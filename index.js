@@ -5,277 +5,351 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 8000;
 
-// 1. Información de la serpiente
+// 1. Información y personalización de la serpiente
 app.get('/', (req, res) => {
   res.json({
     apiversion: '1',
     author: 'avalojandro',
-    color: '#0984e3', // Color azul eléctrico
-    head: 'pixel',    // Cabeza estilo pixel art
+    color: '#0984e3', // Azul eléctrico
+    head: 'pixel',    // Cabeza pixel art
     tail: 'sharp'     // Cola afilada
   });
 });
 
 // 2. Inicio de partida
 app.post('/start', (req, res) => {
-  console.log(`[START] Nueva partida iniciada: ${req.body.game.id}`);
+  console.log(`[START] Partida iniciada: ${req.body.game.id}`);
   res.status(200).send('ok');
 });
 
-// Helper: Comprueba si dos posiciones son idénticas
+// Helpers de coordenadas y distancias
 function isSamePos(p1, p2) {
   return p1.x === p2.x && p1.y === p2.y;
 }
 
-// Helper: Convierte coordenadas a clave string "x,y"
 function toKey(pos) {
   return `${pos.x},${pos.y}`;
 }
 
-// Helper: Distancia Manhattan (rápida para cálculos secundarios)
-function manhattanDistance(a, b) {
+function fromKey(key) {
+  const [x, y] = key.split(',').map(Number);
+  return { x, y };
+}
+
+function manhattanDist(a, b) {
   return Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
 }
 
-// Helper: Verifica si una coordenada está dentro del tablero
 function isInsideBoard(pos, board) {
   return pos.x >= 0 && pos.x < board.width && pos.y >= 0 && pos.y < board.height;
 }
 
-// Helper: Obtiene vecinos válidos en el tablero
-function getAdjacentNeighbors(pos, board) {
-  const candidates = [
+function getNeighbors(pos, board) {
+  const directions = [
     { x: pos.x, y: pos.y + 1 }, // up
     { x: pos.x, y: pos.y - 1 }, // down
     { x: pos.x - 1, y: pos.y }, // left
     { x: pos.x + 1, y: pos.y }  // right
   ];
-  return candidates.filter((p) => isInsideBoard(p, board));
+  return directions.filter((p) => isInsideBoard(p, board));
 }
 
 /**
- * BFS Avanzado:
- * Evalúa el espacio accesible desde una casilla, detecta si puede regresar a su cola
- * (lo que garantiza que NO es un callejón sin salida) y encuentra la distancia real a la comida.
+ * Obtiene el conjunto de obstáculos sólidos en el tablero.
+ * Tiene en cuenta que las colas se vacían al avanzar salvo que la serpiente
+ * acabe de comer (salud 100 o cola duplicada).
  */
-function analyzePathWithBFS(startPos, board, you) {
-  const width = board.width;
-  const height = board.height;
-
-  // Conjunto de obstáculos rígidos (cuerpos de serpientes)
-  const solidObstacles = new Set();
+function getSolidObstacles(board, you) {
+  const solid = new Set();
 
   board.snakes.forEach((snake) => {
-    const isYou = snake.id === you.id;
     const body = snake.body;
+    const isTailStacked =
+      body.length > 1 && isSamePos(body[body.length - 1], body[body.length - 2]);
+    const willTailMove = !isTailStacked && snake.health < 100;
 
-    // Detectar si la cola se moverá en el siguiente turno.
-    // La cola NO se moverá si la serpiente acaba de comer (longitud duplicada al final o salud 100).
-    const tailIsStacked =
-      body.length > 1 &&
-      isSamePos(body[body.length - 1], body[body.length - 2]);
-
-    const willTailVacate = !tailIsStacked && snake.health < 100;
-
-    // Los segmentos que son obstáculos ineludibles
-    const obstacleSegments = willTailVacate ? body.slice(0, -1) : body;
-    obstacleSegments.forEach((segment) => {
-      solidObstacles.add(toKey(segment));
-    });
+    const obstacles = willTailMove ? body.slice(0, -1) : body;
+    obstacles.forEach((seg) => solid.add(toKey(seg)));
   });
 
-  const visited = new Set();
-  const queue = [{ pos: startPos, dist: 0 }];
-  visited.add(toKey(startPos));
+  return solid;
+}
 
-  let reachableSquares = 0;
-  let canReachOwnTail = false;
-  let nearestFoodRealDist = null;
+/**
+ * Lookahead a 2 pasos:
+ * Simula el paso a candidatePos y verifica si existen salidas legales en T+2.
+ * Evita entrar en casillas donde la muerte en el turno inmediato siguiente es inevitable.
+ */
+function hasLegalExitsInTurn2(candidatePos, board, you, solidObstacles) {
+  // En T+1, la nueva cabeza está en candidatePos y la vieja cabeza se convierte en cuello
+  const simulatedObstacles = new Set(solidObstacles);
+  simulatedObstacles.add(toKey(you.head)); // nuestra vieja cabeza ahora es cuerpo
+  simulatedObstacles.delete(toKey(candidatePos));
 
+  // Si no comemos en este paso, nuestra cola se liberaría en T+2
+  const myTail = you.body[you.body.length - 1];
+  const myTailStacked =
+    you.body.length > 1 && isSamePos(myTail, you.body[you.body.length - 2]);
+  if (!myTailStacked && you.health < 100) {
+    simulatedObstacles.delete(toKey(myTail));
+  }
+
+  const turn2Neighbors = getNeighbors(candidatePos, board);
+  const legalExits = turn2Neighbors.filter((n) => !simulatedObstacles.has(toKey(n)));
+
+  return legalExits.length > 0;
+}
+
+/**
+ * Cálculo de Territorio Voronoi y BFS Avanzado:
+ * Evalúa el espacio al que nosotros llegamos ANTES que cualquier oponente.
+ * Esto detecta si los rivales nos están cortando el paso dinámicamente.
+ */
+function analyzeVoronoiAndReach(startPos, board, you, solidObstacles) {
   const myTail = you.body[you.body.length - 1];
   const myTailKey = toKey(myTail);
 
+  // 1. BFS desde nuestra posición propuesta (startPos)
+  const myDistances = new Map();
+  const myQueue = [{ pos: startPos, dist: 0 }];
+  myDistances.set(toKey(startPos), 0);
+
+  let canReachOwnTail = false;
+  let nearestFoodDist = null;
   const foodKeys = new Set((board.food || []).map(toKey));
 
-  while (queue.length > 0) {
-    const current = queue.shift();
-    reachableSquares++;
+  while (myQueue.length > 0) {
+    const { pos, dist } = myQueue.shift();
 
-    // ¿Llegamos a comida accesible?
-    if (foodKeys.has(toKey(current.pos)) && nearestFoodRealDist === null) {
-      nearestFoodRealDist = current.dist;
+    if (foodKeys.has(toKey(pos)) && nearestFoodDist === null) {
+      nearestFoodDist = dist;
     }
 
-    // ¿Podemos alcanzar nuestra propia cola? (Estrategia de escape infalible)
-    if (toKey(current.pos) === myTailKey) {
+    if (toKey(pos) === myTailKey) {
       canReachOwnTail = true;
     }
 
-    const neighbors = getAdjacentNeighbors(current.pos, board);
+    for (const neighbor of getNeighbors(pos, board)) {
+      const nKey = toKey(neighbor);
+      const isMyMovingTail = nKey === myTailKey && you.health < 100;
 
-    for (const next of neighbors) {
-      const nextKey = toKey(next);
-
-      // La cola propia siempre es transitable si se va a mover
-      const isMyMovingTail = nextKey === myTailKey && !isSamePos(myTail, you.body[you.body.length - 2]);
-
-      if (!visited.has(nextKey)) {
-        if (!solidObstacles.has(nextKey) || isMyMovingTail) {
-          visited.add(nextKey);
-          queue.push({ pos: next, dist: current.dist + 1 });
+      if (!myDistances.has(nKey)) {
+        if (!solidObstacles.has(nKey) || isMyMovingTail) {
+          myDistances.set(nKey, dist + 1);
+          myQueue.push({ pos: neighbor, dist: dist + 1 });
         }
       }
     }
   }
 
+  // 2. BFS multi-origen desde las cabezas de todas las serpientes rivales
+  const opponentDistances = new Map();
+  const oppQueue = [];
+
+  board.snakes.forEach((other) => {
+    if (other.id === you.id) return;
+    const key = toKey(other.head);
+    opponentDistances.set(key, 0);
+    oppQueue.push({ pos: other.head, dist: 0 });
+  });
+
+  while (oppQueue.length > 0) {
+    const { pos, dist } = oppQueue.shift();
+
+    for (const neighbor of getNeighbors(pos, board)) {
+      const nKey = toKey(neighbor);
+      if (!opponentDistances.has(nKey) && !solidObstacles.has(nKey)) {
+        opponentDistances.set(nKey, dist + 1);
+        oppQueue.push({ pos: neighbor, dist: dist + 1 });
+      }
+    }
+  }
+
+  // 3. Contar casillas de territorio exclusivo (Voronoi)
+  let exclusiveTerritory = 0;
+  let sharedOrControlledSpace = 0;
+
+  for (const [cellKey, myD] of myDistances.entries()) {
+    sharedOrControlledSpace++;
+    const oppD = opponentDistances.get(cellKey);
+
+    if (oppD === undefined || myD < oppD) {
+      // Llegamos estrictamente antes que cualquier enemigo
+      exclusiveTerritory++;
+    }
+  }
+
   return {
-    reachableSpace: reachableSquares,
+    reachableSpace: sharedOrControlledSpace,
+    exclusiveTerritory,
     canReachTail: canReachOwnTail,
-    nearestFoodDist: nearestFoodRealDist
+    nearestFoodDist
   };
 }
 
-// 3. Decisión de movimiento
+// 3. Lógica de decisión de movimiento por turno
 app.post('/move', (req, res) => {
   const { board, you } = req.body;
   const myHead = you.head;
   const myLength = you.length;
 
-  const moves = {
+  const moveDirections = {
     up: { x: myHead.x, y: myHead.y + 1 },
     down: { x: myHead.x, y: myHead.y - 1 },
     left: { x: myHead.x - 1, y: myHead.y },
     right: { x: myHead.x + 1, y: myHead.y }
   };
 
-  // Conjunto de obstáculos actuales
-  const impassable = new Set();
-
-  board.snakes.forEach((snake) => {
-    const body = snake.body;
-    const tailIsStacked =
-      body.length > 1 && isSamePos(body[body.length - 1], body[body.length - 2]);
-    const segments = (tailIsStacked || snake.health === 100) ? body : body.slice(0, -1);
-
-    segments.forEach((seg) => impassable.add(toKey(seg)));
-  });
-
-  // Peligros del mapa (Hazards)
+  const solidObstacles = getSolidObstacles(board, you);
   const hazardKeys = new Set((board.hazards || []).map(toKey));
 
-  // Paso 1: Filtrar movimientos inmediatamente fatales (Paredes y cuerpos sólidos)
-  const physicallySafeMoves = Object.keys(moves).filter((move) => {
-    const target = moves[move];
+  // FILTRO 1: Movimientos físicamente posibles (No paredes, no cuerpos sólidos)
+  const physicallySafeMoves = Object.keys(moveDirections).filter((move) => {
+    const target = moveDirections[move];
     if (!isInsideBoard(target, board)) return false;
-    if (impassable.has(toKey(target))) return false;
+    if (solidObstacles.has(toKey(target))) return false;
     return true;
   });
 
   if (physicallySafeMoves.length === 0) {
-    console.log('[MOVE] ⚠️ ¡Sin salida! Movimiento de emergencia a up');
+    console.log('[MOVE] 💀 ¡Sin movimientos legales! Movimiento de emergencia hacia up');
     return res.json({ move: 'up', shout: 'Sin salida 💀' });
   }
 
-  // Paso 2: Identificar amenazas de choque de cabezas (Head-to-Head)
-  // Las casillas donde serpientes rivales >= a nosotros pueden moverse en el turno 1
-  const lethalOpponentZones = new Set();
-  const smallerOpponentHeads = [];
+  // FILTRO 2: Lookahead a 2 pasos (Descartar callejones con muerte garantizada en T+2)
+  const movesWithTurn2Exit = physicallySafeMoves.filter((move) => {
+    return hasLegalExitsInTurn2(moveDirections[move], board, you, solidObstacles);
+  });
+
+  // Si hay movimientos con salida garantizada en T+2, descartamos los suicidas
+  const viableTurn2Moves = movesWithTurn2Exit.length > 0 ? movesWithTurn2Exit : physicallySafeMoves;
+
+  // FILTRO 3: Choques de cabeza contra rivales iguales o mayores
+  const lethalHeadZones = new Set();
+  const huntingTargets = [];
+
+  let maxOpponentLength = 0;
 
   board.snakes.forEach((other) => {
     if (other.id === you.id) return;
+    if (other.length > maxOpponentLength) {
+      maxOpponentLength = other.length;
+    }
 
-    const opponentNeighbors = getAdjacentNeighbors(other.head, board);
+    const otherPotentialMoves = getNeighbors(other.head, board);
 
     if (other.length >= myLength) {
-      opponentNeighbors.forEach((sq) => lethalOpponentZones.add(toKey(sq)));
+      // Enemigo igual o mayor: sus posibles movimientos son ZONAS MORTALES
+      otherPotentialMoves.forEach((sq) => lethalHeadZones.add(toKey(sq)));
     } else {
-      smallerOpponentHeads.push(other.head);
+      // Enemigo menor: sus posibles movimientos son oportunidades de intercepción
+      otherPotentialMoves.forEach((sq) => {
+        huntingTargets.push({ pos: sq, enemyId: other.id, enemyLength: other.length });
+      });
     }
   });
 
-  // Separar los movimientos que garantizan CERO riesgo de choque contra rivales más grandes
-  const guaranteedNoHeadCollisionMoves = physicallySafeMoves.filter(
-    (move) => !lethalOpponentZones.has(toKey(moves[move]))
+  // Excluir casillas amenazadas por rivales mayores si existen opciones seguras
+  const safeFromHeadCollisionMoves = viableTurn2Moves.filter(
+    (move) => !lethalHeadZones.has(toKey(moveDirections[move]))
   );
 
-  // Si existen movimientos sin riesgo de choque frontal, DESCARTAMOS por completo los riesgosos.
-  // Solo consideramos casillas de choque frontal si no nos queda absolutamente ninguna otra opción.
-  const candidateMoves =
-    guaranteedNoHeadCollisionMoves.length > 0
-      ? guaranteedNoHeadCollisionMoves
-      : physicallySafeMoves;
+  const candidates =
+    safeFromHeadCollisionMoves.length > 0
+      ? safeFromHeadCollisionMoves
+      : viableTurn2Moves;
 
-  // Centro del tablero
+  // Parámetros estratégicos del estado actual
   const center = { x: Math.floor(board.width / 2), y: Math.floor(board.height / 2) };
+  const isStarving = you.health <= 35;
+  const isLeader = myLength > maxOpponentLength;
+  const needsGrowth = !isLeader || myLength < 8;
+  const isSatiated = isLeader && you.health > 60; // Evitar sobrealimentación si ya dominamos
 
-  // Paso 3: Evaluar y puntuar rigurosamente cada movimiento candidato
-  const scoredMoves = candidateMoves.map((move) => {
-    const nextPos = moves[move];
+  // EVALUACIÓN Y PUNTUACIÓN DE CADA MOVIMIENTO CANDIDATO
+  const scoredMoves = candidates.map((move) => {
+    const nextPos = moveDirections[move];
     const nextKey = toKey(nextPos);
     let score = 0;
 
-    // Análisis de BFS: espacio disponible, si conecta con la cola y distancia real a comida
-    const { reachableSpace, canReachTail, nearestFoodDist } = analyzePathWithBFS(nextPos, board, you);
+    // Análisis de Territorio Voronoi y BFS
+    const { reachableSpace, exclusiveTerritory, canReachTail, nearestFoodDist } =
+      analyzeVoronoiAndReach(nextPos, board, you, solidObstacles);
 
-    // A. ESPACIO Y CONTROL DE ENCIERRO (Evitar trampas mortales)
-    if (reachableSpace >= myLength) {
-      // Espacio amplio suficiente para todo nuestro cuerpo
-      score += Math.min(reachableSpace, 80) * 15;
-    } else {
-      // Espacio menor que nuestra longitud: callejón potencialmente mortal
+    // 1. ESPACIO Y CONTROL DE TERRITORIO (Voronoi + BFS)
+    // El territorio exclusivo (Voronoi) nos asegura que no seremos acorralados por rivales
+    score += exclusiveTerritory * 25;
+    score += Math.min(reachableSpace, 80) * 10;
+
+    if (reachableSpace < myLength) {
       if (canReachTail) {
-        // Si podemos perseguir nuestra propia cola, el callejón se irá abriendo a nuestro paso
-        score += 200 + reachableSpace * 5;
+        // Conexión segura a la cola: el callejón se abrirá al movernos
+        score += 300 + reachableSpace * 5;
       } else {
-        // Trampa mortal sin salida: penalización masiva
-        score -= 2000 - reachableSpace * 10;
+        // Trampa mortal sin salida: penalización crítica
+        score -= 2500 - reachableSpace * 10;
       }
     }
 
-    // B. LIBERTADES (Grados de libertad en la siguiente casilla)
-    // Evita entrar en cuellos de botella estrechos donde puedan emboscarnos
-    const openNeighbors = getAdjacentNeighbors(nextPos, board).filter(
-      (n) => !impassable.has(toKey(n))
+    // 2. LIBERTADES Y PROTECCIÓN CONTRA EL "SQUEEZE" (Paredes)
+    const openNeighbors = getNeighbors(nextPos, board).filter(
+      (n) => !solidObstacles.has(toKey(n))
     ).length;
-    score += openNeighbors * 25;
+    score += openNeighbors * 30;
 
-    // C. GESTIÓN DE COMIDA (Alimentación estratégica)
-    const enemiesAreLonger = board.snakes.some((s) => s.id !== you.id && s.length >= myLength);
-    const isStarving = you.health <= 35;
-    const needGrowth = enemiesAreLonger || you.length < 8;
+    // Penalización por pegarse al borde si hay rivales cerca (evita ser comprimido contra la pared)
+    const isAtEdge =
+      nextPos.x === 0 ||
+      nextPos.x === board.width - 1 ||
+      nextPos.y === 0 ||
+      nextPos.y === board.height - 1;
 
+    if (isAtEdge) {
+      const nearEnemies = board.snakes.some(
+        (s) => s.id !== you.id && manhattanDist(nextPos, s.head) <= 3
+      );
+      if (nearEnemies) {
+        score -= 80; // Peligro de squeeze
+      }
+    }
+
+    // 3. ESTRATEGIA DE ALIMENTACIÓN INTELIGENTE (Sin sobrealimentación)
     if (nearestFoodDist !== null) {
       if (isStarving) {
-        // Supervivencia crítica: ir directo a la comida más cercana
-        score += (250 - nearestFoodDist * 20);
-      } else if (needGrowth && reachableSpace >= myLength) {
-        // Modo desarrollo: comer para superar a los rivales si el camino es seguro
-        score += (120 - nearestFoodDist * 8);
+        // Supervivencia pura: comida de forma urgente
+        score += (350 - nearestFoodDist * 30);
+      } else if (needsGrowth && reachableSpace >= myLength) {
+        // Crecimiento necesario para superar al rival más largo
+        score += (140 - nearestFoodDist * 10);
+      } else if (isSatiated) {
+        // Ya somos el líder y tenemos buena salud: NO sobrealimentarnos
+        // Leve penalización por comer comida innecesaria que ocupe espacio
+        if (nearestFoodDist === 0) {
+          score -= 40;
+        }
       } else if (reachableSpace >= myLength * 1.5) {
-        // Modo tranquilo: solo si no compromete espacio
-        score += (40 - nearestFoodDist * 3);
+        // Modo estándar
+        score += (50 - nearestFoodDist * 4);
       }
     }
 
-    // D. POSICIONAMIENTO Y CONTROL CENTRAL
-    // Evita pegarse a las paredes donde es más fácil ser acorralado
-    const distToCenter = manhattanDistance(nextPos, center);
-    score += (15 - distToCenter * 2);
+    // 4. CONTROL DEL CENTRO DEL TABLERO
+    const distToCenter = manhattanDist(nextPos, center);
+    score += (20 - distToCenter * 3);
 
-    // E. PENALIZACIÓN POR HAZARDS (Lava / Peligros)
+    // 5. PENALIZACIÓN POR HAZARDS (Lava / Áreas de daño)
     if (hazardKeys.has(nextKey)) {
-      score -= 350; // Evitar entrar en zonas de daño salvo que sea inevitable
+      score -= 400;
     }
 
-    // F. MODO CAZADOR (Si un rival más pequeño está cerca y tenemos espacio seguro)
-    if (smallerOpponentHeads.length > 0 && reachableSpace >= myLength) {
-      smallerOpponentHeads.forEach((enemyHead) => {
-        const distToEnemyHead = manhattanDistance(nextPos, enemyHead);
-        if (distToEnemyHead === 1) {
-          // ¡Podemos eliminarlo con choque frontal!
-          score += 500;
-        } else if (distToEnemyHead === 2) {
-          score += 60; // Presionar al rival
+    // 6. CAZA Y EMBOSCADA PREDICTIVA A SERPIENTES PEQUEÑAS
+    if (huntingTargets.length > 0 && reachableSpace >= myLength) {
+      huntingTargets.forEach((target) => {
+        if (isSamePos(nextPos, target.pos)) {
+          // Si interceptamos la casilla a la que puede ir un rival más pequeño: ¡eliminación!
+          score += 600;
+        } else if (manhattanDist(nextPos, target.pos) === 1) {
+          score += 80; // Presionar su salida
         }
       });
     }
@@ -283,6 +357,7 @@ app.post('/move', (req, res) => {
     return {
       move,
       score,
+      exclusiveTerritory,
       reachableSpace,
       canReachTail,
       nearestFoodDist,
@@ -290,23 +365,23 @@ app.post('/move', (req, res) => {
     };
   });
 
-  // Ordenar de mayor a menor puntuación
+  // Ordenar movimientos por mayor puntuación
   scoredMoves.sort((a, b) => b.score - a.score);
 
-  const bestChoice = scoredMoves[0];
+  const best = scoredMoves[0];
   console.log(
-    `[MOVE T${req.body.turn}] Salud: ${you.health} | Elegido: ${bestChoice.move} (Score: ${bestChoice.score}) | Espacio: ${bestChoice.reachableSpace} | ConectaCola: ${bestChoice.canReachTail}`
+    `[MOVE T${req.body.turn}] HP: ${you.health} | Len: ${myLength} (Líder: ${isLeader}) | Elegido: ${best.move} (Score: ${best.score}) | Voronoi: ${best.exclusiveTerritory} | Espacio: ${best.reachableSpace} | Cola: ${best.canReachTail}`
   );
 
   res.json({
-    move: bestChoice.move,
-    shout: `T${req.body.turn} ⚡`
+    move: best.move,
+    shout: `T${req.body.turn} 👾`
   });
 });
 
 // 4. Fin de partida
 app.post('/end', (req, res) => {
-  console.log(`[END] Juego terminado: ${req.body.game.id}`);
+  console.log(`[END] Partida finalizada: ${req.body.game.id}`);
   res.status(200).send('ok');
 });
 
