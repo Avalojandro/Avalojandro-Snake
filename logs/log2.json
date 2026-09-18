@@ -1,0 +1,287 @@
+{
+"Game": {
+"ID": "bb4416b8-74c5-4902-aef7-e82c9cef317c",
+"Status": "complete",
+"Width": 11,
+"Height": 11,
+"Ruleset": {
+"foodSpawnChance": "15",
+"minimumFood": "1",
+"name": "standard"
+},
+"SnakeTimeout": 500,
+"MaxTurns": 7200,
+"FoodSpawns": [],
+"HazardSpawns": [],
+"Source": "custom",
+"RulesetName": "standard",
+"RulesStages": [
+"game_over.standard",
+"movement.standard",
+"starvation.standard",
+"hazard_damage.standard",
+"feed_snakes.standard",
+"elimination.standard"
+],
+"Map": "standard",
+"Created": "1789698517224869"
+},
+"LastFrame": {
+"Turn": 72,
+"Snakes": [
+{
+"ID": "gs_mj6mthgdMgjDHRjBh6Pfm9mV",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 10,
+"Y": 2
+},
+{
+"X": 10,
+"Y": 3
+},
+{
+"X": 10,
+"Y": 4
+},
+{
+"X": 10,
+"Y": 5
+},
+{
+"X": 10,
+"Y": 6
+},
+{
+"X": 9,
+"Y": 6
+},
+{
+"X": 9,
+"Y": 7
+},
+{
+"X": 9,
+"Y": 8
+},
+{
+"X": 8,
+"Y": 8
+}
+],
+"Health": 99,
+"Death": null,
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "22",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 22851,
+"Latency": 22918,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_dxtRS7Jwfb4VbkYkD4rRvWdR",
+"Name": "Culebra Cascabel",
+"URL": "",
+"Body": [
+{
+"X": 10,
+"Y": 8
+},
+{
+"X": 10,
+"Y": 7
+},
+{
+"X": 10,
+"Y": 8
+},
+{
+"X": 10,
+"Y": 9
+},
+{
+"X": 10,
+"Y": 10
+},
+{
+"X": 9,
+"Y": 10
+},
+{
+"X": 9,
+"Y": 9
+},
+{
+"X": 8,
+"Y": 9
+},
+{
+"X": 7,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 10
+}
+],
+"Health": 93,
+"Death": {
+"Cause": "snake-self-collision",
+"Turn": 72,
+"EliminatedBy": "gs_dxtRS7Jwfb4VbkYkD4rRvWdR"
+},
+"Color": "#e70a77",
+"HeadType": "silly",
+"TailType": "mlh-gene",
+"Latency": "172",
+"Shout": "T71 Muerte inevitable",
+"Squad": "",
+"APIVersion": "",
+"Author": "Avalojandro",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 172861,
+"Latency": 172934,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_JwVCrGYJhWRVKjXWCvpKJKtd",
+"Name": "Hungry Bot",
+"URL": "",
+"Body": [
+{
+"X": 4,
+"Y": 1
+},
+{
+"X": 3,
+"Y": 1
+},
+{
+"X": 3,
+"Y": 2
+},
+{
+"X": 3,
+"Y": 3
+},
+{
+"X": 4,
+"Y": 3
+},
+{
+"X": 4,
+"Y": 4
+},
+{
+"X": 4,
+"Y": 5
+}
+],
+"Health": 99,
+"Death": {
+"Cause": "snake-collision",
+"Turn": 17,
+"EliminatedBy": "gs_dxtRS7Jwfb4VbkYkD4rRvWdR"
+},
+"Color": "#00cc00",
+"HeadType": "alligator",
+"TailType": "alligator",
+"Latency": "1",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "Battlesnake Bots",
+"StatusCode": 0,
+"Error": "",
+"TimingMicros": {},
+"IsBot": true,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_h9YghmTJxkdBdjCHtwwwKgtX",
+"Name": "Right Bot",
+"URL": "",
+"Body": [
+{
+"X": 11,
+"Y": 1
+},
+{
+"X": 10,
+"Y": 1
+},
+{
+"X": 9,
+"Y": 1
+}
+],
+"Health": 90,
+"Death": {
+"Cause": "wall-collision",
+"Turn": 10,
+"EliminatedBy": ""
+},
+"Color": "#33beff",
+"HeadType": "missile",
+"TailType": "ion",
+"Latency": "1",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "Battlesnake Bots",
+"StatusCode": 0,
+"Error": "",
+"TimingMicros": {},
+"IsBot": true,
+"IsEnvironment": false,
+"ProxyURL": ""
+}
+],
+"Food": [
+{
+"X": 2,
+"Y": 2
+},
+{
+"X": 1,
+"Y": 7
+},
+{
+"X": 7,
+"Y": 7
+}
+],
+"Hazards": [],
+"GameState": {},
+"PointState": []
+}
+}

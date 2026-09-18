@@ -1,0 +1,165 @@
+{
+"Game": {
+"ID": "8ec4ada6-7e94-45fb-ba19-8d34de7045b3",
+"Status": "complete",
+"Width": 11,
+"Height": 11,
+"Ruleset": {
+"foodSpawnChance": "15",
+"minimumFood": "1",
+"name": "standard"
+},
+"SnakeTimeout": 500,
+"MaxTurns": 7200,
+"FoodSpawns": [],
+"HazardSpawns": [],
+"Source": "custom",
+"RulesetName": "standard",
+"RulesStages": [
+"game_over.standard",
+"movement.standard",
+"starvation.standard",
+"hazard_damage.standard",
+"feed_snakes.standard",
+"elimination.standard"
+],
+"Map": "standard",
+"Created": "1789699553191563"
+},
+"LastFrame": {
+"Turn": 34,
+"Snakes": [
+{
+"ID": "gs_J8QjBXv9QhSdWWy93F6SDcx7",
+"Name": "Culebra Cascabel",
+"URL": "",
+"Body": [
+{
+"X": 0,
+"Y": 8
+},
+{
+"X": 0,
+"Y": 9
+},
+{
+"X": 0,
+"Y": 10
+},
+{
+"X": 1,
+"Y": 10
+},
+{
+"X": 1,
+"Y": 9
+}
+],
+"Health": 93,
+"Death": {
+"Cause": "head-collision",
+"Turn": 34,
+"EliminatedBy": "gs_pmS4CXSB7bgGb4dPxCQgXMPf"
+},
+"Color": "#e70a77",
+"HeadType": "silly",
+"TailType": "mlh-gene",
+"Latency": "261",
+"Shout": "T33 Riesgo forzado | Score: 2230",
+"Squad": "",
+"APIVersion": "",
+"Author": "Avalojandro",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 261289,
+"Latency": 261409,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_pmS4CXSB7bgGb4dPxCQgXMPf",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 0,
+"Y": 8
+},
+{
+"X": 1,
+"Y": 8
+},
+{
+"X": 1,
+"Y": 7
+},
+{
+"X": 2,
+"Y": 7
+},
+{
+"X": 3,
+"Y": 7
+},
+{
+"X": 3,
+"Y": 8
+}
+],
+"Health": 85,
+"Death": null,
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "452",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 452223,
+"Latency": 452357,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+}
+],
+"Food": [
+{
+"X": 5,
+"Y": 3
+},
+{
+"X": 6,
+"Y": 4
+},
+{
+"X": 10,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 0
+},
+{
+"X": 0,
+"Y": 1
+}
+],
+"Hazards": [],
+"GameState": {},
+"PointState": []
+}
+}

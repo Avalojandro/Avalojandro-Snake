@@ -1,0 +1,149 @@
+{
+"Game": {
+"ID": "b7f8116c-5299-4374-bbf5-4960dcc6489a",
+"Status": "running",
+"Width": 11,
+"Height": 11,
+"Ruleset": {
+"foodSpawnChance": "15",
+"minimumFood": "1",
+"name": "standard"
+},
+"SnakeTimeout": 500,
+"MaxTurns": 7200,
+"FoodSpawns": [],
+"HazardSpawns": [],
+"Source": "custom",
+"RulesetName": "standard",
+"RulesStages": [
+"game_over.standard",
+"movement.standard",
+"starvation.standard",
+"hazard_damage.standard",
+"feed_snakes.standard",
+"elimination.standard"
+],
+"Map": "standard",
+"Created": "1789704774302409"
+},
+"LastFrame": {
+"Turn": 23,
+"Snakes": [
+{
+"ID": "gs_MyPkQ7wq34qPr8wQxybQRrR8",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 4,
+"Y": 3
+},
+{
+"X": 5,
+"Y": 3
+},
+{
+"X": 5,
+"Y": 4
+},
+{
+"X": 4,
+"Y": 4
+}
+],
+"Health": 79,
+"Death": null,
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "454",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 454089,
+"Latency": 454205,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_g7rp7RXHJdCgXHYcgYCqVS67",
+"Name": "Culebra Cascabel",
+"URL": "",
+"Body": [
+{
+"X": 6,
+"Y": 7
+},
+{
+"X": 6,
+"Y": 6
+},
+{
+"X": 5,
+"Y": 6
+},
+{
+"X": 4,
+"Y": 6
+},
+{
+"X": 4,
+"Y": 7
+}
+],
+"Health": 93,
+"Death": null,
+"Color": "#e70a77",
+"HeadType": "silly",
+"TailType": "mlh-gene",
+"Latency": "167",
+"Shout": "T22 [AlphaDominance/Encierro] Esp:113 Sc:4919",
+"Squad": "",
+"APIVersion": "",
+"Author": "Avalojandro",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 166139,
+"Latency": 167717,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+}
+],
+"Food": [
+{
+"X": 10,
+"Y": 2
+},
+{
+"X": 2,
+"Y": 9
+},
+{
+"X": 5,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 10
+}
+],
+"Hazards": [],
+"GameState": {},
+"PointState": []
+}
+}

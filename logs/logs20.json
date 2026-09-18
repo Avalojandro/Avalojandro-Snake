@@ -1,0 +1,173 @@
+{
+"Game": {
+"ID": "03e56822-ac0e-4564-85ff-1ead8d2997d7",
+"Status": "complete",
+"Width": 11,
+"Height": 11,
+"Ruleset": {
+"foodSpawnChance": "15",
+"minimumFood": "1",
+"name": "standard"
+},
+"SnakeTimeout": 500,
+"MaxTurns": 7200,
+"FoodSpawns": [],
+"HazardSpawns": [],
+"Source": "custom",
+"RulesetName": "standard",
+"RulesStages": [
+"game_over.standard",
+"movement.standard",
+"starvation.standard",
+"hazard_damage.standard",
+"feed_snakes.standard",
+"elimination.standard"
+],
+"Map": "standard",
+"Created": "1789705308043690"
+},
+"LastFrame": {
+"Turn": 71,
+"Snakes": [
+{
+"ID": "gs_myHTxdkgYp6pwXktkpqggKgc",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 0,
+"Y": 9
+},
+{
+"X": 1,
+"Y": 9
+},
+{
+"X": 2,
+"Y": 9
+},
+{
+"X": 3,
+"Y": 9
+},
+{
+"X": 4,
+"Y": 9
+},
+{
+"X": 5,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 9
+},
+{
+"X": 7,
+"Y": 9
+}
+],
+"Health": 79,
+"Death": null,
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "26",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 25937,
+"Latency": 26021,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_tHkRvbR7fPY9MXK3FxTvR3yc",
+"Name": "Culebra Cascabel",
+"URL": "",
+"Body": [
+{
+"X": 0,
+"Y": 9
+},
+{
+"X": 0,
+"Y": 10
+},
+{
+"X": 1,
+"Y": 10
+},
+{
+"X": 2,
+"Y": 10
+},
+{
+"X": 3,
+"Y": 10
+},
+{
+"X": 4,
+"Y": 10
+}
+],
+"Health": 88,
+"Death": {
+"Cause": "head-collision",
+"Turn": 71,
+"EliminatedBy": "gs_myHTxdkgYp6pwXktkpqggKgc"
+},
+"Color": "#e70a77",
+"HeadType": "silly",
+"TailType": "mlh-gene",
+"Latency": "168",
+"Shout": "T70 Riesgo forzado | Score: -1920",
+"Squad": "",
+"APIVersion": "",
+"Author": "Avalojandro",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 168538,
+"Latency": 168790,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+}
+],
+"Food": [
+{
+"X": 5,
+"Y": 0
+},
+{
+"X": 1,
+"Y": 7
+},
+{
+"X": 0,
+"Y": 4
+},
+{
+"X": 3,
+"Y": 2
+}
+],
+"Hazards": [],
+"GameState": {},
+"PointState": []
+}
+}

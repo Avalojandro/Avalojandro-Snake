@@ -1,0 +1,177 @@
+{
+"Game": {
+"ID": "a2d83cb6-2cca-48d0-b0e6-671ba07be9f3",
+"Status": "complete",
+"Width": 11,
+"Height": 11,
+"Ruleset": {
+"foodSpawnChance": "15",
+"minimumFood": "1",
+"name": "standard"
+},
+"SnakeTimeout": 500,
+"MaxTurns": 7200,
+"FoodSpawns": [],
+"HazardSpawns": [],
+"Source": "custom",
+"RulesetName": "standard",
+"RulesStages": [
+"game_over.standard",
+"movement.standard",
+"starvation.standard",
+"hazard_damage.standard",
+"feed_snakes.standard",
+"elimination.standard"
+],
+"Map": "standard",
+"Created": "1789703965411474"
+},
+"LastFrame": {
+"Turn": 71,
+"Snakes": [
+{
+"ID": "gs_6tMJTq7P7TXqDScwJtQByTqQ",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 2,
+"Y": 3
+},
+{
+"X": 2,
+"Y": 4
+},
+{
+"X": 2,
+"Y": 5
+},
+{
+"X": 2,
+"Y": 6
+},
+{
+"X": 3,
+"Y": 6
+},
+{
+"X": 4,
+"Y": 6
+},
+{
+"X": 4,
+"Y": 5
+},
+{
+"X": 4,
+"Y": 4
+},
+{
+"X": 5,
+"Y": 4
+}
+],
+"Health": 99,
+"Death": null,
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "21",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 21899,
+"Latency": 21987,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_Hk8wWwpSVFCqCf6KWJjJ7yYX",
+"Name": "Culebra Cascabel",
+"URL": "",
+"Body": [
+{
+"X": 3,
+"Y": 6
+},
+{
+"X": 3,
+"Y": 5
+},
+{
+"X": 3,
+"Y": 4
+},
+{
+"X": 3,
+"Y": 3
+},
+{
+"X": 4,
+"Y": 3
+},
+{
+"X": 5,
+"Y": 3
+},
+{
+"X": 6,
+"Y": 3
+}
+],
+"Health": 82,
+"Death": {
+"Cause": "snake-collision",
+"Turn": 71,
+"EliminatedBy": "gs_6tMJTq7P7TXqDScwJtQByTqQ"
+},
+"Color": "#e70a77",
+"HeadType": "silly",
+"TailType": "mlh-gene",
+"Latency": "162",
+"Shout": "T70 Muerte inevitable",
+"Squad": "",
+"APIVersion": "",
+"Author": "Avalojandro",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 162815,
+"Latency": 162912,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+}
+],
+"Food": [
+{
+"X": 1,
+"Y": 4
+},
+{
+"X": 10,
+"Y": 4
+},
+{
+"X": 4,
+"Y": 2
+}
+],
+"Hazards": [],
+"GameState": {},
+"PointState": []
+}
+}

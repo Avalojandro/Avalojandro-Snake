@@ -1,0 +1,499 @@
+{
+"Game": {
+"ID": "9b6666b0-d46b-4ef2-8522-b76ae1037e33",
+"Status": "complete",
+"Width": 11,
+"Height": 11,
+"Ruleset": {
+"foodSpawnChance": "15",
+"minimumFood": "1",
+"name": "standard"
+},
+"SnakeTimeout": 500,
+"MaxTurns": 7200,
+"FoodSpawns": [],
+"HazardSpawns": [],
+"Source": "custom",
+"RulesetName": "standard",
+"RulesStages": [
+"game_over.standard",
+"movement.standard",
+"starvation.standard",
+"hazard_damage.standard",
+"feed_snakes.standard",
+"elimination.standard"
+],
+"Map": "standard",
+"Created": "1789699198226990"
+},
+"LastFrame": {
+"Turn": 457,
+"Snakes": [
+{
+"ID": "gs_MMyYgkyF8hYVjCtPwdWxK6tR",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 4,
+"Y": 7
+},
+{
+"X": 4,
+"Y": 8
+},
+{
+"X": 5,
+"Y": 8
+},
+{
+"X": 5,
+"Y": 7
+},
+{
+"X": 5,
+"Y": 6
+},
+{
+"X": 4,
+"Y": 6
+},
+{
+"X": 3,
+"Y": 6
+},
+{
+"X": 2,
+"Y": 6
+},
+{
+"X": 1,
+"Y": 6
+},
+{
+"X": 1,
+"Y": 5
+},
+{
+"X": 1,
+"Y": 4
+},
+{
+"X": 1,
+"Y": 3
+},
+{
+"X": 1,
+"Y": 2
+},
+{
+"X": 1,
+"Y": 1
+},
+{
+"X": 2,
+"Y": 1
+},
+{
+"X": 3,
+"Y": 1
+},
+{
+"X": 4,
+"Y": 1
+},
+{
+"X": 4,
+"Y": 2
+},
+{
+"X": 5,
+"Y": 2
+},
+{
+"X": 5,
+"Y": 1
+},
+{
+"X": 5,
+"Y": 0
+},
+{
+"X": 6,
+"Y": 0
+},
+{
+"X": 7,
+"Y": 0
+},
+{
+"X": 8,
+"Y": 0
+},
+{
+"X": 8,
+"Y": 1
+},
+{
+"X": 7,
+"Y": 1
+},
+{
+"X": 6,
+"Y": 1
+},
+{
+"X": 6,
+"Y": 2
+},
+{
+"X": 6,
+"Y": 3
+},
+{
+"X": 6,
+"Y": 4
+}
+],
+"Health": 96,
+"Death": null,
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "24",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 24567,
+"Latency": 24656,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_BYXhvDvvFXcvMqfbCjcmHpp9",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 4,
+"Y": 1
+},
+{
+"X": 4,
+"Y": 0
+},
+{
+"X": 3,
+"Y": 0
+},
+{
+"X": 2,
+"Y": 0
+},
+{
+"X": 1,
+"Y": 0
+},
+{
+"X": 0,
+"Y": 0
+},
+{
+"X": 0,
+"Y": 1
+},
+{
+"X": 0,
+"Y": 2
+},
+{
+"X": 0,
+"Y": 3
+},
+{
+"X": 0,
+"Y": 4
+},
+{
+"X": 0,
+"Y": 5
+},
+{
+"X": 0,
+"Y": 6
+},
+{
+"X": 0,
+"Y": 7
+},
+{
+"X": 0,
+"Y": 8
+},
+{
+"X": 1,
+"Y": 8
+},
+{
+"X": 1,
+"Y": 9
+},
+{
+"X": 2,
+"Y": 9
+},
+{
+"X": 2,
+"Y": 8
+},
+{
+"X": 2,
+"Y": 7
+},
+{
+"X": 3,
+"Y": 7
+},
+{
+"X": 3,
+"Y": 8
+},
+{
+"X": 3,
+"Y": 9
+},
+{
+"X": 3,
+"Y": 10
+},
+{
+"X": 4,
+"Y": 10
+},
+{
+"X": 4,
+"Y": 9
+},
+{
+"X": 5,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 9
+},
+{
+"X": 6,
+"Y": 8
+},
+{
+"X": 7,
+"Y": 8
+},
+{
+"X": 7,
+"Y": 7
+}
+],
+"Health": 98,
+"Death": {
+"Cause": "snake-collision",
+"Turn": 457,
+"EliminatedBy": "gs_MMyYgkyF8hYVjCtPwdWxK6tR"
+},
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "23",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 23775,
+"Latency": 23896,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_p7CDdVf3PmFWgdbtScTcSbH3",
+"Name": "Geriatric Jagwire",
+"URL": "",
+"Body": [
+{
+"X": 8,
+"Y": 5
+},
+{
+"X": 9,
+"Y": 5
+},
+{
+"X": 10,
+"Y": 5
+},
+{
+"X": 10,
+"Y": 4
+},
+{
+"X": 9,
+"Y": 4
+},
+{
+"X": 9,
+"Y": 3
+},
+{
+"X": 9,
+"Y": 2
+},
+{
+"X": 9,
+"Y": 1
+},
+{
+"X": 8,
+"Y": 1
+},
+{
+"X": 8,
+"Y": 2
+},
+{
+"X": 7,
+"Y": 2
+},
+{
+"X": 7,
+"Y": 3
+},
+{
+"X": 6,
+"Y": 3
+},
+{
+"X": 5,
+"Y": 3
+},
+{
+"X": 5,
+"Y": 4
+},
+{
+"X": 4,
+"Y": 4
+}
+],
+"Health": 45,
+"Death": {
+"Cause": "head-collision",
+"Turn": 299,
+"EliminatedBy": "gs_MMyYgkyF8hYVjCtPwdWxK6tR"
+},
+"Color": "#ffe58f",
+"HeadType": "glasses",
+"TailType": "freckled",
+"Latency": "38",
+"Shout": "",
+"Squad": "",
+"APIVersion": "",
+"Author": "waryferryman",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 38550,
+"Latency": 38643,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+},
+{
+"ID": "gs_3yGxjW7G8qQCpcv7DQBvcHVD",
+"Name": "Culebra Cascabel",
+"URL": "",
+"Body": [
+{
+"X": 4,
+"Y": 6
+},
+{
+"X": 4,
+"Y": 5
+},
+{
+"X": 5,
+"Y": 5
+},
+{
+"X": 5,
+"Y": 4
+}
+],
+"Health": 82,
+"Death": {
+"Cause": "head-collision",
+"Turn": 20,
+"EliminatedBy": "gs_p7CDdVf3PmFWgdbtScTcSbH3"
+},
+"Color": "#e70a77",
+"HeadType": "silly",
+"TailType": "mlh-gene",
+"Latency": "234",
+"Shout": "T19 Riesgo forzado | Score: 990",
+"Squad": "",
+"APIVersion": "",
+"Author": "Avalojandro",
+"StatusCode": 200,
+"Error": "",
+"TimingMicros": {
+"Connect": 0,
+"DNS": 0,
+"FirstByte": 234459,
+"Latency": 234618,
+"TLS": 0
+},
+"IsBot": false,
+"IsEnvironment": false,
+"ProxyURL": ""
+}
+],
+"Food": [
+{
+"X": 0,
+"Y": 9
+},
+{
+"X": 0,
+"Y": 10
+},
+{
+"X": 9,
+"Y": 4
+}
+],
+"Hazards": [],
+"GameState": {},
+"PointState": []
+}
+}
