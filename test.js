@@ -1396,4 +1396,435 @@ console.log("🧪 Iniciando pruebas de Battlesnake...\n");
   console.log("  ✅ Test 25 Superado: Evitó meterse en la esquina bajo amenaza de encierro frontal.\n");
 })();
 
-console.log("🎉 ¡TODAS LAS PRUEBAS (25/25) PASARON CON ÉXITO!");
+// -------------------------------------------------------------
+// Test 26: Escenario de Partición Ofensiva y Muralla Slicing (Inspirado en Log 101 - Firsttry)
+// -------------------------------------------------------------
+(() => {
+  // Culebra Cascabel (L=20) tiene ventaja de tamaño y está cerrando una muralla en fila Y=7.
+  // Cabeza en (1,7), cuello en (2,7), cuerpo extendido horizontalmente hasta (10,7).
+  // Rival (L=12) está en el norte (Y >= 9).
+  // Moverse 'left' a (0,7) toca la pared lateral izquierda sellando el paso y dejando al rival
+  // en un sub-espacio desconectado.
+  const gameState = {
+    game: { id: "log101-partition-test" },
+    turn: 250,
+    board: {
+      height: 11,
+      width: 11,
+      food: [{ x: 5, y: 2 }, { x: 8, y: 1 }],
+      hazards: [],
+      snakes: [],
+    },
+    you: {
+      id: "me",
+      name: "Culebra Cascabel",
+      health: 85,
+      length: 20,
+      head: { x: 1, y: 7 },
+      body: [
+        { x: 1, y: 7 },
+        { x: 2, y: 7 },
+        { x: 2, y: 6 },
+        { x: 3, y: 6 },
+        { x: 4, y: 6 },
+        { x: 5, y: 6 },
+        { x: 5, y: 7 },
+        { x: 6, y: 7 },
+        { x: 6, y: 6 },
+        { x: 7, y: 6 },
+        { x: 8, y: 6 },
+        { x: 9, y: 6 },
+        { x: 10, y: 6 },
+        { x: 10, y: 5 },
+        { x: 9, y: 5 },
+        { x: 8, y: 5 },
+        { x: 7, y: 5 },
+        { x: 6, y: 5 },
+        { x: 5, y: 5 },
+        { x: 4, y: 5 },
+      ],
+    },
+  };
+
+  const trappedEnemy = {
+    id: "trapped-enemy",
+    name: "Rival Encerrado",
+    health: 90,
+    length: 12,
+    head: { x: 2, y: 10 },
+    body: [
+      { x: 2, y: 10 },
+      { x: 3, y: 10 },
+      { x: 4, y: 10 },
+      { x: 5, y: 10 },
+      { x: 6, y: 10 },
+      { x: 7, y: 10 },
+      { x: 8, y: 10 },
+      { x: 9, y: 10 },
+      { x: 9, y: 9 },
+      { x: 8, y: 9 },
+      { x: 7, y: 9 },
+      { x: 6, y: 9 },
+    ],
+  };
+
+  gameState.board.snakes = [gameState.you, trappedEnemy];
+
+  const result = process_move(gameState);
+  console.log(`Test 26 [Escenario Partición Ofensiva Log 101]: Movimiento elegido -> "${result.move}", Shout -> "${result.shout}"`);
+  assert.strictEqual(
+    result.move,
+    "left",
+    "Debe elegir 'left' a (0,7) para sellar la muralla contra la pared y ejecutar la partición letal"
+  );
+  console.log("  ✅ Test 26 Superado: Ejecutó la estrategia de Muralla Slicing y sellado de partición de forma óptima.\n");
+})();
+
+// -------------------------------------------------------------
+// Test 27: Escenario de Detección y Fuga Anti-Partición
+// -------------------------------------------------------------
+(() => {
+  // Culebra Cascabel (L=10) está en (5,8) con cuello en (5,9).
+  // Un rival gigante (L=22) está construyendo una muralla en Y=7 con su cuerpo de (0,7) a (4,7) y de (6,7) a (10,7).
+  // Queda una brecha libre en (5,7) hacia el sur (donde hay 60+ casillas de espacio).
+  // Moverse 'up' o lateralmente en Y=8 mantendría a Cascabel en la trampa norte (apenas 15 casillas).
+  // Cascabel debe elegir 'down' a (5,7) para escapar hacia el sur antes de que la muralla se cierre.
+  const gameState = {
+    game: { id: "anti-partition-escape-test" },
+    turn: 220,
+    board: {
+      height: 11,
+      width: 11,
+      food: [{ x: 5, y: 2 }],
+      hazards: [],
+      snakes: [],
+    },
+    you: {
+      id: "me",
+      name: "Culebra Cascabel",
+      health: 80,
+      length: 10,
+      head: { x: 5, y: 8 },
+      body: [
+        { x: 5, y: 8 },
+        { x: 5, y: 9 },
+        { x: 4, y: 9 },
+        { x: 3, y: 9 },
+        { x: 2, y: 9 },
+        { x: 1, y: 9 },
+        { x: 1, y: 10 },
+        { x: 2, y: 10 },
+        { x: 3, y: 10 },
+        { x: 4, y: 10 },
+      ],
+    },
+  };
+
+  const wallBuilderEnemy = {
+    id: "wall-builder",
+    name: "FirstTry Bot",
+    health: 95,
+    length: 22,
+    head: { x: 8, y: 7 },
+    body: [
+      { x: 8, y: 7 },
+      { x: 9, y: 7 },
+      { x: 10, y: 7 },
+      { x: 10, y: 6 },
+      { x: 9, y: 6 },
+      { x: 8, y: 6 },
+      { x: 7, y: 6 },
+      { x: 6, y: 6 },
+      { x: 6, y: 5 },
+      { x: 4, y: 6 },
+      { x: 3, y: 6 },
+      { x: 2, y: 6 },
+      { x: 1, y: 6 },
+      { x: 0, y: 6 },
+      { x: 0, y: 7 },
+      { x: 1, y: 7 },
+      { x: 2, y: 7 },
+      { x: 3, y: 7 },
+      { x: 4, y: 7 },
+      { x: 4, y: 7 },
+      { x: 4, y: 7 },
+      { x: 4, y: 7 },
+    ],
+  };
+
+  gameState.board.snakes = [gameState.you, wallBuilderEnemy];
+
+  const result = process_move(gameState);
+  console.log(`Test 27 [Escenario Fuga Anti-Partición]: Movimiento elegido -> "${result.move}", Shout -> "${result.shout}"`);
+  assert.strictEqual(
+    result.move,
+    "down",
+    "Debe elegir 'down' a (5,7) cruzando la brecha hacia el sur abierto antes de que se cierre el cerco"
+  );
+  console.log("  ✅ Test 27 Superado: Detectó el cerco de muralla y ejecutó la fuga por la brecha correctamente.\n");
+})();
+
+// -------------------------------------------------------------
+// Test 28: Escenario Log 102 - Detección de 4 Vueltas y Ruptura de Bucle hacia Área Abierta
+// -------------------------------------------------------------
+(() => {
+  const { clear_game_history } = require("./index");
+  const gameId = "test-log102-game";
+  clear_game_history(gameId);
+
+  // Definir un ciclo rectangular de 12 pasos en las columnas 9 y 10:
+  // (9,2) -> (9,1) -> (9,0) -> (10,0) -> (10,1) -> (10,2) -> (10,3) -> (10,4) -> (9,4) -> (9,3) -> (9,2)
+  const loopCoords = [
+    { x: 9, y: 3 },
+    { x: 9, y: 2 },
+    { x: 9, y: 1 },
+    { x: 9, y: 0 },
+    { x: 10, y: 0 },
+    { x: 10, y: 1 },
+    { x: 10, y: 2 },
+    { x: 10, y: 3 },
+    { x: 10, y: 4 },
+    { x: 10, y: 5 },
+    { x: 9, y: 5 },
+    { x: 9, y: 4 },
+  ];
+
+  // Simular 4 vueltas completas (4 * 12 = 48 turnos)
+  let currentTurn = 1;
+  for (let lap = 0; lap < 4; lap++) {
+    for (let step = 0; step < loopCoords.length; step++) {
+      const head = loopCoords[step];
+      const prevHead = loopCoords[(step - 1 + loopCoords.length) % loopCoords.length];
+      const prevPrev = loopCoords[(step - 2 + loopCoords.length) % loopCoords.length];
+
+      const simState = {
+        game: { id: gameId },
+        turn: currentTurn++,
+        board: {
+          height: 11,
+          width: 11,
+          food: [{ x: 2, y: 5 }, { x: 3, y: 8 }],
+          hazards: [],
+          snakes: [],
+        },
+        you: {
+          id: "me",
+          name: "Culebra Cascabel",
+          health: 80,
+          length: 4,
+          head: head,
+          body: [head, prevHead, prevPrev, { x: 9, y: 0 }],
+        },
+      };
+
+      const enemy = {
+        id: "rival",
+        name: "Firsttry Enemy",
+        health: 70,
+        length: 8,
+        head: { x: 7, y: 5 },
+        body: [
+          { x: 7, y: 5 },
+          { x: 7, y: 4 },
+          { x: 7, y: 3 },
+          { x: 7, y: 2 },
+          { x: 7, y: 1 },
+          { x: 7, y: 0 },
+          { x: 8, y: 0 },
+          { x: 8, y: 1 },
+        ],
+      };
+      simState.board.snakes = [simState.you, enemy];
+
+      process_move(simState);
+    }
+  }
+
+  // Ahora en el turno 49, la serpiente está en (9,5) con el rival en (7,5).
+  // La columna 8 está despejada (8,5 libre).
+  // El área más abierta del tablero está en el centro/oeste (x <= 6).
+  // Como ya dio 4 vueltas completas en las columnas 9-10, debe romper el ciclo y moverse 'left' hacia (8,5).
+  const testState = {
+    game: { id: gameId },
+    turn: currentTurn,
+    board: {
+      height: 11,
+      width: 11,
+      food: [{ x: 2, y: 5 }, { x: 3, y: 8 }],
+      hazards: [],
+      snakes: [],
+    },
+    you: {
+      id: "me",
+      name: "Culebra Cascabel",
+      health: 65,
+      length: 4,
+      head: { x: 9, y: 5 },
+      body: [
+        { x: 9, y: 5 },
+        { x: 10, y: 5 },
+        { x: 10, y: 4 },
+        { x: 10, y: 3 },
+      ],
+    },
+  };
+
+  const enemy = {
+    id: "rival",
+    name: "Firsttry Enemy",
+    health: 70,
+    length: 8,
+    head: { x: 7, y: 3 },
+    body: [
+      { x: 7, y: 3 },
+      { x: 7, y: 2 },
+      { x: 7, y: 1 },
+      { x: 7, y: 0 },
+      { x: 8, y: 0 },
+      { x: 8, y: 1 },
+      { x: 8, y: 2 },
+      { x: 8, y: 3 },
+    ],
+  };
+  testState.board.snakes = [testState.you, enemy];
+
+  const result = process_move(testState);
+  console.log(`Test 28 [Escenario Log 102 - Detección 4 Vueltas y Ruptura hacia Área Abierta]: Movimiento elegido -> "${result.move}", Shout -> "${result.shout}"`);
+  assert.strictEqual(
+    result.move,
+    "left",
+    "Tras completar 4 vueltas en las columnas 9-10, debe elegir 'left' hacia (8,5) para escapar al área abierta en lugar de continuar el bucle"
+  );
+  assert.ok(
+    result.shout.includes("RupturaBucle-4Vueltas"),
+    "El shout debe indicar que se activó la estrategia de ruptura de bucle [RupturaBucle-4Vueltas]"
+  );
+  console.log("  ✅ Test 28 Superado: Detectó 4 vueltas repetitivas y ejecutó la ruptura hacia el área abierta con éxito.\n");
+})();
+
+// ==========================================
+// TEST 29: ESCENARIO LOG 103 - ANTI WALL-RACE TRAP (CARRERA PARALELA EN PARED HACIA ESQUINA)
+// ==========================================
+(() => {
+  const testState = {
+    game: { id: "test-game-103-wall-race", ruleset: { name: "standard" }, timeout: 500 },
+    turn: 53,
+    board: {
+      height: 11,
+      width: 11,
+      food: [
+        { x: 10, y: 8 },
+        { x: 5, y: 7 },
+        { x: 1, y: 6 },
+      ],
+      hazards: [],
+      snakes: [],
+    },
+    you: {
+      id: "cascabel",
+      name: "Culebra Cascabel",
+      health: 79,
+      length: 4,
+      head: { x: 10, y: 3 },
+      body: [
+        { x: 10, y: 3 },
+        { x: 9, y: 3 },
+        { x: 8, y: 3 },
+        { x: 7, y: 3 },
+      ],
+    },
+  };
+
+  const enemy = {
+    id: "rival-firsttry",
+    name: "firsttry",
+    health: 93,
+    length: 6,
+    head: { x: 8, y: 5 },
+    body: [
+      { x: 8, y: 5 },
+      { x: 7, y: 5 },
+      { x: 7, y: 4 },
+      { x: 6, y: 4 },
+      { x: 5, y: 4 },
+      { x: 4, y: 4 },
+    ],
+  };
+  testState.board.snakes = [testState.you, enemy];
+
+  const result = process_move(testState);
+  console.log(`Test 29 [Escenario Log 103 - Anti Wall-Race Trap en Borde Derecho]: Movimiento elegido -> "${result.move}", Shout -> "${result.shout}"`);
+  assert.strictEqual(
+    result.move,
+    "down",
+    "Estando en (10,3) con un rival mayor en (8,5) subiendo en paralelo, debe elegir 'down' a (10,2) para evitar la trampa mortal de carrera en pared hacia la esquina (10,10)"
+  );
+  console.log("  ✅ Test 29 Superado: Evitó la trampa de carrera paralela en pared hacia la esquina mortal del Log 103.\n");
+})();
+
+// ==========================================
+// TEST 30: ESCENARIO PARTIDA 73133328 - ANTI CORRIDOR CLAMP TRAP (EVITAR CALLEJÓN DE 1 CASILLA)
+// ==========================================
+(() => {
+  const testState = {
+    game: { id: "test-game-7313-clamp", ruleset: { name: "standard" }, timeout: 500 },
+    turn: 37,
+    board: {
+      height: 11,
+      width: 11,
+      food: [
+        { x: 1, y: 9 },
+        { x: 4, y: 2 },
+      ],
+      hazards: [],
+      snakes: [],
+    },
+    you: {
+      id: "cascabel",
+      name: "Culebra Cascabel",
+      health: 100,
+      length: 7,
+      head: { x: 7, y: 0 },
+      body: [
+        { x: 7, y: 0 },
+        { x: 8, y: 0 },
+        { x: 9, y: 0 },
+        { x: 9, y: 1 },
+        { x: 8, y: 1 },
+        { x: 8, y: 2 },
+        { x: 8, y: 2 },
+      ],
+    },
+  };
+
+  const enemy = {
+    id: "rival-firsttry-7313",
+    name: "firsttry",
+    health: 89,
+    length: 6,
+    head: { x: 4, y: 1 },
+    body: [
+      { x: 4, y: 1 },
+      { x: 5, y: 1 },
+      { x: 5, y: 2 },
+      { x: 6, y: 2 },
+      { x: 7, y: 2 },
+      { x: 7, y: 3 },
+    ],
+  };
+  testState.board.snakes = [testState.you, enemy];
+
+  const result = process_move(testState);
+  console.log(`Test 30 [Escenario Partida 73133328 - Anti Corridor Clamp Trap]: Movimiento elegido -> "${result.move}", Shout -> "${result.shout}"`);
+  assert.strictEqual(
+    result.move,
+    "left",
+    "Estando en (7,0) con el cuerpo rival bloqueando (7,2), debe elegir 'left' hacia (6,0) para escapar a campo abierto en lugar de meterse a (7,1) en el callejón angosto de 1 casilla"
+  );
+  console.log("  ✅ Test 30 Superado: Evitó meterse al callejón angosto de 1 casilla entre cuerpos del escenario 73133328.\n");
+})();
+
+console.log("🎉 ¡TODAS LAS PRUEBAS (30/30) PASARON CON ÉXITO!");
+
+
+
