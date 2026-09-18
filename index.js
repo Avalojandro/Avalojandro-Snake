@@ -1421,7 +1421,24 @@ function process_move(gameState) {
   // -------------------------------------------------------------
   // ETAPA 4: FALLBACK INTELIGENTE CON PREDICCIÓN MULTI-PASO
   // -------------------------------------------------------------
+  let useFallback = false;
   if (safeMoves.length === 0) {
+    useFallback = true;
+  } else if (legalMoves.length > safeMoves.length) {
+    let allTraps = true;
+    for (let i = 0; i < safeMoves.length; i++) {
+      const sm = safeMoves[i];
+      const rawSpace = evaluate_space(sm.coord, solidObstacles, board, myTail).count;
+      const isCorner = is_corner_pocket_trap(sm.coord, enemies, myLength, board);
+      if (rawSpace > 3 && rawSpace >= Math.min(myLength / 2, 8) && !isCorner) {
+        allTraps = false;
+        break;
+      }
+    }
+    if (allTraps) useFallback = true;
+  }
+
+  if (useFallback) {
     if (legalMoves.length > 0) {
       let bestFallback = legalMoves[0];
       let bestScore = -Infinity;
@@ -1443,6 +1460,17 @@ function process_move(gameState) {
 
         let score = spaceInfo.count * 20;
         if (spaceInfo.canReachTail) score += 200;
+
+        // Penalizaciones severas por encierro para preferir riesgo a muerte segura
+        if (spaceInfo.count <= 3) {
+          score -= 10000;
+        } else if (spaceInfo.count < myLength) {
+          score -= 3000;
+        }
+
+        if (is_corner_pocket_trap(candidate.coord, enemies, myLength, board)) {
+          score -= 5000;
+        }
 
         let threatPenalty = 0;
         let distToHeads = 0;
