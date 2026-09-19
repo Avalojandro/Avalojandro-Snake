@@ -1,0 +1,1743 @@
+{
+  "version": 1,
+  "gamesPlayed": 371,
+  "totalWins": 181,
+  "totalDraws": 16,
+  "totalLosses": 174,
+  "lastUpdated": "2026-09-19T06:54:10.432Z",
+  "lastAdjustmentReason": "👑 Coronación Gen #2: Win Rate 60% | Fitness: 4107",
+  "weights": {
+    "spaceWeight": 64,
+    "tailBonus": 795,
+    "voronoiWeight": 64,
+    "voronoiNetWeight": 100,
+    "deadEndPenalty": 4680,
+    "corridorPenalty": 1760,
+    "edgePenalty": 347,
+    "cornerPenalty": 500,
+    "wallSqueezePenalty": 800,
+    "coffinPenalty": 1050,
+    "cornerPocketPenalty": 1170,
+    "foodBaseMultiplier": 128,
+    "foodEarlyMultiplier": 250,
+    "foodHungryMultiplier": 150,
+    "threatProximityPenalty": 690,
+    "chokepointBonus": 350,
+    "cutoffMultiplier": 0.59,
+    "partitionMultiplier": 3.4,
+    "wallSlicingMultiplier": 0.9,
+    "coilingMultiplier": 1.35
+  },
+  "bounds": {
+    "spaceWeight": {
+      "min": 10,
+      "max": 150,
+      "step": 1
+    },
+    "tailBonus": {
+      "min": 100,
+      "max": 2000,
+      "step": 25
+    },
+    "voronoiWeight": {
+      "min": 10,
+      "max": 150,
+      "step": 1
+    },
+    "voronoiNetWeight": {
+      "min": 10,
+      "max": 200,
+      "step": 2
+    },
+    "deadEndPenalty": {
+      "min": 1000,
+      "max": 15000,
+      "step": 100
+    },
+    "corridorPenalty": {
+      "min": 300,
+      "max": 8000,
+      "step": 50
+    },
+    "edgePenalty": {
+      "min": 20,
+      "max": 1200,
+      "step": 20
+    },
+    "cornerPenalty": {
+      "min": 100,
+      "max": 2500,
+      "step": 25
+    },
+    "wallSqueezePenalty": {
+      "min": 100,
+      "max": 3000,
+      "step": 50
+    },
+    "coffinPenalty": {
+      "min": 100,
+      "max": 3500,
+      "step": 50
+    },
+    "cornerPocketPenalty": {
+      "min": 100,
+      "max": 4000,
+      "step": 50
+    },
+    "foodBaseMultiplier": {
+      "min": 20,
+      "max": 300,
+      "step": 5
+    },
+    "foodEarlyMultiplier": {
+      "min": 40,
+      "max": 400,
+      "step": 5
+    },
+    "foodHungryMultiplier": {
+      "min": 30,
+      "max": 350,
+      "step": 5
+    },
+    "threatProximityPenalty": {
+      "min": 50,
+      "max": 1200,
+      "step": 25
+    },
+    "chokepointBonus": {
+      "min": 50,
+      "max": 2000,
+      "step": 25
+    },
+    "cutoffMultiplier": {
+      "min": 0.2,
+      "max": 4,
+      "step": 0.05
+    },
+    "partitionMultiplier": {
+      "min": 0.2,
+      "max": 4,
+      "step": 0.05
+    },
+    "wallSlicingMultiplier": {
+      "min": 0.2,
+      "max": 3.5,
+      "step": 0.05
+    },
+    "coilingMultiplier": {
+      "min": 0.1,
+      "max": 3.5,
+      "step": 0.05
+    }
+  },
+  "recentHistory": [
+    {
+      "gameNum": 371,
+      "timestamp": "2026-09-19T06:54:10.431Z",
+      "reason": "Choque frontal con rival superior en T10 (Len 5 vs 4). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 10,
+      "fitness": 0,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 235,
+          "to": 250,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 118,
+          "to": 128,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 140,
+          "to": 150,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 660,
+          "to": 690,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.64,
+          "to": 0.59,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 370,
+      "timestamp": "2026-09-19T06:54:09.998Z",
+      "reason": "Victoria en Turno 229 (Len: 24). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 229,
+      "fitness": 7275,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.35,
+          "to": 3.4,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.59,
+          "to": 0.64,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.85,
+          "to": 0.9,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 98,
+          "to": 100,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 362,
+          "to": 347,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 520,
+          "to": 500,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1790,
+          "to": 1760,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4730,
+          "to": 4680,
+          "diff": -50
+        },
+        "coilingMultiplier": {
+          "from": 1.3,
+          "to": 1.35,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 369,
+      "timestamp": "2026-09-19T06:54:09.593Z",
+      "reason": "Acorralamiento en esquina en T44. Incremento de penalización de bolsillo de esquina.",
+      "outcome": "LOSS",
+      "turns": 44,
+      "fitness": 835,
+      "deathCause": "CORNER_TRAP",
+      "changes": {
+        "cornerPocketPenalty": {
+          "from": 1130,
+          "to": 1170,
+          "diff": 40
+        },
+        "cornerPenalty": {
+          "from": 495,
+          "to": 520,
+          "diff": 25
+        },
+        "deadEndPenalty": {
+          "from": 4650,
+          "to": 4730,
+          "diff": 80
+        },
+        "edgePenalty": {
+          "from": 372,
+          "to": 362,
+          "diff": -10
+        }
+      }
+    },
+    {
+      "gameNum": 368,
+      "timestamp": "2026-09-19T06:54:09.301Z",
+      "reason": "Victoria en Turno 37 (Len: 6). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 37,
+      "fitness": 3765,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.3,
+          "to": 3.35,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.54,
+          "to": 0.59,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.8,
+          "to": 0.85,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 96,
+          "to": 98,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 387,
+          "to": 372,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 515,
+          "to": 495,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1820,
+          "to": 1790,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4700,
+          "to": 4650,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 367,
+      "timestamp": "2026-09-19T06:54:09.254Z",
+      "reason": "Victoria en Turno 201 (Len: 19). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 201,
+      "fitness": 6680,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.25,
+          "to": 3.3,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.49,
+          "to": 0.54,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.75,
+          "to": 0.8,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 94,
+          "to": 96,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 402,
+          "to": 387,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 535,
+          "to": 515,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1850,
+          "to": 1820,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4750,
+          "to": 4700,
+          "diff": -50
+        },
+        "coilingMultiplier": {
+          "from": 1.25,
+          "to": 1.3,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 366,
+      "timestamp": "2026-09-19T06:54:08.956Z",
+      "reason": "Victoria en Turno 279 (Len: 23). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 279,
+      "fitness": 7990,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.2,
+          "to": 3.25,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.44,
+          "to": 0.49,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.7,
+          "to": 0.75,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 92,
+          "to": 94,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 417,
+          "to": 402,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 555,
+          "to": 535,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1880,
+          "to": 1850,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4800,
+          "to": 4750,
+          "diff": -50
+        },
+        "coilingMultiplier": {
+          "from": 1.2,
+          "to": 1.25,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 365,
+      "timestamp": "2026-09-19T06:54:08.247Z",
+      "reason": "Choque frontal con rival superior en T114 (Len 12 vs 10). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 114,
+      "fitness": 2060,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 220,
+          "to": 235,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 108,
+          "to": 118,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 130,
+          "to": 140,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 630,
+          "to": 660,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.49,
+          "to": 0.44,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 364,
+      "timestamp": "2026-09-19T06:54:07.973Z",
+      "reason": "Victoria en Turno 176 (Len: 13). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 176,
+      "fitness": 6095,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.15,
+          "to": 3.2,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.44,
+          "to": 0.49,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.65,
+          "to": 0.7,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 90,
+          "to": 92,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 432,
+          "to": 417,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 575,
+          "to": 555,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1910,
+          "to": 1880,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4850,
+          "to": 4800,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 363,
+      "timestamp": "2026-09-19T06:54:07.574Z",
+      "reason": "Choque frontal con rival superior en T151 (Len 11 vs 10). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 151,
+      "fitness": 2615,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 205,
+          "to": 220,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 98,
+          "to": 108,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 120,
+          "to": 130,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 600,
+          "to": 630,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.49,
+          "to": 0.44,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 362,
+      "timestamp": "2026-09-19T06:54:07.282Z",
+      "reason": "Victoria en Turno 36 (Len: 6). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 36,
+      "fitness": 3750,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.1,
+          "to": 3.15,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.44,
+          "to": 0.49,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.6,
+          "to": 0.65,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 88,
+          "to": 90,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 447,
+          "to": 432,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 595,
+          "to": 575,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1940,
+          "to": 1910,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4900,
+          "to": 4850,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 361,
+      "timestamp": "2026-09-19T06:54:07.212Z",
+      "reason": "Choque frontal con rival superior en T87 (Len 7 vs 6). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 87,
+      "fitness": 1515,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 280,
+          "to": 295,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 155,
+          "to": 165,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 170,
+          "to": 180,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 750,
+          "to": 780,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.4,
+          "to": 0.35,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 360,
+      "timestamp": "2026-09-19T06:54:07.043Z",
+      "reason": "Victoria en Turno 133 (Len: 13). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 133,
+      "fitness": 5450,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.25,
+          "to": 3.3,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.35,
+          "to": 0.4,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.75,
+          "to": 0.8,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 94,
+          "to": 96,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 439,
+          "to": 424,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 599,
+          "to": 579,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1834,
+          "to": 1804,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4750,
+          "to": 4700,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 359,
+      "timestamp": "2026-09-19T06:54:06.919Z",
+      "reason": "Choque frontal con rival superior en T106 (Len 12 vs 6). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 106,
+      "fitness": 1800,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 265,
+          "to": 280,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 145,
+          "to": 155,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 160,
+          "to": 170,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 720,
+          "to": 750,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.4,
+          "to": 0.35,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 358,
+      "timestamp": "2026-09-19T06:54:06.686Z",
+      "reason": "Victoria en Turno 166 (Len: 15). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 166,
+      "fitness": 6015,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.2,
+          "to": 3.25,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.35,
+          "to": 0.4,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.7,
+          "to": 0.75,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 92,
+          "to": 94,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 454,
+          "to": 439,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 619,
+          "to": 599,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1864,
+          "to": 1834,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4800,
+          "to": 4750,
+          "diff": -50
+        },
+        "coilingMultiplier": {
+          "from": 1.2,
+          "to": 1.25,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 357,
+      "timestamp": "2026-09-19T06:54:06.221Z",
+      "reason": "Choque frontal con rival superior en T150 (Len 16 vs 11). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 150,
+      "fitness": 2635,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 250,
+          "to": 265,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 135,
+          "to": 145,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 150,
+          "to": 160,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 690,
+          "to": 720,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.4,
+          "to": 0.35,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 356,
+      "timestamp": "2026-09-19T06:54:05.940Z",
+      "reason": "Choque frontal con rival superior en T151 (Len 15 vs 13). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 151,
+      "fitness": 2720,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 235,
+          "to": 250,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 125,
+          "to": 135,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 140,
+          "to": 150,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 660,
+          "to": 690,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.45,
+          "to": 0.4,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 355,
+      "timestamp": "2026-09-19T06:54:05.587Z",
+      "reason": "Victoria en Turno 138 (Len: 11). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 138,
+      "fitness": 5455,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.15,
+          "to": 3.2,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.4,
+          "to": 0.45,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.65,
+          "to": 0.7,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 90,
+          "to": 92,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 469,
+          "to": 454,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 639,
+          "to": 619,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1894,
+          "to": 1864,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4850,
+          "to": 4800,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 354,
+      "timestamp": "2026-09-19T06:54:05.312Z",
+      "reason": "Choque frontal con rival superior en T259 (Len 24 vs 20). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 259,
+      "fitness": 4585,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 220,
+          "to": 235,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 115,
+          "to": 125,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 130,
+          "to": 140,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 630,
+          "to": 660,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.45,
+          "to": 0.4,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 353,
+      "timestamp": "2026-09-19T06:54:04.754Z",
+      "reason": "Choque frontal con rival superior en T199 (Len 14 vs 8). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 199,
+      "fitness": 3265,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 205,
+          "to": 220,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 105,
+          "to": 115,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 120,
+          "to": 130,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 600,
+          "to": 630,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.5,
+          "to": 0.45,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 352,
+      "timestamp": "2026-09-19T06:54:04.374Z",
+      "reason": "Victoria en Turno 39 (Len: 6). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 39,
+      "fitness": 3795,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.1,
+          "to": 3.15,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.45,
+          "to": 0.5,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.6,
+          "to": 0.65,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 88,
+          "to": 90,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 484,
+          "to": 469,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 659,
+          "to": 639,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1924,
+          "to": 1894,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4900,
+          "to": 4850,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 351,
+      "timestamp": "2026-09-19T06:35:34.752Z",
+      "reason": "Victoria en Turno 4 (Len: 4). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 4,
+      "fitness": 2400,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3.05,
+          "to": 3.1,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.4,
+          "to": 0.45,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.55,
+          "to": 0.6,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 86,
+          "to": 88,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 465,
+          "to": 450,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 615,
+          "to": 595,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 1970,
+          "to": 1940,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 4950,
+          "to": 4900,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 350,
+      "timestamp": "2026-09-19T06:00:09.035Z",
+      "reason": "Choque frontal con rival superior en T84 (Len 7 vs 6). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 84,
+      "fitness": 1470,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 190,
+          "to": 205,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 95,
+          "to": 105,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 110,
+          "to": 120,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 570,
+          "to": 600,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.45,
+          "to": 0.4,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 349,
+      "timestamp": "2026-09-19T05:56:05.254Z",
+      "reason": "Choque frontal con rival superior en T57 (Len 7 vs 4). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 57,
+      "fitness": 995,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 175,
+          "to": 190,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 85,
+          "to": 95,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 100,
+          "to": 110,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 540,
+          "to": 570,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.5,
+          "to": 0.45,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 348,
+      "timestamp": "2026-09-19T05:51:43.955Z",
+      "reason": "Agotamiento de espacio en T418. Refuerzo de control territorial Voronoi, tail chase y crecimiento.",
+      "outcome": "LOSS",
+      "turns": 418,
+      "fitness": 6725,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "spaceWeight": {
+          "from": 62,
+          "to": 64,
+          "diff": 2
+        },
+        "tailBonus": {
+          "from": 830,
+          "to": 860,
+          "diff": 30
+        },
+        "voronoiWeight": {
+          "from": 62,
+          "to": 64,
+          "diff": 2
+        },
+        "voronoiNetWeight": {
+          "from": 84,
+          "to": 86,
+          "diff": 2
+        },
+        "foodEarlyMultiplier": {
+          "from": 165,
+          "to": 175,
+          "diff": 10
+        },
+        "coilingMultiplier": {
+          "from": 1.25,
+          "to": 1.2,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 347,
+      "timestamp": "2026-09-19T05:46:01.765Z",
+      "reason": "Victoria en Turno 96 (Len: 9). Refuerzo ofensivo y descompresión perimetral.",
+      "outcome": "WIN",
+      "turns": 96,
+      "fitness": 4755,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 3,
+          "to": 3.05,
+          "diff": 0.05
+        },
+        "cutoffMultiplier": {
+          "from": 0.45,
+          "to": 0.5,
+          "diff": 0.05
+        },
+        "wallSlicingMultiplier": {
+          "from": 0.5,
+          "to": 0.55,
+          "diff": 0.05
+        },
+        "voronoiNetWeight": {
+          "from": 82,
+          "to": 84,
+          "diff": 2
+        },
+        "edgePenalty": {
+          "from": 480,
+          "to": 465,
+          "diff": -15
+        },
+        "cornerPenalty": {
+          "from": 635,
+          "to": 615,
+          "diff": -20
+        },
+        "corridorPenalty": {
+          "from": 2000,
+          "to": 1970,
+          "diff": -30
+        },
+        "deadEndPenalty": {
+          "from": 5000,
+          "to": 4950,
+          "diff": -50
+        }
+      }
+    },
+    {
+      "gameNum": 346,
+      "timestamp": "2026-09-19T05:44:48.090Z",
+      "reason": "Choque frontal con rival superior en T193 (Len 17 vs 10). Impulso alimenticio temprano y prudencia.",
+      "outcome": "LOSS",
+      "turns": 193,
+      "fitness": 3245,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "foodEarlyMultiplier": {
+          "from": 150,
+          "to": 165,
+          "diff": 15
+        },
+        "foodBaseMultiplier": {
+          "from": 75,
+          "to": 85,
+          "diff": 10
+        },
+        "foodHungryMultiplier": {
+          "from": 90,
+          "to": 100,
+          "diff": 10
+        },
+        "threatProximityPenalty": {
+          "from": 510,
+          "to": 540,
+          "diff": 30
+        },
+        "cutoffMultiplier": {
+          "from": 0.5,
+          "to": 0.45,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 345,
+      "timestamp": "2026-09-19T05:36:35.989Z",
+      "reason": "Agotamiento de espacio en T135. Refuerzo de control territorial Voronoi, tail chase y crecimiento.",
+      "outcome": "LOSS",
+      "turns": 135,
+      "fitness": 2410,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "spaceWeight": {
+          "from": 60,
+          "to": 62,
+          "diff": 2
+        },
+        "tailBonus": {
+          "from": 800,
+          "to": 830,
+          "diff": 30
+        },
+        "voronoiWeight": {
+          "from": 60,
+          "to": 62,
+          "diff": 2
+        },
+        "voronoiNetWeight": {
+          "from": 80,
+          "to": 82,
+          "diff": 2
+        },
+        "foodEarlyMultiplier": {
+          "from": 140,
+          "to": 150,
+          "diff": 10
+        },
+        "coilingMultiplier": {
+          "from": 1.3,
+          "to": 1.25,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 344,
+      "timestamp": "2026-09-19T05:35:16.991Z",
+      "reason": "Agotamiento de espacio en T250. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 250,
+      "fitness": 3890,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.35,
+          "to": 1.3,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 343,
+      "timestamp": "2026-09-19T05:35:16.990Z",
+      "reason": "Victoria en Turno 250 (Len: 19). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 250,
+      "fitness": 7415,
+      "deathCause": "ALIVE",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.3,
+          "to": 1.35,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 342,
+      "timestamp": "2026-09-19T05:35:16.987Z",
+      "reason": "Agotamiento de espacio en T250. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 250,
+      "fitness": 4065,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.35,
+          "to": 1.3,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 341,
+      "timestamp": "2026-09-19T05:35:16.984Z",
+      "reason": "Agotamiento de espacio en T250. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 250,
+      "fitness": 4415,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.4,
+          "to": 1.35,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 340,
+      "timestamp": "2026-09-19T05:34:34.613Z",
+      "reason": "Choque frontal letal en T226. Aumento de distancia preventiva y cautela ante cuellos de botella.",
+      "outcome": "LOSS",
+      "turns": 226,
+      "fitness": 3915,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "threatProximityPenalty": {
+          "from": 470,
+          "to": 510,
+          "diff": 40
+        },
+        "chokepointBonus": {
+          "from": 375,
+          "to": 350,
+          "diff": -25
+        }
+      }
+    },
+    {
+      "gameNum": 339,
+      "timestamp": "2026-09-19T05:34:34.611Z",
+      "reason": "Victoria en Turno 226 (Len: 23). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 226,
+      "fitness": 7195,
+      "deathCause": "ALIVE",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.35,
+          "to": 1.4,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 338,
+      "timestamp": "2026-09-19T05:20:13.021Z",
+      "reason": "Victoria en Turno 10 (Len: 4). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 10,
+      "fitness": 2490,
+      "deathCause": "ALIVE",
+      "changes": {}
+    },
+    {
+      "gameNum": 337,
+      "timestamp": "2026-09-19T05:08:41.970Z",
+      "reason": "Agotamiento de espacio en T142. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 142,
+      "fitness": 2480,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.4,
+          "to": 1.35,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 336,
+      "timestamp": "2026-09-19T05:04:21.261Z",
+      "reason": "Agotamiento de espacio en T217. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 217,
+      "fitness": 3710,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.45,
+          "to": 1.4,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 335,
+      "timestamp": "2026-09-19T05:02:17.539Z",
+      "reason": "Agotamiento de espacio en T280. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 280,
+      "fitness": 4515,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.5,
+          "to": 1.45,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 334,
+      "timestamp": "2026-09-19T04:57:52.122Z",
+      "reason": "Agotamiento de espacio en T315. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 315,
+      "fitness": 4935,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.55,
+          "to": 1.5,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 333,
+      "timestamp": "2026-09-19T04:50:02.537Z",
+      "reason": "Victoria en Turno 10 (Len: 4). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 10,
+      "fitness": 2490,
+      "deathCause": "ALIVE",
+      "changes": {
+        "partitionMultiplier": {
+          "from": 2.95,
+          "to": 3,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 332,
+      "timestamp": "2026-09-19T04:49:08.667Z",
+      "reason": "Agotamiento de espacio en T409. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 409,
+      "fitness": 6345,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.6,
+          "to": 1.55,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 331,
+      "timestamp": "2026-09-19T04:42:35.652Z",
+      "reason": "Colisión o aplastamiento contra pared en T349. Aumento de anti-squeeze y penalización de muro.",
+      "outcome": "LOSS",
+      "turns": 349,
+      "fitness": 5340,
+      "deathCause": "WALL_COLLISION",
+      "changes": {
+        "wallSqueezePenalty": {
+          "from": 720,
+          "to": 800,
+          "diff": 80
+        },
+        "coffinPenalty": {
+          "from": 970,
+          "to": 1050,
+          "diff": 80
+        },
+        "edgePenalty": {
+          "from": 440,
+          "to": 480,
+          "diff": 40
+        },
+        "partitionMultiplier": {
+          "from": 3,
+          "to": 2.95,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 330,
+      "timestamp": "2026-09-19T04:38:04.789Z",
+      "reason": "Agotamiento de espacio en T61. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 61,
+      "fitness": 1160,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.65,
+          "to": 1.6,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 329,
+      "timestamp": "2026-09-19T04:38:04.486Z",
+      "reason": "Agotamiento de espacio en T149. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 149,
+      "fitness": 2550,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.7,
+          "to": 1.65,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 328,
+      "timestamp": "2026-09-19T04:27:52.549Z",
+      "reason": "Agotamiento de espacio en T407. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 407,
+      "fitness": 6630,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.75,
+          "to": 1.7,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 327,
+      "timestamp": "2026-09-19T04:22:42.624Z",
+      "reason": "Choque frontal letal en T237. Aumento de distancia preventiva y cautela ante cuellos de botella.",
+      "outcome": "LOSS",
+      "turns": 237,
+      "fitness": 4045,
+      "deathCause": "HEAD_COLLISION",
+      "changes": {
+        "threatProximityPenalty": {
+          "from": 430,
+          "to": 470,
+          "diff": 40
+        },
+        "chokepointBonus": {
+          "from": 400,
+          "to": 375,
+          "diff": -25
+        }
+      }
+    },
+    {
+      "gameNum": 326,
+      "timestamp": "2026-09-19T04:21:42.283Z",
+      "reason": "Victoria en Turno 16 (Len: 5). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 16,
+      "fitness": 2615,
+      "deathCause": "ALIVE",
+      "changes": {}
+    },
+    {
+      "gameNum": 325,
+      "timestamp": "2026-09-19T04:15:02.903Z",
+      "reason": "Victoria en Turno 276 (Len: 17). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 276,
+      "fitness": 7735,
+      "deathCause": "ALIVE",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.7,
+          "to": 1.75,
+          "diff": 0.05
+        }
+      }
+    },
+    {
+      "gameNum": 324,
+      "timestamp": "2026-09-19T04:15:02.463Z",
+      "reason": "Agotamiento de espacio en T211. Aumento de espacio libre y reducción de coiling/cutoff excesivo.",
+      "outcome": "LOSS",
+      "turns": 211,
+      "fitness": 3585,
+      "deathCause": "SPACE_EXHAUSTION",
+      "changes": {
+        "coilingMultiplier": {
+          "from": 1.75,
+          "to": 1.7,
+          "diff": -0.05
+        }
+      }
+    },
+    {
+      "gameNum": 323,
+      "timestamp": "2026-09-19T04:15:02.116Z",
+      "reason": "Victoria en Turno 133 (Len: 11). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 133,
+      "fitness": 5380,
+      "deathCause": "ALIVE",
+      "changes": {}
+    },
+    {
+      "gameNum": 322,
+      "timestamp": "2026-09-19T04:15:01.931Z",
+      "reason": "Victoria en Turno 166 (Len: 12). Refuerzo de parámetros exitosos.",
+      "outcome": "WIN",
+      "turns": 166,
+      "fitness": 5910,
+      "deathCause": "ALIVE",
+      "changes": {}
+    }
+  ],
+  "champion": {
+    "generation": 2,
+    "winRate": 60,
+    "fitness": 4107,
+    "gamesEvaluated": 10,
+    "timestamp": "2026-09-19T06:54:10.432Z",
+    "weights": {
+      "spaceWeight": 64,
+      "tailBonus": 795,
+      "voronoiWeight": 64,
+      "voronoiNetWeight": 100,
+      "deadEndPenalty": 4680,
+      "corridorPenalty": 1760,
+      "edgePenalty": 347,
+      "cornerPenalty": 500,
+      "wallSqueezePenalty": 800,
+      "coffinPenalty": 1050,
+      "cornerPocketPenalty": 1170,
+      "foodBaseMultiplier": 128,
+      "foodEarlyMultiplier": 250,
+      "foodHungryMultiplier": 150,
+      "threatProximityPenalty": 690,
+      "chokepointBonus": 350,
+      "cutoffMultiplier": 0.59,
+      "partitionMultiplier": 3.4,
+      "wallSlicingMultiplier": 0.9,
+      "coilingMultiplier": 1.35
+    },
+    "notes": "Evolución HOLISTIC: Win Rate superior (60% vs 50%). El Candidato demostró superioridad estadística."
+  },
+  "evolutionHistory": [
+    {
+      "generation": 2,
+      "winRate": 60,
+      "fitness": 4107,
+      "gamesEvaluated": 10,
+      "timestamp": "2026-09-19T06:54:10.432Z",
+      "weights": {
+        "spaceWeight": 64,
+        "tailBonus": 795,
+        "voronoiWeight": 64,
+        "voronoiNetWeight": 100,
+        "deadEndPenalty": 4680,
+        "corridorPenalty": 1760,
+        "edgePenalty": 347,
+        "cornerPenalty": 500,
+        "wallSqueezePenalty": 800,
+        "coffinPenalty": 1050,
+        "cornerPocketPenalty": 1170,
+        "foodBaseMultiplier": 128,
+        "foodEarlyMultiplier": 250,
+        "foodHungryMultiplier": 150,
+        "threatProximityPenalty": 690,
+        "chokepointBonus": 350,
+        "cutoffMultiplier": 0.59,
+        "partitionMultiplier": 3.4,
+        "wallSlicingMultiplier": 0.9,
+        "coilingMultiplier": 1.35
+      },
+      "notes": "Evolución HOLISTIC: Win Rate superior (60% vs 50%). El Candidato demostró superioridad estadística."
+    }
+  ]
+}

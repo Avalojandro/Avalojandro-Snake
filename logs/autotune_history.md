@@ -1,0 +1,1632 @@
+# 🧠 Historial de Auditoría de Auto-Tuning
+
+### 🕒 [2026-09-19T04:02:04.148Z] Simulación #208 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 289. | Fitness: 5035 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:02:04.480Z] Simulación #209 [WIN]: 🏆 Victoria en Turno 248. Longitud máxima: 23. | Fitness: 7525 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:53.068Z] Simulación #210 [WIN]: 🏆 Victoria en Turno 17. Longitud máxima: 6. | Fitness: 2665 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:53.349Z] Simulación #211 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 162. | Fitness: 2780 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:53.576Z] Simulación #212 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 116. | Fitness: 1985 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:54.124Z] Simulación #213 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 206. | Fitness: 3685 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:54.240Z] Simulación #214 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 64. | Fitness: 1135 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:54.639Z] Simulación #215 [WIN]: 🏆 Victoria en Turno 209. Longitud máxima: 17. | Fitness: 6730 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:55.362Z] Simulación #216 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 310. | Fitness: 5070 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:55.771Z] Simulación #217 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 197. | Fitness: 3445 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:56.292Z] Simulación #218 [WIN]: 🏆 Victoria en Turno 271. Longitud máxima: 22. | Fitness: 7835 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:03:56.733Z] Simulación #219 [WIN]: 🏆 Victoria en Turno 237. Longitud máxima: 15. | Fitness: 7080 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:16.499Z] Simulación #220 [WIN]: 🏆 Victoria en Turno 177. Longitud máxima: 14. | Fitness: 6145 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:16.977Z] Simulación #221 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 91. | Fitness: 2785 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:17.127Z] Simulación #222 [WIN]: 🏆 Victoria en Turno 97. Longitud máxima: 9. | Fitness: 4770 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:17.248Z] Simulación #223 [WIN]: 🏆 Victoria en Turno 91. Longitud máxima: 8. | Fitness: 4645 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:17.592Z] Simulación #224 [WIN]: 🏆 Victoria en Turno 188. Longitud máxima: 18. | Fitness: 6450 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:17.783Z] Simulación #225 [WIN]: 🏆 Victoria en Turno 152. Longitud máxima: 14. | Fitness: 5770 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:18.205Z] Simulación #226 [WIN]: 🏆 Victoria en Turno 221. Longitud máxima: 20. | Fitness: 7015 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:18.338Z] Simulación #227 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 82. | Fitness: 1440 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:18.393Z] Simulación #228 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 59. | Fitness: 1095 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:18.675Z] Simulación #229 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 216. | Fitness: 3730 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:19.110Z] Simulación #230 [WIN]: 🏆 Victoria en Turno 244. Longitud máxima: 23. | Fitness: 7465 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:19.327Z] Simulación #231 [WIN]: 🏆 Victoria en Turno 193. Longitud máxima: 13. | Fitness: 6350 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:19.386Z] Simulación #232 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 60. | Fitness: 1005 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:19.723Z] Simulación #233 [WIN]: 🏆 Victoria en Turno 267. Longitud máxima: 23. | Fitness: 7810 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:20.256Z] Simulación #234 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 308. | Fitness: 6390 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:20.779Z] Simulación #235 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 299. | Fitness: 5080 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:21.181Z] Simulación #236 [WIN]: 🏆 Victoria en Turno 284. Longitud máxima: 27. | Fitness: 8205 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:21.392Z] Simulación #237 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 131. | Fitness: 2175 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:21.517Z] Simulación #238 [WIN]: 🏆 Victoria en Turno 89. Longitud máxima: 9. | Fitness: 4650 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:21.862Z] Simulación #239 [WIN]: 🏆 Victoria en Turno 244. Longitud máxima: 19. | Fitness: 7325 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:22.371Z] Simulación #240 [WIN]: 🏆 Victoria en Turno 227. Longitud máxima: 19. | Fitness: 7070 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:22.747Z] Simulación #241 [WIN]: 🏆 Victoria en Turno 224. Longitud máxima: 15. | Fitness: 6885 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:23.156Z] Simulación #242 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 252. | Fitness: 4340 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:23.626Z] Simulación #243 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 77. | Fitness: 1330 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:23.941Z] Simulación #244 [WIN]: 🏆 Victoria en Turno 228. Longitud máxima: 23. | Fitness: 7225 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:24.297Z] Simulación #245 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 158. | Fitness: 2650 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:24.658Z] Simulación #246 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 144. | Fitness: 2440 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:25.268Z] Simulación #247 [WIN]: 🏆 Victoria en Turno 270. Longitud máxima: 21. | Fitness: 7785 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:25.544Z] Simulación #248 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 159. | Fitness: 2805 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:25.954Z] Simulación #249 [WIN]: 🏆 Victoria en Turno 270. Longitud máxima: 20. | Fitness: 7750 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:26.327Z] Simulación #250 [WIN]: 🏆 Victoria en Turno 239. Longitud máxima: 19. | Fitness: 7250 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:26.468Z] Simulación #251 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 97. | Fitness: 1630 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:26.615Z] Simulación #252 [WIN]: 🏆 Victoria en Turno 181. Longitud máxima: 13. | Fitness: 6170 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:27.009Z] Simulación #253 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 237. | Fitness: 4150 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:27.043Z] Simulación #254 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 14. | Fitness: 550 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:27.300Z] Simulación #255 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 73. | Fitness: 1235 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:27.693Z] Simulación #256 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 203. | Fitness: 3535 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:27.953Z] Simulación #257 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 194. | Fitness: 3260 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:28.067Z] Simulación #258 [WIN]: 🏆 Victoria en Turno 151. Longitud máxima: 12. | Fitness: 5685 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:28.198Z] Simulación #259 [WIN]: 🏆 Victoria en Turno 104. Longitud máxima: 11. | Fitness: 4945 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:28.583Z] Simulación #260 [WIN]: 🏆 Victoria en Turno 233. Longitud máxima: 17. | Fitness: 7090 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:28.703Z] Simulación #261 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 62. | Fitness: 1175 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:28.764Z] Simulación #262 [WIN]: 🏆 Victoria en Turno 68. Longitud máxima: 3. | Fitness: 4125 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:29.063Z] Simulación #263 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 138. | Fitness: 2420 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:29.562Z] Simulación #264 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 318. | Fitness: 5610 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:29.818Z] Simulación #265 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 95. | Fitness: 1635 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:30.172Z] Simulación #266 [WIN]: 🏆 Victoria en Turno 217. Longitud máxima: 19. | Fitness: 6920 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:30.658Z] Simulación #267 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 151. | Fitness: 2545 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:30.721Z] Simulación #268 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 22. | Fitness: 670 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:30.856Z] Simulación #269 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 45. | Fitness: 850 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:04:35.460Z] Partida #270 [WIN]: 🏆 Victoria absoluta en el Turno 10. Longitud máxima: 4. | Fitness: 2490 | Cambios: Sin cambios (valores en límites)
+
+### 🕒 [2026-09-19T04:13:28.460Z] Simulación #271 [WIN]: 🏆 Victoria en Turno 141. Longitud máxima: 11. | Fitness: 5500 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:13:29.059Z] Simulación #272 [WIN]: 🏆 Victoria en Turno 315. Longitud máxima: 21. | Fitness: 8460 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:13:29.524Z] Simulación #273 [WIN]: 🏆 Victoria en Turno 272. Longitud máxima: 19. | Fitness: 7745 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:13:29.980Z] Simulación #274 [WIN]: 🏆 Victoria en Turno 280. Longitud máxima: 17. | Fitness: 7795 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:13:30.168Z] Simulación #275 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 143. | Fitness: 2530 | Cambios: coilingMultiplier: 2.5 -> 2.45 (-0.05), cutoffMultiplier: 1 -> 0.95 (-0.05), wallSlicingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:14:48.453Z] Simulación #276 [WIN]: 🏆 Victoria en Turno 187. Longitud máxima: 12. | Fitness: 6225 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:48.667Z] Simulación #277 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 104. | Fitness: 1840 | Cambios: coilingMultiplier: 2.45 -> 2.4 (-0.05), cutoffMultiplier: 0.95 -> 0.9 (-0.05), wallSlicingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T04:14:48.867Z] Simulación #278 [WIN]: 🏆 Victoria en Turno 101. Longitud máxima: 8. | Fitness: 4795 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:49.076Z] Simulación #279 [WIN]: 🏆 Victoria en Turno 134. Longitud máxima: 15. | Fitness: 5535 | Cambios: coilingMultiplier: 2.4 -> 2.45 (+0.05)
+
+### 🕒 [2026-09-19T04:14:49.349Z] Simulación #280 [WIN]: 🏆 Victoria en Turno 249. Longitud máxima: 21. | Fitness: 7470 | Cambios: coilingMultiplier: 2.45 -> 2.5 (+0.05)
+
+### 🕒 [2026-09-19T04:14:49.494Z] Simulación #281 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 68. | Fitness: 1300 | Cambios: coilingMultiplier: 2.5 -> 2.45 (-0.05), cutoffMultiplier: 0.9 -> 0.85 (-0.05), wallSlicingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T04:14:49.698Z] Simulación #282 [WIN]: 🏆 Victoria en Turno 242. Longitud máxima: 15. | Fitness: 7155 | Cambios: coilingMultiplier: 2.45 -> 2.5 (+0.05)
+
+### 🕒 [2026-09-19T04:14:49.936Z] Simulación #283 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 97. | Fitness: 1665 | Cambios: coilingMultiplier: 2.5 -> 2.45 (-0.05), cutoffMultiplier: 0.85 -> 0.8 (-0.05), wallSlicingMultiplier: 1.05 -> 1 (-0.05)
+
+### 🕒 [2026-09-19T04:14:50.132Z] Simulación #284 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 89. | Fitness: 2545 | Cambios: coilingMultiplier: 2.45 -> 2.4 (-0.05), cutoffMultiplier: 0.8 -> 0.75 (-0.05), wallSlicingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T04:14:50.310Z] Simulación #285 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 110. | Fitness: 1860 | Cambios: coilingMultiplier: 2.4 -> 2.35 (-0.05), cutoffMultiplier: 0.75 -> 0.7 (-0.05), wallSlicingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T04:14:50.460Z] Simulación #286 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 88. | Fitness: 1670 | Cambios: coilingMultiplier: 2.35 -> 2.3 (-0.05), cutoffMultiplier: 0.7 -> 0.65 (-0.05), wallSlicingMultiplier: 0.9 -> 0.85 (-0.05)
+
+### 🕒 [2026-09-19T04:14:50.705Z] Simulación #287 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 136 en (0,10). | Fitness: 2355 | Cambios: cornerPenalty: 515 -> 555 (+40), cornerPocketPenalty: 950 -> 1010 (+60), edgePenalty: 350 -> 380 (+30), cutoffMultiplier: 0.65 -> 0.6 (-0.05)
+
+### 🕒 [2026-09-19T04:14:51.105Z] Simulación #288 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 287. | Fitness: 5145 | Cambios: coilingMultiplier: 2.3 -> 2.25 (-0.05), cutoffMultiplier: 0.6 -> 0.55 (-0.05), wallSlicingMultiplier: 0.85 -> 0.8 (-0.05)
+
+### 🕒 [2026-09-19T04:14:51.673Z] Simulación #289 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 197. | Fitness: 3235 | Cambios: coilingMultiplier: 2.25 -> 2.2 (-0.05), cutoffMultiplier: 0.55 -> 0.5 (-0.05), wallSlicingMultiplier: 0.8 -> 0.75 (-0.05)
+
+### 🕒 [2026-09-19T04:14:52.099Z] Simulación #290 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 101. | Fitness: 2690 | Cambios: coilingMultiplier: 2.2 -> 2.15 (-0.05), wallSlicingMultiplier: 0.75 -> 0.7 (-0.05)
+
+### 🕒 [2026-09-19T04:14:52.270Z] Simulación #291 [WIN]: 🏆 Victoria en Turno 131. Longitud máxima: 15. | Fitness: 5490 | Cambios: coilingMultiplier: 2.15 -> 2.2 (+0.05)
+
+### 🕒 [2026-09-19T04:14:52.467Z] Simulación #292 [WIN]: 🏆 Victoria en Turno 138. Longitud máxima: 15. | Fitness: 5595 | Cambios: coilingMultiplier: 2.2 -> 2.25 (+0.05)
+
+### 🕒 [2026-09-19T04:14:52.690Z] Simulación #293 [WIN]: 🏆 Victoria en Turno 188. Longitud máxima: 12. | Fitness: 6240 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:53.276Z] Simulación #294 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 269. | Fitness: 4630 | Cambios: coilingMultiplier: 2.25 -> 2.2 (-0.05), wallSlicingMultiplier: 0.7 -> 0.65 (-0.05)
+
+### 🕒 [2026-09-19T04:14:53.443Z] Simulación #295 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 93. | Fitness: 1570 | Cambios: coilingMultiplier: 2.2 -> 2.15 (-0.05), wallSlicingMultiplier: 0.65 -> 0.6 (-0.05)
+
+### 🕒 [2026-09-19T04:14:53.742Z] Simulación #296 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 151. | Fitness: 2580 | Cambios: coilingMultiplier: 2.15 -> 2.1 (-0.05), wallSlicingMultiplier: 0.6 -> 0.55 (-0.05)
+
+### 🕒 [2026-09-19T04:14:53.964Z] Simulación #297 [WIN]: 🏆 Victoria en Turno 149. Longitud máxima: 8. | Fitness: 5515 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:54.216Z] Simulación #298 [WIN]: 🏆 Victoria en Turno 124. Longitud máxima: 8. | Fitness: 5140 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:54.506Z] Simulación #299 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 163. | Fitness: 2830 | Cambios: coilingMultiplier: 2.1 -> 2.05 (-0.05), wallSlicingMultiplier: 0.55 -> 0.5 (-0.05)
+
+### 🕒 [2026-09-19T04:14:54.990Z] Simulación #300 [WIN]: 🏆 Victoria en Turno 268. Longitud máxima: 22. | Fitness: 7790 | Cambios: coilingMultiplier: 2.05 -> 2.1 (+0.05)
+
+### 🕒 [2026-09-19T04:14:55.204Z] Simulación #301 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 59. | Fitness: 1025 | Cambios: coilingMultiplier: 2.1 -> 2.05 (-0.05)
+
+### 🕒 [2026-09-19T04:14:55.446Z] Simulación #302 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 138. | Fitness: 2420 | Cambios: coilingMultiplier: 2.05 -> 2 (-0.05)
+
+### 🕒 [2026-09-19T04:14:55.714Z] Simulación #303 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 70. | Fitness: 1260 | Cambios: coilingMultiplier: 2 -> 1.95 (-0.05)
+
+### 🕒 [2026-09-19T04:14:55.807Z] Simulación #304 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 52. | Fitness: 1955 | Cambios: coilingMultiplier: 1.95 -> 1.9 (-0.05)
+
+### 🕒 [2026-09-19T04:14:56.266Z] Simulación #305 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 313. | Fitness: 5465 | Cambios: coilingMultiplier: 1.9 -> 1.85 (-0.05)
+
+### 🕒 [2026-09-19T04:14:56.453Z] Simulación #306 [WIN]: 🏆 Victoria en Turno 100. Longitud máxima: 8. | Fitness: 4780 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:56.776Z] Simulación #307 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 160. | Fitness: 2855 | Cambios: coilingMultiplier: 1.85 -> 1.8 (-0.05)
+
+### 🕒 [2026-09-19T04:14:57.438Z] Simulación #308 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 254 en (0,0). | Fitness: 4475 | Cambios: cornerPenalty: 555 -> 595 (+40), cornerPocketPenalty: 1010 -> 1070 (+60), edgePenalty: 380 -> 410 (+30)
+
+### 🕒 [2026-09-19T04:14:57.769Z] Simulación #309 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 229. | Fitness: 4135 | Cambios: coilingMultiplier: 1.8 -> 1.75 (-0.05)
+
+### 🕒 [2026-09-19T04:14:58.320Z] Simulación #310 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 362 en (10,10). | Fitness: 6375 | Cambios: cornerPenalty: 595 -> 635 (+40), cornerPocketPenalty: 1070 -> 1130 (+60), edgePenalty: 410 -> 440 (+30)
+
+### 🕒 [2026-09-19T04:14:58.581Z] Simulación #311 [WIN]: 🏆 Victoria en Turno 188. Longitud máxima: 13. | Fitness: 6275 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:58.896Z] Simulación #312 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 175. | Fitness: 3010 | Cambios: coilingMultiplier: 1.75 -> 1.7 (-0.05)
+
+### 🕒 [2026-09-19T04:14:59.077Z] Simulación #313 [WIN]: 🏆 Victoria en Turno 142. Longitud máxima: 11. | Fitness: 5515 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:14:59.386Z] Simulación #314 [WIN]: 🏆 Victoria en Turno 236. Longitud máxima: 21. | Fitness: 7275 | Cambios: coilingMultiplier: 1.7 -> 1.75 (+0.05)
+
+### 🕒 [2026-09-19T04:14:59.565Z] Simulación #315 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 107. | Fitness: 1815 | Cambios: coilingMultiplier: 1.75 -> 1.7 (-0.05)
+
+### 🕒 [2026-09-19T04:14:59.967Z] Simulación #316 [WIN]: 🏆 Victoria en Turno 266. Longitud máxima: 18. | Fitness: 7620 | Cambios: coilingMultiplier: 1.7 -> 1.75 (+0.05)
+
+### 🕒 [2026-09-19T04:15:00.419Z] Simulación #317 [WIN]: 🏆 Victoria en Turno 351. Longitud máxima: 23. | Fitness: 9070 | Cambios: coilingMultiplier: 1.75 -> 1.8 (+0.05)
+
+### 🕒 [2026-09-19T04:15:00.725Z] Simulación #318 [WIN]: 🏆 Victoria en Turno 203. Longitud máxima: 20. | Fitness: 6745 | Cambios: coilingMultiplier: 1.8 -> 1.85 (+0.05)
+
+### 🕒 [2026-09-19T04:15:00.906Z] Simulación #319 [WIN]: 🏆 Victoria en Turno 115. Longitud máxima: 9. | Fitness: 5040 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:15:00.991Z] Simulación #320 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 45. | Fitness: 1850 | Cambios: coilingMultiplier: 1.85 -> 1.8 (-0.05)
+
+### 🕒 [2026-09-19T04:15:01.612Z] Simulación #321 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 195. | Fitness: 3345 | Cambios: coilingMultiplier: 1.8 -> 1.75 (-0.05)
+
+### 🕒 [2026-09-19T04:15:01.931Z] Simulación #322 [WIN]: 🏆 Victoria en Turno 166. Longitud máxima: 12. | Fitness: 5910 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:15:02.116Z] Simulación #323 [WIN]: 🏆 Victoria en Turno 133. Longitud máxima: 11. | Fitness: 5380 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:15:02.463Z] Simulación #324 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 211. | Fitness: 3585 | Cambios: coilingMultiplier: 1.75 -> 1.7 (-0.05)
+
+### 🕒 [2026-09-19T04:15:02.903Z] Simulación #325 [WIN]: 🏆 Victoria en Turno 276. Longitud máxima: 17. | Fitness: 7735 | Cambios: coilingMultiplier: 1.7 -> 1.75 (+0.05)
+
+### 🕒 [2026-09-19T04:21:42.288Z] Partida #326 [WIN]: 🏆 Victoria absoluta en el Turno 16. Longitud máxima: 5. | Fitness: 2615 | Cambios: Sin cambios (valores en límites)
+
+### 🕒 [2026-09-19T04:22:42.627Z] Partida #327 [LOSS]: 💥 Muerte por Choque Frontal en Turno 237 contra rattler (Longitud 20 vs nuestra 14). | Fitness: 4045 | Cambios: threatProximityPenalty: 430 -> 470 (+40), chokepointBonus: 400 -> 375 (-25)
+
+### 🕒 [2026-09-19T04:27:52.555Z] Partida #328 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 407. | Fitness: 6630 | Cambios: coilingMultiplier: 1.75 -> 1.7 (-0.05)
+
+### 🕒 [2026-09-19T04:38:04.487Z] Simulación #329 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 149. | Fitness: 2550 | Cambios: coilingMultiplier: 1.7 -> 1.65 (-0.05)
+
+### 🕒 [2026-09-19T04:38:04.790Z] Simulación #330 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 61. | Fitness: 1160 | Cambios: coilingMultiplier: 1.65 -> 1.6 (-0.05)
+
+### 🕒 [2026-09-19T04:42:35.653Z] Partida #331 [LOSS]: 🧱 Muerte por Choque contra Pared en Turno 349 en (9,11). | Fitness: 5340 | Cambios: wallSqueezePenalty: 720 -> 800 (+80), coffinPenalty: 970 -> 1050 (+80), edgePenalty: 440 -> 480 (+40), partitionMultiplier: 3 -> 2.95 (-0.05)
+
+### 🕒 [2026-09-19T04:47:15.632Z] Simulación #332 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 227. | Fitness: 3790 | Cambios: coilingMultiplier: 1.6 -> 1.55 (-0.05)
+
+### 🕒 [2026-09-19T04:47:16.105Z] Simulación #333 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 68. | Fitness: 1160 | Cambios: coilingMultiplier: 1.55 -> 1.5 (-0.05)
+
+### 🕒 [2026-09-19T04:47:16.165Z] Simulación #334 [WIN]: 🏆 Victoria en Turno 36. Longitud máxima: 6. | Fitness: 3750 | Cambios: partitionMultiplier: 2.95 -> 3 (+0.05)
+
+### 🕒 [2026-09-19T04:47:16.445Z] Simulación #335 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 91. | Fitness: 1645 | Cambios: coilingMultiplier: 1.5 -> 1.45 (-0.05)
+
+### 🕒 [2026-09-19T04:47:16.578Z] Simulación #336 [WIN]: 🏆 Victoria en Turno 72. Longitud máxima: 7. | Fitness: 4325 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:16.798Z] Simulación #337 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 50. | Fitness: 890 | Cambios: coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T04:47:16.826Z] Simulación #338 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 24. | Fitness: 0 | Cambios: coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T04:47:17.194Z] Simulación #339 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 236. | Fitness: 3995 | Cambios: coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T04:47:17.576Z] Simulación #340 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 205. | Fitness: 3495 | Cambios: coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T04:47:17.727Z] Simulación #341 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 98. | Fitness: 2750 | Cambios: coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T04:47:18.201Z] Simulación #342 [WIN]: 🏆 Victoria en Turno 331. Longitud máxima: 25. | Fitness: 8840 | Cambios: coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T04:47:18.609Z] Simulación #343 [WIN]: 🏆 Victoria en Turno 287. Longitud máxima: 21. | Fitness: 8040 | Cambios: coilingMultiplier: 1.25 -> 1.3 (+0.05)
+
+### 🕒 [2026-09-19T04:47:18.734Z] Simulación #344 [WIN]: 🏆 Victoria en Turno 155. Longitud máxima: 11. | Fitness: 5710 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:18.918Z] Simulación #345 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 80 en (10,10). | Fitness: 1620 | Cambios: cornerPenalty: 635 -> 675 (+40), cornerPocketPenalty: 1130 -> 1190 (+60), edgePenalty: 480 -> 510 (+30)
+
+### 🕒 [2026-09-19T04:47:19.019Z] Simulación #346 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 48. | Fitness: 860 | Cambios: coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T04:47:19.424Z] Simulación #347 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 112. | Fitness: 1890 | Cambios: coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T04:47:19.973Z] Simulación #348 [WIN]: 🏆 Victoria en Turno 378. Longitud máxima: 26. | Fitness: 9580 | Cambios: coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T04:47:20.307Z] Simulación #349 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 58 en (10,10). | Fitness: 1080 | Cambios: cornerPenalty: 675 -> 715 (+40), cornerPocketPenalty: 1190 -> 1250 (+60), edgePenalty: 510 -> 540 (+30)
+
+### 🕒 [2026-09-19T04:47:20.513Z] Simulación #350 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 129. | Fitness: 2285 | Cambios: coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T04:47:20.613Z] Simulación #351 [WIN]: 🏆 Victoria en Turno 48. Longitud máxima: 7. | Fitness: 3965 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:20.664Z] Simulación #352 [WIN]: 🏆 Victoria en Turno 37. Longitud máxima: 7. | Fitness: 3800 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:21.001Z] Simulación #353 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 224. | Fitness: 4780 | Cambios: coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:47:21.435Z] Simulación #354 [WIN]: 🏆 Victoria en Turno 273. Longitud máxima: 24. | Fitness: 7935 | Cambios: coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T04:47:21.698Z] Simulación #355 [WIN]: 🏆 Victoria en Turno 180. Longitud máxima: 12. | Fitness: 6120 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:21.787Z] Simulación #356 [WIN]: 🏆 Victoria en Turno 112. Longitud máxima: 7. | Fitness: 4925 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:22.053Z] Simulación #357 [WIN]: 🏆 Victoria en Turno 173. Longitud máxima: 13. | Fitness: 6050 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:22.315Z] Simulación #358 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 144. | Fitness: 2440 | Cambios: coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:47:22.766Z] Simulación #359 [WIN]: 🏆 Victoria en Turno 288. Longitud máxima: 19. | Fitness: 7985 | Cambios: coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T04:47:22.864Z] Simulación #360 [WIN]: 🏆 Victoria en Turno 123. Longitud máxima: 9. | Fitness: 5160 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:23.382Z] Simulación #361 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 302. | Fitness: 5125 | Cambios: coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:47:23.566Z] Simulación #362 [WIN]: 🏆 Victoria en Turno 107. Longitud máxima: 6. | Fitness: 4815 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:23.841Z] Simulación #363 [WIN]: 🏆 Victoria en Turno 250. Longitud máxima: 15. | Fitness: 7275 | Cambios: coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T04:47:24.205Z] Simulación #364 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 204. | Fitness: 3690 | Cambios: coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:47:24.301Z] Simulación #365 [WIN]: 🏆 Victoria en Turno 87. Longitud máxima: 7. | Fitness: 4550 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:24.588Z] Simulación #366 [WIN]: 🏆 Victoria en Turno 275. Longitud máxima: 23. | Fitness: 7930 | Cambios: coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T04:47:24.946Z] Simulación #367 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 74. | Fitness: 1250 | Cambios: coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:47:25.205Z] Simulación #368 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 145. | Fitness: 2560 | Cambios: coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T04:47:25.539Z] Simulación #369 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 142 en (10,10). | Fitness: 2375 | Cambios: cornerPenalty: 715 -> 755 (+40), cornerPocketPenalty: 1250 -> 1310 (+60), edgePenalty: 540 -> 570 (+30)
+
+### 🕒 [2026-09-19T04:47:25.813Z] Simulación #370 [WIN]: 🏆 Victoria en Turno 149. Longitud máxima: 10. | Fitness: 5585 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:26.115Z] Simulación #371 [WIN]: 🏆 Victoria en Turno 199. Longitud máxima: 15. | Fitness: 6510 | Cambios: coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T04:47:26.206Z] Simulación #372 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 49. | Fitness: 875 | Cambios: coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T04:47:26.663Z] Simulación #373 [WIN]: 🏆 Victoria en Turno 259. Longitud máxima: 12. | Fitness: 7305 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:26.841Z] Simulación #374 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 106. | Fitness: 2800 | Cambios: coilingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T04:47:27.048Z] Simulación #375 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 120. | Fitness: 2010 | Cambios: coilingMultiplier: 1.05 -> 1 (-0.05)
+
+### 🕒 [2026-09-19T04:47:27.544Z] Simulación #376 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 236 en (0,10). | Fitness: 4030 | Cambios: cornerPenalty: 755 -> 795 (+40), cornerPocketPenalty: 1310 -> 1370 (+60), edgePenalty: 570 -> 600 (+30)
+
+### 🕒 [2026-09-19T04:47:27.856Z] Simulación #377 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 52. | Fitness: 920 | Cambios: coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T04:47:28.232Z] Simulación #378 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 214. | Fitness: 3735 | Cambios: coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T04:47:28.405Z] Simulación #379 [WIN]: 🏆 Victoria en Turno 167. Longitud máxima: 11. | Fitness: 5890 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:28.676Z] Simulación #380 [WIN]: 🏆 Victoria en Turno 228. Longitud máxima: 20. | Fitness: 7120 | Cambios: coilingMultiplier: 0.9 -> 0.95 (+0.05)
+
+### 🕒 [2026-09-19T04:47:28.847Z] Simulación #381 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 86. | Fitness: 1430 | Cambios: coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T04:47:28.931Z] Simulación #382 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 65. | Fitness: 1115 | Cambios: coilingMultiplier: 0.9 -> 0.85 (-0.05)
+
+### 🕒 [2026-09-19T04:47:29.408Z] Simulación #383 [WIN]: 🏆 Victoria en Turno 306. Longitud máxima: 28. | Fitness: 8570 | Cambios: coilingMultiplier: 0.85 -> 0.9 (+0.05)
+
+### 🕒 [2026-09-19T04:47:29.607Z] Simulación #384 [WIN]: 🏆 Victoria en Turno 223. Longitud máxima: 15. | Fitness: 6870 | Cambios: coilingMultiplier: 0.9 -> 0.95 (+0.05)
+
+### 🕒 [2026-09-19T04:47:29.838Z] Simulación #385 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 175. | Fitness: 3010 | Cambios: coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T04:47:30.115Z] Simulación #386 [WIN]: 🏆 Victoria en Turno 129. Longitud máxima: 10. | Fitness: 5285 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:30.451Z] Simulación #387 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 120. | Fitness: 2010 | Cambios: coilingMultiplier: 0.9 -> 0.85 (-0.05)
+
+### 🕒 [2026-09-19T04:47:30.498Z] Simulación #388 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 23. | Fitness: 685 | Cambios: coilingMultiplier: 0.85 -> 0.8 (-0.05)
+
+### 🕒 [2026-09-19T04:47:30.728Z] Simulación #389 [WIN]: 🏆 Victoria en Turno 136. Longitud máxima: 11. | Fitness: 5425 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:30.809Z] Simulación #390 [WIN]: 🏆 Victoria en Turno 75. Longitud máxima: 8. | Fitness: 4405 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:31.205Z] Simulación #391 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 318. | Fitness: 5400 | Cambios: coilingMultiplier: 0.8 -> 0.75 (-0.05)
+
+### 🕒 [2026-09-19T04:47:31.589Z] Simulación #392 [WIN]: 🏆 Victoria en Turno 241. Longitud máxima: 19. | Fitness: 7280 | Cambios: coilingMultiplier: 0.75 -> 0.8 (+0.05)
+
+### 🕒 [2026-09-19T04:47:32.064Z] Simulación #393 [WIN]: 🏆 Victoria en Turno 325. Longitud máxima: 22. | Fitness: 8645 | Cambios: coilingMultiplier: 0.8 -> 0.85 (+0.05)
+
+### 🕒 [2026-09-19T04:47:32.210Z] Simulación #394 [WIN]: 🏆 Victoria en Turno 119. Longitud máxima: 8. | Fitness: 5065 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:32.362Z] Simulación #395 [WIN]: 🏆 Victoria en Turno 122. Longitud máxima: 13. | Fitness: 5285 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:32.782Z] Simulación #396 [WIN]: 🏆 Victoria en Turno 297. Longitud máxima: 21. | Fitness: 8190 | Cambios: coilingMultiplier: 0.85 -> 0.9 (+0.05)
+
+### 🕒 [2026-09-19T04:47:33.151Z] Simulación #397 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 177. | Fitness: 2935 | Cambios: coilingMultiplier: 0.9 -> 0.85 (-0.05)
+
+### 🕒 [2026-09-19T04:47:33.410Z] Simulación #398 [WIN]: 🏆 Victoria en Turno 122. Longitud máxima: 11. | Fitness: 5215 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:33.602Z] Simulación #399 [WIN]: 🏆 Victoria en Turno 123. Longitud máxima: 12. | Fitness: 5265 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:33.710Z] Simulación #400 [WIN]: 🏆 Victoria en Turno 137. Longitud máxima: 10. | Fitness: 5405 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:33.867Z] Simulación #401 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 60. | Fitness: 1075 | Cambios: coilingMultiplier: 0.85 -> 0.8 (-0.05)
+
+### 🕒 [2026-09-19T04:47:34.380Z] Simulación #402 [WIN]: 🏆 Victoria en Turno 328. Longitud máxima: 28. | Fitness: 8900 | Cambios: coilingMultiplier: 0.8 -> 0.85 (+0.05)
+
+### 🕒 [2026-09-19T04:47:34.604Z] Simulación #403 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 34. | Fitness: 650 | Cambios: coilingMultiplier: 0.85 -> 0.8 (-0.05)
+
+### 🕒 [2026-09-19T04:47:34.871Z] Simulación #404 [WIN]: 🏆 Victoria en Turno 147. Longitud máxima: 13. | Fitness: 5660 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:35.308Z] Simulación #405 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 335. | Fitness: 6005 | Cambios: coilingMultiplier: 0.8 -> 0.75 (-0.05)
+
+### 🕒 [2026-09-19T04:47:35.724Z] Simulación #406 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 252. | Fitness: 4305 | Cambios: coilingMultiplier: 0.75 -> 0.7 (-0.05)
+
+### 🕒 [2026-09-19T04:47:36.259Z] Simulación #407 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 280. | Fitness: 4900 | Cambios: coilingMultiplier: 0.7 -> 0.65 (-0.05)
+
+### 🕒 [2026-09-19T04:47:36.431Z] Simulación #408 [WIN]: 🏆 Victoria en Turno 72. Longitud máxima: 6. | Fitness: 4290 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:36.529Z] Simulación #409 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 21. | Fitness: 0 | Cambios: coilingMultiplier: 0.65 -> 0.6 (-0.05)
+
+### 🕒 [2026-09-19T04:47:36.809Z] Simulación #410 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 139. | Fitness: 2260 | Cambios: coilingMultiplier: 0.6 -> 0.55 (-0.05)
+
+### 🕒 [2026-09-19T04:47:36.993Z] Simulación #411 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 83. | Fitness: 1560 | Cambios: coilingMultiplier: 0.55 -> 0.5 (-0.05)
+
+### 🕒 [2026-09-19T04:47:37.334Z] Simulación #412 [WIN]: 🏆 Victoria en Turno 197. Longitud máxima: 14. | Fitness: 6445 | Cambios: coilingMultiplier: 0.5 -> 0.55 (+0.05)
+
+### 🕒 [2026-09-19T04:47:37.698Z] Simulación #413 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 251. | Fitness: 4325 | Cambios: coilingMultiplier: 0.55 -> 0.5 (-0.05)
+
+### 🕒 [2026-09-19T04:47:37.962Z] Simulación #414 [WIN]: 🏆 Victoria en Turno 134. Longitud máxima: 9. | Fitness: 5325 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:38.422Z] Simulación #415 [WIN]: 🏆 Victoria en Turno 303. Longitud máxima: 23. | Fitness: 8350 | Cambios: coilingMultiplier: 0.5 -> 0.55 (+0.05)
+
+### 🕒 [2026-09-19T04:47:38.566Z] Simulación #416 [WIN]: 🏆 Victoria en Turno 157. Longitud máxima: 14. | Fitness: 5845 | Cambios: coilingMultiplier: 0.55 -> 0.6 (+0.05)
+
+### 🕒 [2026-09-19T04:47:38.737Z] Simulación #417 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 38. | Fitness: 710 | Cambios: coilingMultiplier: 0.6 -> 0.55 (-0.05)
+
+### 🕒 [2026-09-19T04:47:39.081Z] Simulación #418 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 214. | Fitness: 3735 | Cambios: coilingMultiplier: 0.55 -> 0.5 (-0.05)
+
+### 🕒 [2026-09-19T04:47:39.504Z] Simulación #419 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 130 en (10,0). | Fitness: 2265 | Cambios: cornerPenalty: 795 -> 835 (+40), cornerPocketPenalty: 1370 -> 1430 (+60)
+
+### 🕒 [2026-09-19T04:47:39.810Z] Simulación #420 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 164. | Fitness: 2810 | Cambios: coilingMultiplier: 0.5 -> 0.45 (-0.05)
+
+### 🕒 [2026-09-19T04:47:40.110Z] Simulación #421 [WIN]: 🏆 Victoria en Turno 213. Longitud máxima: 14. | Fitness: 6685 | Cambios: coilingMultiplier: 0.45 -> 0.5 (+0.05)
+
+### 🕒 [2026-09-19T04:47:40.385Z] Simulación #422 [WIN]: 🏆 Victoria en Turno 129. Longitud máxima: 8. | Fitness: 5215 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:40.640Z] Simulación #423 [WIN]: 🏆 Victoria en Turno 184. Longitud máxima: 13. | Fitness: 6215 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:40.669Z] Simulación #424 [WIN]: 🏆 Victoria en Turno 17. Longitud máxima: 4. | Fitness: 2595 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:40.889Z] Simulación #425 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 30. | Fitness: 555 | Cambios: coilingMultiplier: 0.5 -> 0.45 (-0.05)
+
+### 🕒 [2026-09-19T04:47:41.124Z] Simulación #426 [WIN]: 🏆 Victoria en Turno 126. Longitud máxima: 13. | Fitness: 5345 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:47:41.470Z] Simulación #427 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 50 en (0,0). | Fitness: 925 | Cambios: cornerPenalty: 835 -> 875 (+40), cornerPocketPenalty: 1430 -> 1490 (+60)
+
+### 🕒 [2026-09-19T04:47:41.864Z] Simulación #428 [WIN]: 🏆 Victoria en Turno 226. Longitud máxima: 18. | Fitness: 7020 | Cambios: coilingMultiplier: 0.45 -> 0.5 (+0.05)
+
+### 🕒 [2026-09-19T04:47:42.109Z] Simulación #429 [WIN]: 🏆 Victoria en Turno 169. Longitud máxima: 14. | Fitness: 6025 | Cambios: coilingMultiplier: 0.5 -> 0.55 (+0.05)
+
+### 🕒 [2026-09-19T04:47:42.261Z] Simulación #430 [WIN]: 🏆 Victoria en Turno 195. Longitud máxima: 16. | Fitness: 6485 | Cambios: coilingMultiplier: 0.55 -> 0.6 (+0.05)
+
+### 🕒 [2026-09-19T04:47:42.582Z] Simulación #431 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 72. | Fitness: 1290 | Cambios: coilingMultiplier: 0.6 -> 0.55 (-0.05)
+
+### 🕒 [2026-09-19T04:49:08.674Z] Partida #332 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 409. | Fitness: 6345 | Cambios: coilingMultiplier: 1.6 -> 1.55 (-0.05)
+
+### 🕒 [2026-09-19T04:49:54.264Z] Simulación #333 [WIN]: 🏆 Victoria en Turno 216. Longitud máxima: 15. | Fitness: 6765 | Cambios: partitionMultiplier: 2.95 -> 3 (+0.05), coilingMultiplier: 1.55 -> 1.6 (+0.05)
+
+### 🕒 [2026-09-19T04:49:54.481Z] Simulación #334 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 131. | Fitness: 2280 | Cambios: coilingMultiplier: 1.6 -> 1.55 (-0.05)
+
+### 🕒 [2026-09-19T04:49:54.658Z] Simulación #335 [WIN]: 🏆 Victoria en Turno 89. Longitud máxima: 6. | Fitness: 4545 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:49:54.951Z] Simulación #336 [WIN]: 🏆 Victoria en Turno 142. Longitud máxima: 12. | Fitness: 5550 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:49:54.988Z] Simulación #337 [WIN]: 🏆 Victoria en Turno 27. Longitud máxima: 5. | Fitness: 2780 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:49:55.397Z] Simulación #338 [WIN]: 🏆 Victoria en Turno 293. Longitud máxima: 25. | Fitness: 8270 | Cambios: coilingMultiplier: 1.55 -> 1.6 (+0.05)
+
+### 🕒 [2026-09-19T04:49:55.670Z] Simulación #339 [WIN]: 🏆 Victoria en Turno 232. Longitud máxima: 18. | Fitness: 7110 | Cambios: coilingMultiplier: 1.6 -> 1.65 (+0.05)
+
+### 🕒 [2026-09-19T04:49:55.832Z] Simulación #340 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 22 en (0,10). | Fitness: 0 | Cambios: cornerPenalty: 635 -> 675 (+40), cornerPocketPenalty: 1130 -> 1190 (+60), edgePenalty: 480 -> 510 (+30)
+
+### 🕒 [2026-09-19T04:49:56.306Z] Simulación #341 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 224. | Fitness: 3710 | Cambios: coilingMultiplier: 1.65 -> 1.6 (-0.05)
+
+### 🕒 [2026-09-19T04:49:56.892Z] Simulación #342 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 335. | Fitness: 5550 | Cambios: coilingMultiplier: 1.6 -> 1.55 (-0.05)
+
+### 🕒 [2026-09-19T04:49:57.083Z] Simulación #343 [WIN]: 🏆 Victoria en Turno 93. Longitud máxima: 10. | Fitness: 4745 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:49:57.241Z] Simulación #344 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 69. | Fitness: 1175 | Cambios: coilingMultiplier: 1.55 -> 1.5 (-0.05)
+
+### 🕒 [2026-09-19T04:49:57.415Z] Simulación #345 [WIN]: 🏆 Victoria en Turno 244. Longitud máxima: 13. | Fitness: 7115 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:49:57.774Z] Simulación #346 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 186 en (0,0). | Fitness: 3245 | Cambios: cornerPenalty: 675 -> 715 (+40), cornerPocketPenalty: 1190 -> 1250 (+60), edgePenalty: 510 -> 540 (+30)
+
+### 🕒 [2026-09-19T04:49:58.154Z] Simulación #347 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 126. | Fitness: 2205 | Cambios: coilingMultiplier: 1.5 -> 1.45 (-0.05)
+
+### 🕒 [2026-09-19T04:49:58.426Z] Simulación #348 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 161. | Fitness: 2765 | Cambios: coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T04:49:58.531Z] Simulación #349 [WIN]: 🏆 Victoria en Turno 65. Longitud máxima: 5. | Fitness: 4150 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:49:59.041Z] Simulación #350 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 269. | Fitness: 4665 | Cambios: coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T04:49:59.323Z] Simulación #351 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 163. | Fitness: 2935 | Cambios: coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T04:49:59.783Z] Simulación #352 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 129. | Fitness: 2250 | Cambios: coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T04:49:59.930Z] Simulación #353 [WIN]: 🏆 Victoria en Turno 92. Longitud máxima: 7. | Fitness: 4625 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:00.221Z] Simulación #354 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 204. | Fitness: 3480 | Cambios: coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:00.310Z] Simulación #355 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 51. | Fitness: 905 | Cambios: coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T04:50:00.841Z] Simulación #356 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 98. | Fitness: 1750 | Cambios: coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T04:50:00.989Z] Simulación #357 [WIN]: 🏆 Victoria en Turno 87. Longitud máxima: 10. | Fitness: 4655 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:01.399Z] Simulación #358 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 282. | Fitness: 4825 | Cambios: coilingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T04:50:01.740Z] Simulación #359 [WIN]: 🏆 Victoria en Turno 192. Longitud máxima: 11. | Fitness: 6265 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:02.000Z] Simulación #360 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 175. | Fitness: 3115 | Cambios: coilingMultiplier: 1.05 -> 1 (-0.05)
+
+### 🕒 [2026-09-19T04:50:02.310Z] Simulación #361 [WIN]: 🏆 Victoria en Turno 146. Longitud máxima: 10. | Fitness: 5540 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:02.538Z] Partida #333 [WIN]: 🏆 Victoria absoluta en el Turno 10. Longitud máxima: 4. | Fitness: 2490 | Cambios: partitionMultiplier: 2.95 -> 3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:02.637Z] Simulación #362 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 134. | Fitness: 2185 | Cambios: coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T04:50:03.055Z] Simulación #363 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 219. | Fitness: 3810 | Cambios: coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T04:50:03.253Z] Simulación #364 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 151. | Fitness: 2475 | Cambios: coilingMultiplier: 0.9 -> 0.85 (-0.05)
+
+### 🕒 [2026-09-19T04:50:03.724Z] Simulación #365 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 290. | Fitness: 4875 | Cambios: coilingMultiplier: 0.85 -> 0.8 (-0.05)
+
+### 🕒 [2026-09-19T04:50:03.971Z] Simulación #366 [WIN]: 🏆 Victoria en Turno 183. Longitud máxima: 13. | Fitness: 6200 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:04.021Z] Simulación #367 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 52. | Fitness: 920 | Cambios: coilingMultiplier: 0.8 -> 0.75 (-0.05)
+
+### 🕒 [2026-09-19T04:50:04.486Z] Simulación #368 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 287. | Fitness: 4865 | Cambios: coilingMultiplier: 0.75 -> 0.7 (-0.05)
+
+### 🕒 [2026-09-19T04:50:04.927Z] Simulación #369 [WIN]: 🏆 Victoria en Turno 128. Longitud máxima: 9. | Fitness: 5235 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:05.518Z] Simulación #370 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 202. | Fitness: 3520 | Cambios: coilingMultiplier: 0.7 -> 0.65 (-0.05)
+
+### 🕒 [2026-09-19T04:50:05.959Z] Simulación #371 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 275. | Fitness: 4685 | Cambios: coilingMultiplier: 0.65 -> 0.6 (-0.05)
+
+### 🕒 [2026-09-19T04:50:06.319Z] Simulación #372 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 73. | Fitness: 1375 | Cambios: coilingMultiplier: 0.6 -> 0.55 (-0.05)
+
+### 🕒 [2026-09-19T04:50:06.692Z] Simulación #373 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 217. | Fitness: 3640 | Cambios: coilingMultiplier: 0.55 -> 0.5 (-0.05)
+
+### 🕒 [2026-09-19T04:50:07.117Z] Simulación #374 [WIN]: 🏆 Victoria en Turno 287. Longitud máxima: 12. | Fitness: 7725 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:07.185Z] Simulación #375 [WIN]: 🏆 Victoria en Turno 37. Longitud máxima: 5. | Fitness: 3730 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:07.370Z] Simulación #376 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 77. | Fitness: 1295 | Cambios: coilingMultiplier: 0.5 -> 0.45 (-0.05)
+
+### 🕒 [2026-09-19T04:50:07.882Z] Simulación #377 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 260. | Fitness: 4705 | Cambios: coilingMultiplier: 0.45 -> 0.4 (-0.05)
+
+### 🕒 [2026-09-19T04:50:08.373Z] Simulación #378 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 244. | Fitness: 4115 | Cambios: coilingMultiplier: 0.4 -> 0.35 (-0.05)
+
+### 🕒 [2026-09-19T04:50:08.754Z] Simulación #379 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 210. | Fitness: 3535 | Cambios: coilingMultiplier: 0.35 -> 0.3 (-0.05)
+
+### 🕒 [2026-09-19T04:50:09.068Z] Simulación #380 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 200. | Fitness: 3560 | Cambios: coilingMultiplier: 0.3 -> 0.25 (-0.05)
+
+### 🕒 [2026-09-19T04:50:09.500Z] Simulación #381 [WIN]: 🏆 Victoria en Turno 249. Longitud máxima: 18. | Fitness: 7365 | Cambios: coilingMultiplier: 0.25 -> 0.3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:09.714Z] Simulación #382 [WIN]: 🏆 Victoria en Turno 145. Longitud máxima: 15. | Fitness: 5700 | Cambios: coilingMultiplier: 0.3 -> 0.35 (+0.05)
+
+### 🕒 [2026-09-19T04:50:09.785Z] Simulación #383 [WIN]: 🏆 Victoria en Turno 59. Longitud máxima: 7. | Fitness: 4130 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:09.981Z] Simulación #384 [WIN]: 🏆 Victoria en Turno 125. Longitud máxima: 11. | Fitness: 5260 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:10.158Z] Simulación #385 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 116. | Fitness: 3090 | Cambios: coilingMultiplier: 0.35 -> 0.3 (-0.05)
+
+### 🕒 [2026-09-19T04:50:10.503Z] Simulación #386 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 242 en (0,0). | Fitness: 3980 | Cambios: cornerPenalty: 715 -> 755 (+40), cornerPocketPenalty: 1250 -> 1310 (+60), edgePenalty: 540 -> 570 (+30)
+
+### 🕒 [2026-09-19T04:50:10.629Z] Simulación #387 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 61. | Fitness: 1090 | Cambios: coilingMultiplier: 0.3 -> 0.25 (-0.05)
+
+### 🕒 [2026-09-19T04:50:11.103Z] Simulación #388 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 85. | Fitness: 1520 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:11.269Z] Simulación #389 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 85. | Fitness: 1450 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:11.675Z] Simulación #390 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 317. | Fitness: 5420 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:12.148Z] Simulación #391 [WIN]: 🏆 Victoria en Turno 234. Longitud máxima: 20. | Fitness: 7210 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:12.478Z] Simulación #392 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 56. | Fitness: 1015 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:12.829Z] Simulación #393 [WIN]: 🏆 Victoria en Turno 199. Longitud máxima: 19. | Fitness: 6650 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:13.014Z] Simulación #394 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 140. | Fitness: 2415 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:13.184Z] Simulación #395 [WIN]: 🏆 Victoria en Turno 133. Longitud máxima: 12. | Fitness: 5415 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:13.389Z] Simulación #396 [WIN]: 🏆 Victoria en Turno 175. Longitud máxima: 12. | Fitness: 6045 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:13.603Z] Simulación #397 [WIN]: 🏆 Victoria en Turno 187. Longitud máxima: 11. | Fitness: 6190 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:14.012Z] Simulación #398 [WIN]: 🏆 Victoria en Turno 323. Longitud máxima: 22. | Fitness: 8615 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:14.517Z] Simulación #399 [WIN]: 🏆 Victoria en Turno 221. Longitud máxima: 12. | Fitness: 6735 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:15.032Z] Simulación #400 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 310 en (0,10). | Fitness: 5280 | Cambios: cornerPenalty: 755 -> 795 (+40), cornerPocketPenalty: 1310 -> 1370 (+60), edgePenalty: 570 -> 600 (+30)
+
+### 🕒 [2026-09-19T04:50:15.556Z] Simulación #401 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 304 en (0,10). | Fitness: 5120 | Cambios: cornerPenalty: 795 -> 835 (+40), cornerPocketPenalty: 1370 -> 1430 (+60)
+
+### 🕒 [2026-09-19T04:50:16.006Z] Simulación #402 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 96. | Fitness: 1580 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:16.134Z] Simulación #403 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 72. | Fitness: 2255 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:16.518Z] Simulación #404 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 130. | Fitness: 2230 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:17.023Z] Simulación #405 [WIN]: 🏆 Victoria en Turno 242. Longitud máxima: 15. | Fitness: 7155 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:17.457Z] Simulación #406 [WIN]: 🏆 Victoria en Turno 326. Longitud máxima: 23. | Fitness: 8695 | Cambios: coilingMultiplier: 0.25 -> 0.3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:17.645Z] Simulación #407 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 99. | Fitness: 2660 | Cambios: coilingMultiplier: 0.3 -> 0.25 (-0.05)
+
+### 🕒 [2026-09-19T04:50:17.831Z] Simulación #408 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 64. | Fitness: 1135 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:17.927Z] Simulación #409 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 46. | Fitness: 830 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:18.208Z] Simulación #410 [WIN]: 🏆 Victoria en Turno 185. Longitud máxima: 14. | Fitness: 6265 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:18.678Z] Simulación #411 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 294. | Fitness: 5110 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:18.933Z] Simulación #412 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 93. | Fitness: 1640 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:19.388Z] Simulación #413 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 303. | Fitness: 5315 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:19.672Z] Simulación #414 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 235. | Fitness: 4155 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:20.210Z] Simulación #415 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 325. | Fitness: 5575 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:20.720Z] Simulación #416 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 148. | Fitness: 2465 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:21.071Z] Simulación #417 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 194. | Fitness: 3400 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:21.392Z] Simulación #418 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 53. | Fitness: 935 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:21.699Z] Simulación #419 [WIN]: 🏆 Victoria en Turno 144. Longitud máxima: 9. | Fitness: 5475 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:21.919Z] Simulación #420 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 52. | Fitness: 920 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:21.994Z] Simulación #421 [WIN]: 🏆 Victoria en Turno 51. Longitud máxima: 8. | Fitness: 4045 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:22.161Z] Simulación #422 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 70. | Fitness: 1260 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:22.552Z] Simulación #423 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 232 en (0,0). | Fitness: 4180 | Cambios: cornerPenalty: 835 -> 875 (+40), cornerPocketPenalty: 1430 -> 1490 (+60)
+
+### 🕒 [2026-09-19T04:50:23.030Z] Simulación #424 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 246. | Fitness: 4250 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:23.563Z] Simulación #425 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 344 en (10,10). | Fitness: 6035 | Cambios: cornerPenalty: 875 -> 915 (+40), cornerPocketPenalty: 1490 -> 1550 (+60)
+
+### 🕒 [2026-09-19T04:50:23.746Z] Simulación #426 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 44. | Fitness: 870 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:24.191Z] Simulación #427 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 234. | Fitness: 4070 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:24.449Z] Simulación #428 [WIN]: 🏆 Victoria en Turno 122. Longitud máxima: 12. | Fitness: 5250 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:24.955Z] Simulación #429 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 313. | Fitness: 5850 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:25.317Z] Simulación #430 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 130 en (10,10). | Fitness: 2265 | Cambios: cornerPenalty: 915 -> 955 (+40), cornerPocketPenalty: 1550 -> 1610 (+60)
+
+### 🕒 [2026-09-19T04:50:25.655Z] Simulación #431 [WIN]: 🏆 Victoria en Turno 160. Longitud máxima: 11. | Fitness: 5785 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:25.773Z] Simulación #432 [WIN]: 🏆 Victoria en Turno 125. Longitud máxima: 11. | Fitness: 5260 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:26.223Z] Simulación #433 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 261. | Fitness: 4580 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:26.719Z] Simulación #434 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 289. | Fitness: 4825 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:27.202Z] Simulación #435 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 327. | Fitness: 5710 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:27.661Z] Simulación #436 [WIN]: 🏆 Victoria en Turno 310. Longitud máxima: 22. | Fitness: 8420 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:27.730Z] Simulación #437 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 73. | Fitness: 1270 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:27.960Z] Simulación #438 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 140. | Fitness: 2380 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:28.030Z] Simulación #439 [WIN]: 🏆 Victoria en Turno 80. Longitud máxima: 4. | Fitness: 4340 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:28.437Z] Simulación #440 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 284. | Fitness: 4750 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:28.856Z] Simulación #441 [WIN]: 🏆 Victoria en Turno 142. Longitud máxima: 13. | Fitness: 5585 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:29.192Z] Simulación #442 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 230. | Fitness: 3800 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:29.686Z] Simulación #443 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 264 en (0,0). | Fitness: 4485 | Cambios: cornerPenalty: 955 -> 995 (+40), cornerPocketPenalty: 1610 -> 1670 (+60)
+
+### 🕒 [2026-09-19T04:50:29.935Z] Simulación #444 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 170. | Fitness: 2865 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:30.243Z] Simulación #445 [WIN]: 🏆 Victoria en Turno 161. Longitud máxima: 13. | Fitness: 5870 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:30.664Z] Simulación #446 [WIN]: 🏆 Victoria en Turno 223. Longitud máxima: 14. | Fitness: 6835 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:30.764Z] Simulación #447 [WIN]: 🏆 Victoria en Turno 101. Longitud máxima: 10. | Fitness: 4865 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:31.160Z] Simulación #448 [WIN]: 🏆 Victoria en Turno 226. Longitud máxima: 16. | Fitness: 6950 | Cambios: coilingMultiplier: 0.25 -> 0.3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:31.241Z] Simulación #449 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 60. | Fitness: 1075 | Cambios: coilingMultiplier: 0.3 -> 0.25 (-0.05)
+
+### 🕒 [2026-09-19T04:50:31.623Z] Simulación #450 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 91. | Fitness: 1575 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:31.821Z] Simulación #451 [WIN]: 🏆 Victoria en Turno 135. Longitud máxima: 11. | Fitness: 5410 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:32.211Z] Simulación #452 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 77. | Fitness: 1400 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:32.468Z] Simulación #453 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 119. | Fitness: 2065 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:33.106Z] Simulación #454 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 66. | Fitness: 1130 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:33.586Z] Simulación #455 [WIN]: 🏆 Victoria en Turno 266. Longitud máxima: 19. | Fitness: 7655 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:33.906Z] Simulación #456 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 144. | Fitness: 2440 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:34.230Z] Simulación #457 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 211. | Fitness: 3655 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:34.534Z] Simulación #458 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 128. | Fitness: 2235 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:34.670Z] Simulación #459 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 66. | Fitness: 2200 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:34.968Z] Simulación #460 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 118. | Fitness: 1945 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:35.489Z] Simulación #461 [WIN]: 🏆 Victoria en Turno 266. Longitud máxima: 22. | Fitness: 7760 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:35.872Z] Simulación #462 [WIN]: 🏆 Victoria en Turno 268. Longitud máxima: 15. | Fitness: 7545 | Cambios: coilingMultiplier: 0.25 -> 0.3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:35.921Z] Simulación #463 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 56. | Fitness: 1015 | Cambios: coilingMultiplier: 0.3 -> 0.25 (-0.05)
+
+### 🕒 [2026-09-19T04:50:36.131Z] Simulación #464 [WIN]: 🏆 Victoria en Turno 125. Longitud máxima: 8. | Fitness: 5155 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:36.254Z] Simulación #465 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 64. | Fitness: 2135 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:36.696Z] Simulación #466 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 135. | Fitness: 2270 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:36.947Z] Simulación #467 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 132. | Fitness: 2225 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:37.352Z] Simulación #468 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 131. | Fitness: 2350 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:37.555Z] Simulación #469 [WIN]: 🏆 Victoria en Turno 95. Longitud máxima: 9. | Fitness: 4740 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:37.936Z] Simulación #470 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 50. | Fitness: 960 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:38.292Z] Simulación #471 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 214. | Fitness: 3875 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:38.594Z] Simulación #472 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 121. | Fitness: 2025 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:39.097Z] Simulación #473 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 234. | Fitness: 4035 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:39.462Z] Simulación #474 [WIN]: 🏆 Victoria en Turno 241. Longitud máxima: 13. | Fitness: 7070 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:39.816Z] Simulación #475 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 217. | Fitness: 3955 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:40.089Z] Simulación #476 [WIN]: 🏆 Victoria en Turno 179. Longitud máxima: 16. | Fitness: 6245 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:40.430Z] Simulación #477 [WIN]: 🏆 Victoria en Turno 115. Longitud máxima: 7. | Fitness: 4970 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:40.850Z] Simulación #478 [WIN]: 🏆 Victoria en Turno 317. Longitud máxima: 22. | Fitness: 8525 | Cambios: coilingMultiplier: 0.25 -> 0.3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:41.056Z] Simulación #479 [WIN]: 🏆 Victoria en Turno 123. Longitud máxima: 10. | Fitness: 5195 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:41.169Z] Simulación #480 [WIN]: 🏆 Victoria en Turno 83. Longitud máxima: 8. | Fitness: 4525 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:41.412Z] Simulación #481 [WIN]: 🏆 Victoria en Turno 137. Longitud máxima: 11. | Fitness: 5440 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:41.851Z] Simulación #482 [WIN]: 🏆 Victoria en Turno 307. Longitud máxima: 18. | Fitness: 8235 | Cambios: coilingMultiplier: 0.3 -> 0.35 (+0.05)
+
+### 🕒 [2026-09-19T04:50:42.457Z] Simulación #483 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 369. | Fitness: 6550 | Cambios: coilingMultiplier: 0.35 -> 0.3 (-0.05)
+
+### 🕒 [2026-09-19T04:50:42.904Z] Simulación #484 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 324 en (0,0). | Fitness: 5595 | Cambios: cornerPenalty: 995 -> 1000 (+5), cornerPocketPenalty: 1670 -> 1730 (+60)
+
+### 🕒 [2026-09-19T04:50:43.059Z] Simulación #485 [WIN]: 🏆 Victoria en Turno 75. Longitud máxima: 6. | Fitness: 4335 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:43.461Z] Simulación #486 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 268. | Fitness: 4615 | Cambios: coilingMultiplier: 0.3 -> 0.25 (-0.05)
+
+### 🕒 [2026-09-19T04:50:43.511Z] Simulación #487 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 25. | Fitness: 750 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:43.911Z] Simulación #488 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 141. | Fitness: 2430 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:44.392Z] Simulación #489 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 194. | Fitness: 3400 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:44.536Z] Simulación #490 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 85. | Fitness: 1450 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:44.733Z] Simulación #491 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 101. | Fitness: 1760 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:45.053Z] Simulación #492 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 269. | Fitness: 4630 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:45.194Z] Simulación #493 [DRAW]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 74. | Fitness: 2320 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:45.532Z] Simulación #494 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 202. | Fitness: 3310 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:45.724Z] Simulación #495 [WIN]: 🏆 Victoria en Turno 118. Longitud máxima: 10. | Fitness: 5120 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:45.912Z] Simulación #496 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 74. | Fitness: 1320 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:46.451Z] Simulación #497 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 307. | Fitness: 5375 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:46.719Z] Simulación #498 [WIN]: 🏆 Victoria en Turno 185. Longitud máxima: 14. | Fitness: 6265 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:46.761Z] Simulación #499 [WIN]: 🏆 Victoria en Turno 29. Longitud máxima: 5. | Fitness: 2810 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:47.003Z] Simulación #500 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 128. | Fitness: 2130 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:47.367Z] Simulación #501 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 209. | Fitness: 3625 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:47.583Z] Simulación #502 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 122. | Fitness: 2075 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:47.678Z] Simulación #503 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 52. | Fitness: 920 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:47.999Z] Simulación #504 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 106. | Fitness: 1835 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:48.454Z] Simulación #505 [WIN]: 🏆 Victoria en Turno 257. Longitud máxima: 19. | Fitness: 7520 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:48.744Z] Simulación #506 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 203. | Fitness: 3570 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:49.177Z] Simulación #507 [WIN]: 🏆 Victoria en Turno 206. Longitud máxima: 19. | Fitness: 6755 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:49.374Z] Simulación #508 [WIN]: 🏆 Victoria en Turno 157. Longitud máxima: 10. | Fitness: 5705 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:49.490Z] Simulación #509 [WIN]: 🏆 Victoria en Turno 78. Longitud máxima: 7. | Fitness: 4415 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:49.762Z] Simulación #510 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 63. | Fitness: 1260 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:50.044Z] Simulación #511 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 219. | Fitness: 3740 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:50.457Z] Simulación #512 [WIN]: 🏆 Victoria en Turno 182. Longitud máxima: 13. | Fitness: 6185 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:50.853Z] Simulación #513 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 258 en (0,10). | Fitness: 4745 | Cambios: cornerPocketPenalty: 1730 -> 1790 (+60)
+
+### 🕒 [2026-09-19T04:50:51.114Z] Simulación #514 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 166. | Fitness: 2840 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:51.461Z] Simulación #515 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 178. | Fitness: 2950 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:51.711Z] Simulación #516 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 44. | Fitness: 800 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:51.870Z] Simulación #517 [WIN]: 🏆 Victoria en Turno 95. Longitud máxima: 12. | Fitness: 4845 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:52.251Z] Simulación #518 [WIN]: 🏆 Victoria en Turno 264. Longitud máxima: 21. | Fitness: 7695 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:52.614Z] Simulación #519 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 167. | Fitness: 2855 | Cambios: coilingMultiplier: 0.25 -> 0.2 (-0.05)
+
+### 🕒 [2026-09-19T04:50:52.791Z] Simulación #520 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 67. | Fitness: 1180 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:53.223Z] Simulación #521 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 220. | Fitness: 3825 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:53.358Z] Simulación #522 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 104. | Fitness: 1805 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:53.421Z] Simulación #523 [WIN]: 🏆 Victoria en Turno 64. Longitud máxima: 7. | Fitness: 4205 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:53.639Z] Simulación #524 [WIN]: 🏆 Victoria en Turno 173. Longitud máxima: 13. | Fitness: 6050 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:53.749Z] Simulación #525 [WIN]: 🏆 Victoria en Turno 145. Longitud máxima: 11. | Fitness: 5560 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:54.138Z] Simulación #526 [WIN]: 🏆 Victoria en Turno 276. Longitud máxima: 19. | Fitness: 7805 | Cambios: coilingMultiplier: 0.2 -> 0.25 (+0.05)
+
+### 🕒 [2026-09-19T04:50:54.527Z] Simulación #527 [WIN]: 🏆 Victoria en Turno 197. Longitud máxima: 14. | Fitness: 6445 | Cambios: coilingMultiplier: 0.25 -> 0.3 (+0.05)
+
+### 🕒 [2026-09-19T04:50:54.809Z] Simulación #528 [WIN]: 🏆 Victoria en Turno 185. Longitud máxima: 14. | Fitness: 6265 | Cambios: coilingMultiplier: 0.3 -> 0.35 (+0.05)
+
+### 🕒 [2026-09-19T04:50:54.926Z] Simulación #529 [WIN]: 🏆 Victoria en Turno 157. Longitud máxima: 16. | Fitness: 5915 | Cambios: coilingMultiplier: 0.35 -> 0.4 (+0.05)
+
+### 🕒 [2026-09-19T04:50:55.230Z] Simulación #530 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 172. | Fitness: 2965 | Cambios: coilingMultiplier: 0.4 -> 0.35 (-0.05)
+
+### 🕒 [2026-09-19T04:50:55.422Z] Simulación #531 [WIN]: 🏆 Victoria en Turno 153. Longitud máxima: 11. | Fitness: 5680 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T04:50:55.792Z] Simulación #532 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 106 en (10,10). | Fitness: 1800 | Cambios: cornerPocketPenalty: 1790 -> 1850 (+60)
+
+### 🕒 [2026-09-19T04:57:52.127Z] Partida #334 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 315. | Fitness: 4935 | Cambios: coilingMultiplier: 1.55 -> 1.5 (-0.05)
+
+### 🕒 [2026-09-19T05:02:17.552Z] Partida #335 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 280. | Fitness: 4515 | Cambios: coilingMultiplier: 1.5 -> 1.45 (-0.05)
+
+### 🕒 [2026-09-19T05:04:21.266Z] Partida #336 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 217. | Fitness: 3710 | Cambios: coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T05:08:41.977Z] Partida #337 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 142. | Fitness: 2480 | Cambios: coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T05:20:13.028Z] Partida #338 [WIN]: 🏆 Victoria absoluta en el Turno 10. Longitud máxima: 4. | Fitness: 2490 | Cambios: Sin cambios (valores en límites)
+
+### 🕒 [2026-09-19T05:34:34.612Z] Partida #339 [WIN]: 🏆 Victoria absoluta en el Turno 226. Longitud máxima: 23. | Fitness: 7195 | Cambios: coilingMultiplier: 1.35 -> 1.4 (+0.05)
+
+### 🕒 [2026-09-19T05:34:34.614Z] Partida #340 [LOSS]: 💥 Muerte por Choque Frontal en Turno 226 contra s1 (Longitud 23 vs nuestra 15). | Fitness: 3915 | Cambios: threatProximityPenalty: 470 -> 510 (+40), chokepointBonus: 375 -> 350 (-25)
+
+### 🕒 [2026-09-19T05:35:16.986Z] Partida #341 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 250. | Fitness: 4415 | Cambios: coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T05:35:16.988Z] Partida #342 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 250. | Fitness: 4065 | Cambios: coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T05:35:16.990Z] Partida #343 [WIN]: 🏆 Victoria absoluta en el Turno 250. Longitud máxima: 19. | Fitness: 7415 | Cambios: coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T05:35:16.991Z] Partida #344 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 250. | Fitness: 3890 | Cambios: coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T05:36:35.990Z] Partida #345 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 135. | Fitness: 2410 | Cambios: spaceWeight: 60 -> 62 (+2), tailBonus: 800 -> 830 (+30), voronoiWeight: 60 -> 62 (+2), voronoiNetWeight: 80 -> 82 (+2), foodEarlyMultiplier: 140 -> 150 (+10), coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T05:38:05.885Z] Simulación #346 [WIN]: 🏆 Victoria en Turno 27. Longitud máxima: 4. | Fitness: 2745 | Cambios: partitionMultiplier: 1.6 -> 1.65 (+0.05), cutoffMultiplier: 1.8 -> 1.85 (+0.05), wallSlicingMultiplier: 1.5 -> 1.55 (+0.05), voronoiNetWeight: 45 -> 47 (+2), edgePenalty: 180 -> 165 (-15), cornerPenalty: 350 -> 330 (-20), corridorPenalty: 900 -> 870 (-30), deadEndPenalty: 2500 -> 2450 (-50)
+
+### 🕒 [2026-09-19T05:38:06.111Z] Simulación #347 [LOSS]: 💥 Choque Frontal en Turno 61 contra Cascabel v102 (Coiling) (Len: 7 vs 6). | Fitness: 1110 | Cambios: foodEarlyMultiplier: 160 -> 175 (+15), foodBaseMultiplier: 90 -> 100 (+10), foodHungryMultiplier: 110 -> 120 (+10), threatProximityPenalty: 250 -> 280 (+30), cutoffMultiplier: 1.85 -> 1.8 (-0.05)
+
+### 🕒 [2026-09-19T05:38:06.649Z] Simulación #348 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 259 en (0,10). | Fitness: 4710 | Cambios: cornerPocketPenalty: 800 -> 840 (+40), cornerPenalty: 330 -> 355 (+25), deadEndPenalty: 2450 -> 2530 (+80), edgePenalty: 165 -> 155 (-10)
+
+### 🕒 [2026-09-19T05:38:07.007Z] Simulación #349 [LOSS]: 💥 Choque Frontal en Turno 231 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 14 vs 13). | Fitness: 3905 | Cambios: foodEarlyMultiplier: 175 -> 190 (+15), foodBaseMultiplier: 100 -> 110 (+10), foodHungryMultiplier: 120 -> 130 (+10), threatProximityPenalty: 280 -> 310 (+30), cutoffMultiplier: 1.8 -> 1.75 (-0.05)
+
+### 🕒 [2026-09-19T05:38:07.376Z] Simulación #350 [WIN]: 🏆 Victoria en Turno 204. Longitud máxima: 18. | Fitness: 6690 | Cambios: partitionMultiplier: 1.65 -> 1.7 (+0.05), cutoffMultiplier: 1.75 -> 1.8 (+0.05), wallSlicingMultiplier: 1.55 -> 1.6 (+0.05), voronoiNetWeight: 47 -> 49 (+2), edgePenalty: 155 -> 140 (-15), cornerPenalty: 355 -> 335 (-20), corridorPenalty: 870 -> 840 (-30), deadEndPenalty: 2530 -> 2480 (-50), coilingMultiplier: 0.8 -> 0.85 (+0.05)
+
+### 🕒 [2026-09-19T05:38:07.599Z] Simulación #351 [LOSS]: 💥 Choque Frontal en Turno 134 contra Cascabel v41 (Glotón Rusher) (Len: 17 vs 14). | Fitness: 2485 | Cambios: foodEarlyMultiplier: 190 -> 205 (+15), foodBaseMultiplier: 110 -> 120 (+10), foodHungryMultiplier: 130 -> 140 (+10), threatProximityPenalty: 310 -> 340 (+30), cutoffMultiplier: 1.8 -> 1.75 (-0.05)
+
+### 🕒 [2026-09-19T05:38:07.721Z] Simulación #352 [WIN]: 🏆 Victoria en Turno 129. Longitud máxima: 6. | Fitness: 5145 | Cambios: partitionMultiplier: 1.7 -> 1.75 (+0.05), cutoffMultiplier: 1.75 -> 1.8 (+0.05), wallSlicingMultiplier: 1.6 -> 1.65 (+0.05), voronoiNetWeight: 49 -> 51 (+2), edgePenalty: 140 -> 125 (-15), cornerPenalty: 335 -> 315 (-20), corridorPenalty: 840 -> 810 (-30), deadEndPenalty: 2480 -> 2430 (-50)
+
+### 🕒 [2026-09-19T05:38:07.839Z] Simulación #353 [LOSS]: 💥 Choque Frontal en Turno 21 contra Cascabel v41 (Glotón Rusher) (Len: 6 vs 4). | Fitness: 0 | Cambios: foodEarlyMultiplier: 205 -> 220 (+15), foodBaseMultiplier: 120 -> 130 (+10), foodHungryMultiplier: 140 -> 150 (+10), threatProximityPenalty: 340 -> 370 (+30), cutoffMultiplier: 1.8 -> 1.75 (-0.05)
+
+### 🕒 [2026-09-19T05:38:07.882Z] Simulación #354 [WIN]: 🏆 Victoria en Turno 16. Longitud máxima: 5. | Fitness: 2615 | Cambios: partitionMultiplier: 1.75 -> 1.8 (+0.05), cutoffMultiplier: 1.75 -> 1.8 (+0.05), wallSlicingMultiplier: 1.65 -> 1.7 (+0.05), voronoiNetWeight: 51 -> 53 (+2), edgePenalty: 125 -> 110 (-15), cornerPenalty: 315 -> 295 (-20), corridorPenalty: 810 -> 780 (-30), deadEndPenalty: 2430 -> 2380 (-50)
+
+### 🕒 [2026-09-19T05:38:08.056Z] Simulación #355 [WIN]: 🏆 Victoria en Turno 135. Longitud máxima: 12. | Fitness: 5445 | Cambios: partitionMultiplier: 1.8 -> 1.85 (+0.05), cutoffMultiplier: 1.8 -> 1.85 (+0.05), wallSlicingMultiplier: 1.7 -> 1.75 (+0.05), voronoiNetWeight: 53 -> 55 (+2), edgePenalty: 110 -> 95 (-15), cornerPenalty: 295 -> 275 (-20), corridorPenalty: 780 -> 750 (-30), deadEndPenalty: 2380 -> 2330 (-50)
+
+### 🕒 [2026-09-19T05:39:03.380Z] Simulación #356 [WIN]: 🏆 Victoria en Turno 23. Longitud máxima: 4. | Fitness: 2685 | Cambios: partitionMultiplier: 1.85 -> 1.9 (+0.05), cutoffMultiplier: 1.85 -> 1.9 (+0.05), wallSlicingMultiplier: 1.75 -> 1.8 (+0.05), voronoiNetWeight: 55 -> 57 (+2), edgePenalty: 95 -> 80 (-15), cornerPenalty: 275 -> 255 (-20), corridorPenalty: 750 -> 720 (-30), deadEndPenalty: 2330 -> 2280 (-50)
+
+### 🕒 [2026-09-19T05:39:03.784Z] Simulación #357 [WIN]: 🏆 Victoria en Turno 316. Longitud máxima: 22. | Fitness: 8510 | Cambios: partitionMultiplier: 1.9 -> 1.95 (+0.05), cutoffMultiplier: 1.9 -> 1.95 (+0.05), wallSlicingMultiplier: 1.8 -> 1.85 (+0.05), voronoiNetWeight: 57 -> 59 (+2), edgePenalty: 80 -> 65 (-15), cornerPenalty: 255 -> 235 (-20), corridorPenalty: 720 -> 690 (-30), deadEndPenalty: 2280 -> 2230 (-50), coilingMultiplier: 0.85 -> 0.9 (+0.05)
+
+### 🕒 [2026-09-19T05:39:04.181Z] Simulación #358 [WIN]: 🏆 Victoria en Turno 259. Longitud máxima: 21. | Fitness: 7620 | Cambios: partitionMultiplier: 1.95 -> 2 (+0.05), cutoffMultiplier: 1.95 -> 2 (+0.05), wallSlicingMultiplier: 1.85 -> 1.9 (+0.05), voronoiNetWeight: 59 -> 61 (+2), edgePenalty: 65 -> 50 (-15), cornerPenalty: 235 -> 215 (-20), corridorPenalty: 690 -> 660 (-30), deadEndPenalty: 2230 -> 2180 (-50), coilingMultiplier: 0.9 -> 0.95 (+0.05)
+
+### 🕒 [2026-09-19T05:39:04.318Z] Simulación #359 [WIN]: 🏆 Victoria en Turno 77. Longitud máxima: 6. | Fitness: 4365 | Cambios: partitionMultiplier: 2 -> 2.05 (+0.05), cutoffMultiplier: 2 -> 2.05 (+0.05), wallSlicingMultiplier: 1.9 -> 1.95 (+0.05), voronoiNetWeight: 61 -> 63 (+2), edgePenalty: 50 -> 35 (-15), cornerPenalty: 215 -> 195 (-20), corridorPenalty: 660 -> 630 (-30), deadEndPenalty: 2180 -> 2130 (-50)
+
+### 🕒 [2026-09-19T05:39:04.633Z] Simulación #360 [LOSS]: 💥 Choque Frontal en Turno 191 contra Mutante Defensivo (Len: 16 vs 12). | Fitness: 3270 | Cambios: foodEarlyMultiplier: 220 -> 235 (+15), foodBaseMultiplier: 130 -> 140 (+10), foodHungryMultiplier: 150 -> 160 (+10), threatProximityPenalty: 370 -> 400 (+30), cutoffMultiplier: 2.05 -> 2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:04.949Z] Simulación #361 [WIN]: 🏆 Victoria en Turno 139. Longitud máxima: 12. | Fitness: 5505 | Cambios: partitionMultiplier: 2.05 -> 2.1 (+0.05), cutoffMultiplier: 2 -> 2.05 (+0.05), wallSlicingMultiplier: 1.95 -> 2 (+0.05), voronoiNetWeight: 63 -> 65 (+2), edgePenalty: 35 -> 20 (-15), cornerPenalty: 195 -> 175 (-20), corridorPenalty: 630 -> 600 (-30), deadEndPenalty: 2130 -> 2080 (-50)
+
+### 🕒 [2026-09-19T05:39:05.227Z] Simulación #362 [WIN]: 🏆 Victoria en Turno 205. Longitud máxima: 23. | Fitness: 6880 | Cambios: partitionMultiplier: 2.1 -> 2.15 (+0.05), cutoffMultiplier: 2.05 -> 2.1 (+0.05), wallSlicingMultiplier: 2 -> 2.05 (+0.05), voronoiNetWeight: 65 -> 67 (+2), cornerPenalty: 175 -> 155 (-20), corridorPenalty: 600 -> 570 (-30), deadEndPenalty: 2080 -> 2030 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:05.411Z] Simulación #363 [LOSS]: 💥 Choque Frontal en Turno 52 contra Mutante Defensivo (Len: 8 vs 7). | Fitness: 1010 | Cambios: foodEarlyMultiplier: 235 -> 250 (+15), foodBaseMultiplier: 140 -> 150 (+10), foodHungryMultiplier: 160 -> 170 (+10), threatProximityPenalty: 400 -> 430 (+30), cutoffMultiplier: 2.1 -> 2.05 (-0.05)
+
+### 🕒 [2026-09-19T05:39:05.691Z] Simulación #364 [LOSS]: 💥 Choque Frontal en Turno 197 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 17 vs 16). | Fitness: 3500 | Cambios: foodEarlyMultiplier: 250 -> 265 (+15), foodBaseMultiplier: 150 -> 160 (+10), foodHungryMultiplier: 170 -> 180 (+10), threatProximityPenalty: 430 -> 460 (+30), cutoffMultiplier: 2.05 -> 2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:05.778Z] Simulación #365 [LOSS]: 💥 Choque Frontal en Turno 46 contra Mutante Agresivo (Len: 9 vs 4). | Fitness: 815 | Cambios: foodEarlyMultiplier: 265 -> 280 (+15), foodBaseMultiplier: 160 -> 170 (+10), foodHungryMultiplier: 180 -> 190 (+10), threatProximityPenalty: 460 -> 490 (+30), cutoffMultiplier: 2 -> 1.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:05.890Z] Simulación #366 [LOSS]: 💥 Choque Frontal en Turno 47 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 7 vs 6). | Fitness: 900 | Cambios: foodEarlyMultiplier: 280 -> 295 (+15), foodBaseMultiplier: 170 -> 180 (+10), foodHungryMultiplier: 190 -> 200 (+10), threatProximityPenalty: 490 -> 520 (+30), cutoffMultiplier: 1.95 -> 1.9 (-0.05)
+
+### 🕒 [2026-09-19T05:39:06.266Z] Simulación #367 [LOSS]: 💥 Choque Frontal en Turno 248 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 17 vs 14). | Fitness: 4195 | Cambios: foodEarlyMultiplier: 295 -> 310 (+15), foodBaseMultiplier: 180 -> 190 (+10), foodHungryMultiplier: 200 -> 210 (+10), threatProximityPenalty: 520 -> 550 (+30), cutoffMultiplier: 1.9 -> 1.85 (-0.05)
+
+### 🕒 [2026-09-19T05:39:06.417Z] Simulación #368 [LOSS]: 💥 Choque Frontal en Turno 97 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 11 vs 10). | Fitness: 1790 | Cambios: foodEarlyMultiplier: 310 -> 325 (+15), foodBaseMultiplier: 190 -> 200 (+10), foodHungryMultiplier: 210 -> 220 (+10), threatProximityPenalty: 550 -> 580 (+30), cutoffMultiplier: 1.85 -> 1.8 (-0.05)
+
+### 🕒 [2026-09-19T05:39:06.823Z] Simulación #369 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 162 (Cuerpo Propio). | Fitness: 2730 | Cambios: deadEndPenalty: 2030 -> 2130 (+100), corridorPenalty: 570 -> 630 (+60), wallSqueezePenalty: 500 -> 550 (+50), coffinPenalty: 650 -> 690 (+40), coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:06.882Z] Simulación #370 [WIN]: 🏆 Victoria en Turno 33. Longitud máxima: 6. | Fitness: 3705 | Cambios: partitionMultiplier: 2.15 -> 2.2 (+0.05), cutoffMultiplier: 1.8 -> 1.85 (+0.05), wallSlicingMultiplier: 2.05 -> 2.1 (+0.05), voronoiNetWeight: 67 -> 69 (+2), cornerPenalty: 155 -> 135 (-20), corridorPenalty: 630 -> 600 (-30), deadEndPenalty: 2130 -> 2080 (-50)
+
+### 🕒 [2026-09-19T05:39:07.148Z] Simulación #371 [WIN]: 🏆 Victoria en Turno 215. Longitud máxima: 22. | Fitness: 6995 | Cambios: partitionMultiplier: 2.2 -> 2.25 (+0.05), cutoffMultiplier: 1.85 -> 1.9 (+0.05), wallSlicingMultiplier: 2.1 -> 2.15 (+0.05), voronoiNetWeight: 69 -> 71 (+2), cornerPenalty: 135 -> 115 (-20), corridorPenalty: 600 -> 570 (-30), deadEndPenalty: 2080 -> 2030 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:07.192Z] Simulación #372 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 50 (Cuerpo Propio). | Fitness: 1015 | Cambios: deadEndPenalty: 2030 -> 2130 (+100), corridorPenalty: 570 -> 630 (+60), wallSqueezePenalty: 550 -> 600 (+50), coffinPenalty: 690 -> 730 (+40), coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:07.562Z] Simulación #373 [WIN]: 🏆 Victoria en Turno 204. Longitud máxima: 17. | Fitness: 6655 | Cambios: partitionMultiplier: 2.25 -> 2.3 (+0.05), cutoffMultiplier: 1.9 -> 1.95 (+0.05), wallSlicingMultiplier: 2.15 -> 2.2 (+0.05), voronoiNetWeight: 71 -> 73 (+2), cornerPenalty: 115 -> 100 (-15), corridorPenalty: 630 -> 600 (-30), deadEndPenalty: 2130 -> 2080 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:07.612Z] Simulación #374 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 56 (Cuerpo Propio). | Fitness: 1105 | Cambios: deadEndPenalty: 2080 -> 2180 (+100), corridorPenalty: 600 -> 660 (+60), wallSqueezePenalty: 600 -> 650 (+50), coffinPenalty: 730 -> 770 (+40), coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:07.780Z] Simulación #375 [WIN]: 🏆 Victoria en Turno 127. Longitud máxima: 16. | Fitness: 5465 | Cambios: partitionMultiplier: 2.3 -> 2.35 (+0.05), cutoffMultiplier: 1.95 -> 2 (+0.05), wallSlicingMultiplier: 2.2 -> 2.25 (+0.05), voronoiNetWeight: 73 -> 75 (+2), corridorPenalty: 660 -> 630 (-30), deadEndPenalty: 2180 -> 2130 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:07.947Z] Simulación #376 [WIN]: 🏆 Victoria en Turno 99. Longitud máxima: 10. | Fitness: 4835 | Cambios: partitionMultiplier: 2.35 -> 2.4 (+0.05), cutoffMultiplier: 2 -> 2.05 (+0.05), wallSlicingMultiplier: 2.25 -> 2.3 (+0.05), voronoiNetWeight: 75 -> 77 (+2), corridorPenalty: 630 -> 600 (-30), deadEndPenalty: 2130 -> 2080 (-50)
+
+### 🕒 [2026-09-19T05:39:08.232Z] Simulación #377 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 73. | Fitness: 1430 | Cambios: spaceWeight: 25 -> 27 (+2), tailBonus: 450 -> 480 (+30), voronoiWeight: 25 -> 27 (+2), voronoiNetWeight: 77 -> 79 (+2), foodEarlyMultiplier: 325 -> 335 (+10), coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:08.299Z] Simulación #378 [WIN]: 🏆 Victoria en Turno 47. Longitud máxima: 7. | Fitness: 3950 | Cambios: partitionMultiplier: 2.4 -> 2.45 (+0.05), cutoffMultiplier: 2.05 -> 2.1 (+0.05), wallSlicingMultiplier: 2.3 -> 2.35 (+0.05), voronoiNetWeight: 79 -> 81 (+2), corridorPenalty: 600 -> 570 (-30), deadEndPenalty: 2080 -> 2030 (-50)
+
+### 🕒 [2026-09-19T05:39:08.598Z] Simulación #379 [WIN]: 🏆 Victoria en Turno 195. Longitud máxima: 19. | Fitness: 6590 | Cambios: partitionMultiplier: 2.45 -> 2.5 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 2.35 -> 2.4 (+0.05), voronoiNetWeight: 81 -> 83 (+2), corridorPenalty: 570 -> 540 (-30), deadEndPenalty: 2030 -> 1980 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:08.865Z] Simulación #380 [WIN]: 🏆 Victoria en Turno 188. Longitud máxima: 14. | Fitness: 6310 | Cambios: partitionMultiplier: 2.5 -> 2.55 (+0.05), cutoffMultiplier: 2.15 -> 2.2 (+0.05), wallSlicingMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 83 -> 85 (+2), corridorPenalty: 540 -> 510 (-30), deadEndPenalty: 1980 -> 1930 (-50), coilingMultiplier: 1 -> 1.05 (+0.05)
+
+### 🕒 [2026-09-19T05:39:09.372Z] Simulación #381 [WIN]: 🏆 Victoria en Turno 237. Longitud máxima: 20. | Fitness: 7255 | Cambios: partitionMultiplier: 2.55 -> 2.6 (+0.05), cutoffMultiplier: 2.2 -> 2.25 (+0.05), wallSlicingMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 85 -> 87 (+2), corridorPenalty: 510 -> 480 (-30), deadEndPenalty: 1930 -> 1880 (-50), coilingMultiplier: 1.05 -> 1.1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:09.476Z] Simulación #382 [LOSS]: 💥 Choque Frontal en Turno 67 contra Mutante Defensivo (Len: 10 vs 9). | Fitness: 1305 | Cambios: foodEarlyMultiplier: 335 -> 350 (+15), foodBaseMultiplier: 200 -> 210 (+10), foodHungryMultiplier: 220 -> 230 (+10), threatProximityPenalty: 580 -> 610 (+30), cutoffMultiplier: 2.25 -> 2.2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:09.725Z] Simulación #383 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 202. | Fitness: 3750 | Cambios: spaceWeight: 27 -> 29 (+2), tailBonus: 480 -> 510 (+30), voronoiWeight: 27 -> 29 (+2), voronoiNetWeight: 87 -> 89 (+2), foodEarlyMultiplier: 350 -> 360 (+10), coilingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T05:39:09.943Z] Simulación #384 [LOSS]: 💥 Choque Frontal en Turno 158 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 15 vs 14). | Fitness: 2845 | Cambios: foodEarlyMultiplier: 360 -> 375 (+15), foodBaseMultiplier: 210 -> 220 (+10), foodHungryMultiplier: 230 -> 240 (+10), threatProximityPenalty: 610 -> 640 (+30), cutoffMultiplier: 2.2 -> 2.15 (-0.05)
+
+### 🕒 [2026-09-19T05:39:10.197Z] Simulación #385 [WIN]: 🏆 Victoria en Turno 171. Longitud máxima: 11. | Fitness: 5950 | Cambios: partitionMultiplier: 2.6 -> 2.65 (+0.05), cutoffMultiplier: 2.15 -> 2.2 (+0.05), wallSlicingMultiplier: 2.5 -> 2.55 (+0.05), voronoiNetWeight: 89 -> 91 (+2), corridorPenalty: 480 -> 450 (-30), deadEndPenalty: 1880 -> 1830 (-50)
+
+### 🕒 [2026-09-19T05:39:10.402Z] Simulación #386 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 158 (Cuerpo Propio). | Fitness: 2810 | Cambios: deadEndPenalty: 1830 -> 1930 (+100), corridorPenalty: 450 -> 510 (+60), wallSqueezePenalty: 650 -> 700 (+50), coffinPenalty: 770 -> 810 (+40), coilingMultiplier: 1.05 -> 1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:10.675Z] Simulación #387 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 222 (Cuerpo Propio). | Fitness: 3980 | Cambios: deadEndPenalty: 1930 -> 2030 (+100), corridorPenalty: 510 -> 570 (+60), wallSqueezePenalty: 700 -> 750 (+50), coffinPenalty: 810 -> 850 (+40), coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:10.830Z] Simulación #388 [WIN]: 🏆 Victoria en Turno 75. Longitud máxima: 13. | Fitness: 4580 | Cambios: partitionMultiplier: 2.65 -> 2.7 (+0.05), cutoffMultiplier: 2.2 -> 2.25 (+0.05), wallSlicingMultiplier: 2.55 -> 2.6 (+0.05), voronoiNetWeight: 91 -> 93 (+2), corridorPenalty: 570 -> 540 (-30), deadEndPenalty: 2030 -> 1980 (-50)
+
+### 🕒 [2026-09-19T05:39:11.216Z] Simulación #389 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 248 (Cuerpo Propio). | Fitness: 4300 | Cambios: deadEndPenalty: 1980 -> 2080 (+100), corridorPenalty: 540 -> 600 (+60), wallSqueezePenalty: 750 -> 800 (+50), coffinPenalty: 850 -> 890 (+40), coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T05:39:11.419Z] Simulación #390 [LOSS]: 💥 Choque Frontal en Turno 135 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 10 vs 9). | Fitness: 2325 | Cambios: foodEarlyMultiplier: 375 -> 390 (+15), foodBaseMultiplier: 220 -> 230 (+10), foodHungryMultiplier: 240 -> 250 (+10), threatProximityPenalty: 640 -> 670 (+30), cutoffMultiplier: 2.25 -> 2.2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:11.620Z] Simulación #391 [LOSS]: 💥 Choque Frontal en Turno 111 contra Cascabel v41 (Glotón Rusher) (Len: 14 vs 12). | Fitness: 2070 | Cambios: foodEarlyMultiplier: 390 -> 400 (+10), foodBaseMultiplier: 230 -> 240 (+10), foodHungryMultiplier: 250 -> 260 (+10), threatProximityPenalty: 670 -> 700 (+30), cutoffMultiplier: 2.2 -> 2.15 (-0.05)
+
+### 🕒 [2026-09-19T05:39:11.695Z] Simulación #392 [LOSS]: 💥 Choque Frontal en Turno 41 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 8 vs 5). | Fitness: 775 | Cambios: foodBaseMultiplier: 240 -> 250 (+10), foodHungryMultiplier: 260 -> 270 (+10), threatProximityPenalty: 700 -> 730 (+30), cutoffMultiplier: 2.15 -> 2.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:12.007Z] Simulación #393 [WIN]: 🏆 Victoria en Turno 193. Longitud máxima: 15. | Fitness: 6420 | Cambios: partitionMultiplier: 2.7 -> 2.75 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 2.6 -> 2.65 (+0.05), voronoiNetWeight: 93 -> 95 (+2), corridorPenalty: 600 -> 570 (-30), deadEndPenalty: 2080 -> 2030 (-50), coilingMultiplier: 0.9 -> 0.95 (+0.05)
+
+### 🕒 [2026-09-19T05:39:12.036Z] Simulación #394 [WIN]: 🏆 Victoria en Turno 21. Longitud máxima: 6. | Fitness: 2725 | Cambios: partitionMultiplier: 2.75 -> 2.8 (+0.05), cutoffMultiplier: 2.15 -> 2.2 (+0.05), wallSlicingMultiplier: 2.65 -> 2.7 (+0.05), voronoiNetWeight: 95 -> 97 (+2), corridorPenalty: 570 -> 540 (-30), deadEndPenalty: 2030 -> 1980 (-50)
+
+### 🕒 [2026-09-19T05:39:12.205Z] Simulación #395 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 62. | Fitness: 1300 | Cambios: spaceWeight: 29 -> 31 (+2), tailBonus: 510 -> 540 (+30), voronoiWeight: 29 -> 31 (+2), voronoiNetWeight: 97 -> 99 (+2), coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T05:39:12.389Z] Simulación #396 [LOSS]: 💥 Choque Frontal en Turno 129 contra Mutante Muralla 👑 (Campeón Previo) (Len: 13 vs 11). | Fitness: 2305 | Cambios: foodBaseMultiplier: 250 -> 260 (+10), foodHungryMultiplier: 270 -> 280 (+10), threatProximityPenalty: 730 -> 760 (+30), cutoffMultiplier: 2.2 -> 2.15 (-0.05)
+
+### 🕒 [2026-09-19T05:39:12.607Z] Simulación #397 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 147 en (10,10). | Fitness: 2645 | Cambios: cornerPocketPenalty: 840 -> 880 (+40), cornerPenalty: 100 -> 125 (+25), deadEndPenalty: 1980 -> 2060 (+80)
+
+### 🕒 [2026-09-19T05:39:12.663Z] Simulación #398 [LOSS]: 💥 Choque Frontal en Turno 33 contra Mutante Muralla 👑 (Campeón Previo) (Len: 5 vs 4). | Fitness: 620 | Cambios: foodBaseMultiplier: 260 -> 270 (+10), foodHungryMultiplier: 280 -> 290 (+10), threatProximityPenalty: 760 -> 790 (+30), cutoffMultiplier: 2.15 -> 2.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:12.790Z] Simulación #399 [LOSS]: 💥 Choque Frontal en Turno 73 contra Mutante Muralla 👑 (Campeón Previo) (Len: 10 vs 6). | Fitness: 1290 | Cambios: foodBaseMultiplier: 270 -> 280 (+10), foodHungryMultiplier: 290 -> 300 (+10), threatProximityPenalty: 790 -> 820 (+30), cutoffMultiplier: 2.1 -> 2.05 (-0.05)
+
+### 🕒 [2026-09-19T05:39:12.985Z] Simulación #400 [WIN]: 🏆 Victoria en Turno 129. Longitud máxima: 10. | Fitness: 5285 | Cambios: partitionMultiplier: 2.8 -> 2.85 (+0.05), cutoffMultiplier: 2.05 -> 2.1 (+0.05), wallSlicingMultiplier: 2.7 -> 2.75 (+0.05), voronoiNetWeight: 99 -> 101 (+2), cornerPenalty: 125 -> 105 (-20), corridorPenalty: 540 -> 510 (-30), deadEndPenalty: 2060 -> 2010 (-50)
+
+### 🕒 [2026-09-19T05:39:13.113Z] Simulación #401 [LOSS]: 🧱 Choque contra Pared en Turno 98 en (9,11). | Fitness: 1945 | Cambios: wallSqueezePenalty: 800 -> 860 (+60), coffinPenalty: 890 -> 940 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 2.85 -> 2.8 (-0.05)
+
+### 🕒 [2026-09-19T05:39:13.355Z] Simulación #402 [WIN]: 🏆 Victoria en Turno 199. Longitud máxima: 21. | Fitness: 6720 | Cambios: partitionMultiplier: 2.8 -> 2.85 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 2.75 -> 2.8 (+0.05), voronoiNetWeight: 101 -> 103 (+2), edgePenalty: 50 -> 35 (-15), cornerPenalty: 105 -> 100 (-5), corridorPenalty: 510 -> 480 (-30), deadEndPenalty: 2010 -> 1960 (-50), coilingMultiplier: 0.9 -> 0.95 (+0.05)
+
+### 🕒 [2026-09-19T05:39:13.572Z] Simulación #403 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 77 en (0,10). | Fitness: 1420 | Cambios: cornerPocketPenalty: 880 -> 920 (+40), cornerPenalty: 100 -> 125 (+25), deadEndPenalty: 1960 -> 2040 (+80), edgePenalty: 35 -> 25 (-10)
+
+### 🕒 [2026-09-19T05:39:14.197Z] Simulación #404 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 433. | Fitness: 7740 | Cambios: spaceWeight: 31 -> 33 (+2), tailBonus: 540 -> 570 (+30), voronoiWeight: 31 -> 33 (+2), voronoiNetWeight: 103 -> 105 (+2), coilingMultiplier: 0.95 -> 0.9 (-0.05)
+
+### 🕒 [2026-09-19T05:39:14.383Z] Simulación #405 [LOSS]: 💥 Choque Frontal en Turno 79 contra Mutante Glotón (Len: 11 vs 7). | Fitness: 1415 | Cambios: foodBaseMultiplier: 280 -> 290 (+10), foodHungryMultiplier: 300 -> 310 (+10), threatProximityPenalty: 820 -> 850 (+30), cutoffMultiplier: 2.15 -> 2.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:14.547Z] Simulación #406 [LOSS]: 💥 Choque Frontal en Turno 88 contra Mutante Glotón 👑 (Campeón Previo) (Len: 11 vs 9). | Fitness: 1620 | Cambios: foodBaseMultiplier: 290 -> 300 (+10), foodHungryMultiplier: 310 -> 320 (+10), threatProximityPenalty: 850 -> 880 (+30), cutoffMultiplier: 2.1 -> 2.05 (-0.05)
+
+### 🕒 [2026-09-19T05:39:14.744Z] Simulación #407 [WIN]: 🏆 Victoria en Turno 130. Longitud máxima: 14. | Fitness: 5440 | Cambios: partitionMultiplier: 2.85 -> 2.9 (+0.05), cutoffMultiplier: 2.05 -> 2.1 (+0.05), wallSlicingMultiplier: 2.8 -> 2.85 (+0.05), voronoiNetWeight: 105 -> 107 (+2), edgePenalty: 25 -> 20 (-5), cornerPenalty: 125 -> 105 (-20), corridorPenalty: 480 -> 450 (-30), deadEndPenalty: 2040 -> 1990 (-50), coilingMultiplier: 0.9 -> 0.95 (+0.05)
+
+### 🕒 [2026-09-19T05:39:14.782Z] Simulación #408 [WIN]: 🏆 Victoria en Turno 21. Longitud máxima: 5. | Fitness: 2690 | Cambios: partitionMultiplier: 2.9 -> 2.95 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 2.85 -> 2.9 (+0.05), voronoiNetWeight: 107 -> 109 (+2), cornerPenalty: 105 -> 100 (-5), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1990 -> 1940 (-50)
+
+### 🕒 [2026-09-19T05:39:14.893Z] Simulación #409 [LOSS]: 💥 Choque Frontal en Turno 57 contra Cascabel v41 (Glotón Rusher) (Len: 8 vs 6). | Fitness: 1050 | Cambios: foodHungryMultiplier: 320 -> 330 (+10), threatProximityPenalty: 880 -> 910 (+30), cutoffMultiplier: 2.15 -> 2.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:14.996Z] Simulación #410 [WIN]: 🏆 Victoria en Turno 78. Longitud máxima: 11. | Fitness: 4555 | Cambios: partitionMultiplier: 2.95 -> 3 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 2.9 -> 2.95 (+0.05), voronoiNetWeight: 109 -> 111 (+2), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1940 -> 1890 (-50)
+
+### 🕒 [2026-09-19T05:39:15.148Z] Simulación #411 [LOSS]: 💥 Choque Frontal en Turno 58 contra Mutante Agresivo (Len: 10 vs 7). | Fitness: 1100 | Cambios: foodHungryMultiplier: 330 -> 340 (+10), threatProximityPenalty: 910 -> 940 (+30), cutoffMultiplier: 2.15 -> 2.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:15.414Z] Simulación #412 [LOSS]: 💥 Choque Frontal en Turno 201 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 20 vs 14). | Fitness: 3490 | Cambios: foodHungryMultiplier: 340 -> 350 (+10), threatProximityPenalty: 940 -> 970 (+30), cutoffMultiplier: 2.1 -> 2.05 (-0.05)
+
+### 🕒 [2026-09-19T05:39:15.657Z] Simulación #413 [LOSS]: 💥 Choque Frontal en Turno 170 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 17 vs 16). | Fitness: 3095 | Cambios: threatProximityPenalty: 970 -> 1000 (+30), cutoffMultiplier: 2.05 -> 2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:15.811Z] Simulación #414 [WIN]: 🏆 Victoria en Turno 107. Longitud máxima: 13. | Fitness: 5060 | Cambios: partitionMultiplier: 3 -> 3.05 (+0.05), cutoffMultiplier: 2 -> 2.05 (+0.05), wallSlicingMultiplier: 2.95 -> 3 (+0.05), voronoiNetWeight: 111 -> 113 (+2), corridorPenalty: 390 -> 360 (-30), deadEndPenalty: 1890 -> 1840 (-50)
+
+### 🕒 [2026-09-19T05:39:16.052Z] Simulación #415 [LOSS]: 💥 Choque Frontal en Turno 177 contra Mutante Defensivo (Len: 16 vs 14). | Fitness: 3130 | Cambios: threatProximityPenalty: 1000 -> 1030 (+30), cutoffMultiplier: 2.05 -> 2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:16.318Z] Simulación #416 [WIN]: 🏆 Victoria en Turno 211. Longitud máxima: 19. | Fitness: 6830 | Cambios: partitionMultiplier: 3.05 -> 3.1 (+0.05), cutoffMultiplier: 2 -> 2.05 (+0.05), wallSlicingMultiplier: 3 -> 3.05 (+0.05), voronoiNetWeight: 113 -> 115 (+2), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1840 -> 1790 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:16.537Z] Simulación #417 [WIN]: 🏆 Victoria en Turno 176. Longitud máxima: 17. | Fitness: 6235 | Cambios: partitionMultiplier: 3.1 -> 3.15 (+0.05), cutoffMultiplier: 2.05 -> 2.1 (+0.05), wallSlicingMultiplier: 3.05 -> 3.1 (+0.05), voronoiNetWeight: 115 -> 117 (+2), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1790 -> 1740 (-50), coilingMultiplier: 1 -> 1.05 (+0.05)
+
+### 🕒 [2026-09-19T05:39:16.562Z] Simulación #418 [WIN]: 🏆 Victoria en Turno 17. Longitud máxima: 5. | Fitness: 2630 | Cambios: partitionMultiplier: 3.15 -> 3.2 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 3.1 -> 3.15 (+0.05), voronoiNetWeight: 117 -> 119 (+2), deadEndPenalty: 1740 -> 1690 (-50)
+
+### 🕒 [2026-09-19T05:39:16.768Z] Simulación #419 [WIN]: 🏆 Victoria en Turno 144. Longitud máxima: 17. | Fitness: 5755 | Cambios: partitionMultiplier: 3.2 -> 3.25 (+0.05), cutoffMultiplier: 2.15 -> 2.2 (+0.05), wallSlicingMultiplier: 3.15 -> 3.2 (+0.05), voronoiNetWeight: 119 -> 121 (+2), deadEndPenalty: 1690 -> 1640 (-50), coilingMultiplier: 1.05 -> 1.1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:17.008Z] Simulación #420 [WIN]: 🏆 Victoria en Turno 180. Longitud máxima: 19. | Fitness: 6365 | Cambios: partitionMultiplier: 3.25 -> 3.3 (+0.05), cutoffMultiplier: 2.2 -> 2.25 (+0.05), wallSlicingMultiplier: 3.2 -> 3.25 (+0.05), voronoiNetWeight: 121 -> 123 (+2), deadEndPenalty: 1640 -> 1590 (-50), coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T05:39:17.117Z] Simulación #421 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 23 en (10,0). | Fitness: 0 | Cambios: cornerPocketPenalty: 920 -> 960 (+40), cornerPenalty: 100 -> 125 (+25), deadEndPenalty: 1590 -> 1670 (+80)
+
+### 🕒 [2026-09-19T05:39:17.367Z] Simulación #422 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 198 (Cuerpo Propio). | Fitness: 3655 | Cambios: deadEndPenalty: 1670 -> 1770 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 860 -> 910 (+50), coffinPenalty: 940 -> 980 (+40), coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:17.706Z] Simulación #423 [LOSS]: 💥 Choque Frontal en Turno 228 contra Mutante Aleatorio 👑 (Campeón Previo) (Len: 20 vs 18). | Fitness: 4035 | Cambios: threatProximityPenalty: 1030 -> 1060 (+30), cutoffMultiplier: 2.25 -> 2.2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:17.838Z] Simulación #424 [LOSS]: 💥 Choque Frontal en Turno 82 contra Mutante Aleatorio 👑 (Campeón Previo) (Len: 11 vs 10). | Fitness: 1565 | Cambios: threatProximityPenalty: 1060 -> 1090 (+30), cutoffMultiplier: 2.2 -> 2.15 (-0.05)
+
+### 🕒 [2026-09-19T05:39:18.088Z] Simulación #425 [WIN]: 🏆 Victoria en Turno 169. Longitud máxima: 17. | Fitness: 6130 | Cambios: partitionMultiplier: 3.3 -> 3.35 (+0.05), cutoffMultiplier: 2.15 -> 2.2 (+0.05), wallSlicingMultiplier: 3.25 -> 3.3 (+0.05), voronoiNetWeight: 123 -> 125 (+2), cornerPenalty: 125 -> 105 (-20), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1770 -> 1720 (-50), coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T05:39:18.269Z] Simulación #426 [LOSS]: 💥 Choque Frontal en Turno 126 contra Mutante Aleatorio (Len: 11 vs 10). | Fitness: 2225 | Cambios: threatProximityPenalty: 1090 -> 1120 (+30), cutoffMultiplier: 2.2 -> 2.15 (-0.05)
+
+### 🕒 [2026-09-19T05:39:18.601Z] Simulación #427 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 264 (Cuerpo Propio). | Fitness: 4785 | Cambios: deadEndPenalty: 1720 -> 1820 (+100), corridorPenalty: 330 -> 390 (+60), wallSqueezePenalty: 910 -> 960 (+50), coffinPenalty: 980 -> 1020 (+40), coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:18.956Z] Simulación #428 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 211 (Cuerpo Propio). | Fitness: 3885 | Cambios: deadEndPenalty: 1820 -> 1920 (+100), corridorPenalty: 390 -> 450 (+60), wallSqueezePenalty: 960 -> 1010 (+50), coffinPenalty: 1020 -> 1060 (+40), coilingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T05:39:19.205Z] Simulación #429 [LOSS]: 💥 Choque Frontal en Turno 147 contra Mutante Aleatorio 👑 (Campeón Previo) (Len: 18 vs 16). | Fitness: 2750 | Cambios: threatProximityPenalty: 1120 -> 1150 (+30), cutoffMultiplier: 2.15 -> 2.1 (-0.05)
+
+### 🕒 [2026-09-19T05:39:19.311Z] Simulación #430 [WIN]: 🏆 Victoria en Turno 60. Longitud máxima: 8. | Fitness: 4180 | Cambios: partitionMultiplier: 3.35 -> 3.4 (+0.05), cutoffMultiplier: 2.1 -> 2.15 (+0.05), wallSlicingMultiplier: 3.3 -> 3.35 (+0.05), voronoiNetWeight: 125 -> 127 (+2), cornerPenalty: 105 -> 100 (-5), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1920 -> 1870 (-50)
+
+### 🕒 [2026-09-19T05:39:19.520Z] Simulación #431 [WIN]: 🏆 Victoria en Turno 156. Longitud máxima: 18. | Fitness: 5970 | Cambios: partitionMultiplier: 3.4 -> 3.45 (+0.05), cutoffMultiplier: 2.15 -> 2.2 (+0.05), wallSlicingMultiplier: 3.35 -> 3.4 (+0.05), voronoiNetWeight: 127 -> 129 (+2), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1870 -> 1820 (-50), coilingMultiplier: 1.05 -> 1.1 (+0.05)
+
+### 🕒 [2026-09-19T05:39:19.555Z] Simulación #432 [WIN]: 🏆 Victoria en Turno 19. Longitud máxima: 6. | Fitness: 2695 | Cambios: partitionMultiplier: 3.45 -> 3.5 (+0.05), cutoffMultiplier: 2.2 -> 2.25 (+0.05), wallSlicingMultiplier: 3.4 -> 3.45 (+0.05), voronoiNetWeight: 129 -> 131 (+2), corridorPenalty: 390 -> 360 (-30), deadEndPenalty: 1820 -> 1770 (-50)
+
+### 🕒 [2026-09-19T05:39:19.800Z] Simulación #433 [LOSS]: 💥 Choque Frontal en Turno 197 contra Mutante Defensivo (Len: 17 vs 13). | Fitness: 3395 | Cambios: threatProximityPenalty: 1150 -> 1180 (+30), cutoffMultiplier: 2.25 -> 2.2 (-0.05)
+
+### 🕒 [2026-09-19T05:39:19.914Z] Simulación #434 [WIN]: 🏆 Victoria en Turno 82. Longitud máxima: 13. | Fitness: 4685 | Cambios: partitionMultiplier: 3.5 -> 3.55 (+0.05), cutoffMultiplier: 2.2 -> 2.25 (+0.05), wallSlicingMultiplier: 3.45 -> 3.5 (+0.05), voronoiNetWeight: 131 -> 133 (+2), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1770 -> 1720 (-50)
+
+### 🕒 [2026-09-19T05:39:20.025Z] Simulación #435 [WIN]: 🏆 Victoria en Turno 77. Longitud máxima: 8. | Fitness: 4435 | Cambios: partitionMultiplier: 3.55 -> 3.6 (+0.05), cutoffMultiplier: 2.25 -> 2.3 (+0.05), voronoiNetWeight: 133 -> 135 (+2), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1720 -> 1670 (-50)
+
+### 🕒 [2026-09-19T05:39:20.056Z] Simulación #436 [WIN]: 🏆 Victoria en Turno 21. Longitud máxima: 5. | Fitness: 2690 | Cambios: partitionMultiplier: 3.6 -> 3.65 (+0.05), cutoffMultiplier: 2.3 -> 2.35 (+0.05), voronoiNetWeight: 135 -> 137 (+2), deadEndPenalty: 1670 -> 1620 (-50)
+
+### 🕒 [2026-09-19T05:39:20.239Z] Simulación #437 [WIN]: 🏆 Victoria en Turno 141. Longitud máxima: 19. | Fitness: 5780 | Cambios: partitionMultiplier: 3.65 -> 3.7 (+0.05), cutoffMultiplier: 2.35 -> 2.4 (+0.05), voronoiNetWeight: 137 -> 139 (+2), deadEndPenalty: 1620 -> 1570 (-50), coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T05:39:20.353Z] Simulación #438 [LOSS]: 💥 Choque Frontal en Turno 77 contra Mutante Muralla (Len: 10 vs 9). | Fitness: 1455 | Cambios: threatProximityPenalty: 1180 -> 1200 (+20), cutoffMultiplier: 2.4 -> 2.35 (-0.05)
+
+### 🕒 [2026-09-19T05:39:20.481Z] Simulación #439 [WIN]: 🏆 Victoria en Turno 80. Longitud máxima: 13. | Fitness: 4655 | Cambios: partitionMultiplier: 3.7 -> 3.75 (+0.05), cutoffMultiplier: 2.35 -> 2.4 (+0.05), voronoiNetWeight: 139 -> 141 (+2), deadEndPenalty: 1570 -> 1520 (-50)
+
+### 🕒 [2026-09-19T05:39:20.753Z] Simulación #440 [LOSS]: 💥 Choque Frontal en Turno 203 contra Mutante Aleatorio (Len: 15 vs 14). | Fitness: 3520 | Cambios: cutoffMultiplier: 2.4 -> 2.35 (-0.05)
+
+### 🕒 [2026-09-19T05:39:20.966Z] Simulación #441 [LOSS]: 💥 Choque Frontal en Turno 137 contra Mutante Muralla (Len: 16 vs 8). | Fitness: 2320 | Cambios: cutoffMultiplier: 2.35 -> 2.3 (-0.05)
+
+### 🕒 [2026-09-19T05:39:21.187Z] Simulación #442 [WIN]: 🏆 Victoria en Turno 165. Longitud máxima: 16. | Fitness: 6035 | Cambios: partitionMultiplier: 3.75 -> 3.8 (+0.05), cutoffMultiplier: 2.3 -> 2.35 (+0.05), voronoiNetWeight: 141 -> 143 (+2), deadEndPenalty: 1520 -> 1470 (-50), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:39:21.316Z] Simulación #443 [LOSS]: 💥 Choque Frontal en Turno 69 contra Mutante Defensivo (Len: 13 vs 6). | Fitness: 1230 | Cambios: cutoffMultiplier: 2.35 -> 2.3 (-0.05)
+
+### 🕒 [2026-09-19T05:39:21.494Z] Simulación #444 [LOSS]: 💥 Choque Frontal en Turno 123 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 13 vs 11). | Fitness: 2215 | Cambios: cutoffMultiplier: 2.3 -> 2.25 (-0.05)
+
+### 🕒 [2026-09-19T05:39:21.670Z] Simulación #445 [WIN]: 🏆 Victoria en Turno 146. Longitud máxima: 15. | Fitness: 5715 | Cambios: partitionMultiplier: 3.8 -> 3.85 (+0.05), cutoffMultiplier: 2.25 -> 2.3 (+0.05), voronoiNetWeight: 143 -> 145 (+2), deadEndPenalty: 1470 -> 1420 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:39:21.819Z] Simulación #446 [WIN]: 🏆 Victoria en Turno 89. Longitud máxima: 12. | Fitness: 4755 | Cambios: partitionMultiplier: 3.85 -> 3.9 (+0.05), cutoffMultiplier: 2.3 -> 2.35 (+0.05), voronoiNetWeight: 145 -> 147 (+2), deadEndPenalty: 1420 -> 1370 (-50)
+
+### 🕒 [2026-09-19T05:39:21.897Z] Simulación #447 [LOSS]: 💥 Choque Frontal en Turno 52 contra Cascabel v102 (Coiling) (Len: 7 vs 6). | Fitness: 975 | Cambios: cutoffMultiplier: 2.35 -> 2.3 (-0.05)
+
+### 🕒 [2026-09-19T05:39:22.108Z] Simulación #448 [WIN]: 🏆 Victoria en Turno 137. Longitud máxima: 14. | Fitness: 5545 | Cambios: partitionMultiplier: 3.9 -> 3.95 (+0.05), cutoffMultiplier: 2.3 -> 2.35 (+0.05), voronoiNetWeight: 147 -> 149 (+2), deadEndPenalty: 1370 -> 1320 (-50), coilingMultiplier: 1.25 -> 1.3 (+0.05)
+
+### 🕒 [2026-09-19T05:39:22.420Z] Simulación #449 [WIN]: 🏆 Victoria en Turno 256. Longitud máxima: 23. | Fitness: 7645 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 2.35 -> 2.4 (+0.05), voronoiNetWeight: 149 -> 151 (+2), deadEndPenalty: 1320 -> 1270 (-50), coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T05:39:22.645Z] Simulación #450 [WIN]: 🏆 Victoria en Turno 158. Longitud máxima: 13. | Fitness: 5825 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 151 -> 153 (+2), deadEndPenalty: 1270 -> 1220 (-50)
+
+### 🕒 [2026-09-19T05:39:22.876Z] Simulación #451 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 149 (Cuerpo Propio). | Fitness: 2605 | Cambios: deadEndPenalty: 1220 -> 1320 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 1010 -> 1060 (+50), coffinPenalty: 1060 -> 1100 (+40), coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T05:39:23.000Z] Simulación #452 [LOSS]: 💥 Choque Frontal en Turno 77 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 8 vs 7). | Fitness: 1385 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:39:23.200Z] Simulación #453 [WIN]: 🏆 Victoria en Turno 141. Longitud máxima: 18. | Fitness: 5745 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 153 -> 155 (+2), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1320 -> 1270 (-50), coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T05:39:23.398Z] Simulación #454 [WIN]: 🏆 Victoria en Turno 126. Longitud máxima: 19. | Fitness: 5555 | Cambios: cutoffMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 155 -> 157 (+2), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1270 -> 1220 (-50), coilingMultiplier: 1.35 -> 1.4 (+0.05)
+
+### 🕒 [2026-09-19T05:39:23.795Z] Simulación #455 [WIN]: 🏆 Victoria en Turno 329. Longitud máxima: 27. | Fitness: 8880 | Cambios: cutoffMultiplier: 2.5 -> 2.55 (+0.05), voronoiNetWeight: 157 -> 159 (+2), deadEndPenalty: 1220 -> 1170 (-50), coilingMultiplier: 1.4 -> 1.45 (+0.05)
+
+### 🕒 [2026-09-19T05:39:23.936Z] Simulación #456 [WIN]: 🏆 Victoria en Turno 73. Longitud máxima: 6. | Fitness: 4305 | Cambios: cutoffMultiplier: 2.55 -> 2.6 (+0.05), voronoiNetWeight: 159 -> 161 (+2), deadEndPenalty: 1170 -> 1120 (-50)
+
+### 🕒 [2026-09-19T05:39:24.096Z] Simulación #457 [LOSS]: 💥 Choque Frontal en Turno 55 contra Mutante Muralla (Len: 6 vs 4). | Fitness: 950 | Cambios: cutoffMultiplier: 2.6 -> 2.55 (-0.05)
+
+### 🕒 [2026-09-19T05:39:24.246Z] Simulación #458 [LOSS]: 💥 Choque Frontal en Turno 103 contra Mutante Muralla 👑 (Campeón Previo) (Len: 10 vs 8). | Fitness: 1810 | Cambios: cutoffMultiplier: 2.55 -> 2.5 (-0.05)
+
+### 🕒 [2026-09-19T05:39:24.448Z] Simulación #459 [LOSS]: 💥 Choque Frontal en Turno 163 contra Mutante Muralla 👑 (Campeón Previo) (Len: 18 vs 12). | Fitness: 2850 | Cambios: cutoffMultiplier: 2.5 -> 2.45 (-0.05)
+
+### 🕒 [2026-09-19T05:39:24.595Z] Simulación #460 [LOSS]: 💥 Choque Frontal en Turno 95 contra Mutante Muralla 👑 (Campeón Previo) (Len: 13 vs 12). | Fitness: 1830 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:39:24.811Z] Simulación #461 [LOSS]: 🧱 Choque contra Pared en Turno 51 en (8,11). | Fitness: 1135 | Cambios: wallSqueezePenalty: 1060 -> 1120 (+60), coffinPenalty: 1100 -> 1150 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:25.015Z] Simulación #462 [WIN]: 🏆 Victoria en Turno 139. Longitud máxima: 13. | Fitness: 5540 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 161 -> 163 (+2), edgePenalty: 50 -> 35 (-15), deadEndPenalty: 1120 -> 1070 (-50)
+
+### 🕒 [2026-09-19T05:39:25.242Z] Simulación #463 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 10. | Fitness: 0 | Cambios: spaceWeight: 33 -> 35 (+2), tailBonus: 570 -> 600 (+30), voronoiWeight: 33 -> 35 (+2), voronoiNetWeight: 163 -> 165 (+2), coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T05:39:25.470Z] Simulación #464 [WIN]: 🏆 Victoria en Turno 143. Longitud máxima: 18. | Fitness: 5775 | Cambios: cutoffMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 165 -> 167 (+2), edgePenalty: 35 -> 20 (-15), deadEndPenalty: 1070 -> 1020 (-50), coilingMultiplier: 1.4 -> 1.45 (+0.05)
+
+### 🕒 [2026-09-19T05:39:25.826Z] Simulación #465 [LOSS]: 💥 Choque Frontal en Turno 94 contra Mutante Muralla (Len: 12 vs 9). | Fitness: 1710 | Cambios: cutoffMultiplier: 2.5 -> 2.45 (-0.05)
+
+### 🕒 [2026-09-19T05:39:25.983Z] Simulación #466 [DRAW]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 98. | Fitness: 2770 | Cambios: spaceWeight: 35 -> 37 (+2), tailBonus: 600 -> 630 (+30), voronoiWeight: 35 -> 37 (+2), voronoiNetWeight: 167 -> 169 (+2), coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T05:39:26.279Z] Simulación #467 [WIN]: 🏆 Victoria en Turno 190. Longitud máxima: 16. | Fitness: 6410 | Cambios: cutoffMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 169 -> 171 (+2), deadEndPenalty: 1020 -> 1000 (-20), coilingMultiplier: 1.4 -> 1.45 (+0.05)
+
+### 🕒 [2026-09-19T05:39:26.359Z] Simulación #468 [LOSS]: 💥 Choque Frontal en Turno 72 contra Cascabel v102 (Coiling) (Len: 8 vs 7). | Fitness: 1310 | Cambios: cutoffMultiplier: 2.5 -> 2.45 (-0.05)
+
+### 🕒 [2026-09-19T05:39:26.502Z] Simulación #469 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 47. | Fitness: 865 | Cambios: spaceWeight: 37 -> 39 (+2), tailBonus: 630 -> 660 (+30), voronoiWeight: 37 -> 39 (+2), voronoiNetWeight: 171 -> 173 (+2), coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T05:39:26.744Z] Simulación #470 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 190 (Cuerpo Propio). | Fitness: 3360 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 1120 -> 1170 (+50), coffinPenalty: 1150 -> 1190 (+40), coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T05:39:27.064Z] Simulación #471 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 261. | Fitness: 4600 | Cambios: spaceWeight: 39 -> 41 (+2), tailBonus: 660 -> 690 (+30), voronoiWeight: 39 -> 41 (+2), voronoiNetWeight: 173 -> 175 (+2), coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T05:39:27.204Z] Simulación #472 [WIN]: 🏆 Victoria en Turno 93. Longitud máxima: 12. | Fitness: 4815 | Cambios: cutoffMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 175 -> 177 (+2), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50)
+
+### 🕒 [2026-09-19T05:39:27.367Z] Simulación #473 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 45. | Fitness: 835 | Cambios: spaceWeight: 41 -> 43 (+2), tailBonus: 690 -> 720 (+30), voronoiWeight: 41 -> 43 (+2), voronoiNetWeight: 177 -> 179 (+2), coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T05:39:27.422Z] Simulación #474 [LOSS]: 🧱 Choque contra Pared en Turno 41 en (10,11). | Fitness: 845 | Cambios: wallSqueezePenalty: 1170 -> 1230 (+60), coffinPenalty: 1190 -> 1240 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:39:27.609Z] Simulación #475 [LOSS]: 💥 Choque Frontal en Turno 29 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 5 vs 4). | Fitness: 0 | Cambios: cutoffMultiplier: 2.5 -> 2.45 (-0.05)
+
+### 🕒 [2026-09-19T05:39:27.767Z] Simulación #476 [LOSS]: 💥 Choque Frontal en Turno 113 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 13 vs 12). | Fitness: 2100 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:39:27.898Z] Simulación #477 [LOSS]: 💥 Choque Frontal en Turno 65 contra Cascabel v41 (Glotón Rusher) (Len: 11 vs 8). | Fitness: 1240 | Cambios: cutoffMultiplier: 2.4 -> 2.35 (-0.05)
+
+### 🕒 [2026-09-19T05:39:28.357Z] Simulación #478 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 153 en (10,10). | Fitness: 2735 | Cambios: cornerPocketPenalty: 960 -> 1000 (+40), cornerPenalty: 100 -> 125 (+25), deadEndPenalty: 1050 -> 1130 (+80), edgePenalty: 50 -> 40 (-10)
+
+### 🕒 [2026-09-19T05:39:28.576Z] Simulación #479 [WIN]: 🏆 Victoria en Turno 160. Longitud máxima: 19. | Fitness: 6065 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 2.35 -> 2.4 (+0.05), voronoiNetWeight: 179 -> 181 (+2), edgePenalty: 40 -> 25 (-15), cornerPenalty: 125 -> 105 (-20), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1130 -> 1080 (-50), coilingMultiplier: 1.25 -> 1.3 (+0.05)
+
+### 🕒 [2026-09-19T05:39:28.820Z] Simulación #480 [WIN]: 🏆 Victoria en Turno 202. Longitud máxima: 20. | Fitness: 6730 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 181 -> 183 (+2), edgePenalty: 25 -> 20 (-5), cornerPenalty: 105 -> 100 (-5), deadEndPenalty: 1080 -> 1030 (-50), coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T05:41:29.197Z] Simulación #481 [LOSS]: 💥 Choque Frontal en Turno 125 contra Mutante Aleatorio (Len: 15 vs 14). | Fitness: 2350 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:41:29.378Z] Simulación #482 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 125 (Cuerpo Propio). | Fitness: 2245 | Cambios: deadEndPenalty: 1030 -> 1130 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 1230 -> 1280 (+50), coffinPenalty: 1240 -> 1280 (+40), coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T05:41:29.536Z] Simulación #483 [WIN]: 🏆 Victoria en Turno 101. Longitud máxima: 13. | Fitness: 4970 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 183 -> 185 (+2), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1130 -> 1080 (-50)
+
+### 🕒 [2026-09-19T05:41:29.732Z] Simulación #484 [LOSS]: 💥 Choque Frontal en Turno 117 contra Mutante Defensivo (Len: 13 vs 10). | Fitness: 2090 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:41:30.017Z] Simulación #485 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 238 (Cuerpo Propio). | Fitness: 4430 | Cambios: deadEndPenalty: 1080 -> 1180 (+100), corridorPenalty: 330 -> 390 (+60), wallSqueezePenalty: 1280 -> 1330 (+50), coffinPenalty: 1280 -> 1320 (+40), coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T05:41:30.168Z] Simulación #486 [LOSS]: 💥 Choque Frontal en Turno 93 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 10 vs 7). | Fitness: 1625 | Cambios: cutoffMultiplier: 2.4 -> 2.35 (-0.05)
+
+### 🕒 [2026-09-19T05:41:30.571Z] Simulación #487 [LOSS]: 💥 Choque Frontal en Turno 213 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 21 vs 16). | Fitness: 3740 | Cambios: cutoffMultiplier: 2.35 -> 2.3 (-0.05)
+
+### 🕒 [2026-09-19T05:41:30.803Z] Simulación #488 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 82 (Cuerpo Propio). | Fitness: 1565 | Cambios: deadEndPenalty: 1180 -> 1280 (+100), corridorPenalty: 390 -> 450 (+60), wallSqueezePenalty: 1330 -> 1380 (+50), coffinPenalty: 1320 -> 1360 (+40), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:31.096Z] Simulación #489 [WIN]: 🏆 Victoria en Turno 105. Longitud máxima: 9. | Fitness: 4890 | Cambios: cutoffMultiplier: 2.3 -> 2.35 (+0.05), voronoiNetWeight: 185 -> 187 (+2), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1280 -> 1230 (-50)
+
+### 🕒 [2026-09-19T05:41:31.374Z] Simulación #490 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 195 (Cuerpo Propio). | Fitness: 3540 | Cambios: deadEndPenalty: 1230 -> 1330 (+100), corridorPenalty: 420 -> 480 (+60), wallSqueezePenalty: 1380 -> 1430 (+50), coffinPenalty: 1360 -> 1400 (+40), coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T05:41:31.648Z] Simulación #491 [WIN]: 🏆 Victoria en Turno 180. Longitud máxima: 20. | Fitness: 6400 | Cambios: cutoffMultiplier: 2.35 -> 2.4 (+0.05), voronoiNetWeight: 187 -> 189 (+2), corridorPenalty: 480 -> 450 (-30), deadEndPenalty: 1330 -> 1280 (-50), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:41:31.895Z] Simulación #492 [WIN]: 🏆 Victoria en Turno 152. Longitud máxima: 14. | Fitness: 5770 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 189 -> 191 (+2), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1280 -> 1230 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:32.085Z] Simulación #493 [LOSS]: 💥 Choque Frontal en Turno 129 contra Mutante Agresivo (Len: 14 vs 13). | Fitness: 2375 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:41:32.372Z] Simulación #494 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 118 (Cuerpo Propio). | Fitness: 2210 | Cambios: deadEndPenalty: 1230 -> 1330 (+100), corridorPenalty: 420 -> 480 (+60), wallSqueezePenalty: 1430 -> 1480 (+50), coffinPenalty: 1400 -> 1440 (+40), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:32.649Z] Simulación #495 [WIN]: 🏆 Victoria en Turno 199. Longitud máxima: 19. | Fitness: 6650 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 191 -> 193 (+2), corridorPenalty: 480 -> 450 (-30), deadEndPenalty: 1330 -> 1280 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:32.885Z] Simulación #496 [WIN]: 🏆 Victoria en Turno 169. Longitud máxima: 18. | Fitness: 6165 | Cambios: cutoffMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 193 -> 195 (+2), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1280 -> 1230 (-50), coilingMultiplier: 1.25 -> 1.3 (+0.05)
+
+### 🕒 [2026-09-19T05:41:32.987Z] Simulación #497 [LOSS]: 💥 Choque Frontal en Turno 62 contra Mutante Glotón (Len: 8 vs 7). | Fitness: 1160 | Cambios: cutoffMultiplier: 2.5 -> 2.45 (-0.05)
+
+### 🕒 [2026-09-19T05:41:33.249Z] Simulación #498 [LOSS]: 💥 Choque Frontal en Turno 195 contra Mutante Glotón 👑 (Campeón Previo) (Len: 20 vs 17). | Fitness: 3505 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:41:33.450Z] Simulación #499 [WIN]: 🏆 Victoria en Turno 128. Longitud máxima: 13. | Fitness: 5375 | Cambios: cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 195 -> 197 (+2), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1230 -> 1180 (-50)
+
+### 🕒 [2026-09-19T05:41:33.775Z] Simulación #500 [LOSS]: 🧱 Choque contra Pared en Turno 221 en (10,11). | Fitness: 3930 | Cambios: wallSqueezePenalty: 1480 -> 1540 (+60), coffinPenalty: 1440 -> 1490 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:34.190Z] Simulación #501 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 217 (Cuerpo Propio). | Fitness: 4115 | Cambios: deadEndPenalty: 1180 -> 1280 (+100), corridorPenalty: 390 -> 450 (+60), wallSqueezePenalty: 1540 -> 1590 (+50), coffinPenalty: 1490 -> 1530 (+40), coilingMultiplier: 1.3 -> 1.25 (-0.05)
+
+### 🕒 [2026-09-19T05:41:34.566Z] Simulación #502 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 218 (Cuerpo Propio). | Fitness: 3885 | Cambios: deadEndPenalty: 1280 -> 1380 (+100), corridorPenalty: 450 -> 510 (+60), wallSqueezePenalty: 1590 -> 1640 (+50), coffinPenalty: 1530 -> 1570 (+40), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:34.722Z] Simulación #503 [LOSS]: 💥 Choque Frontal en Turno 97 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 11 vs 10). | Fitness: 1790 | Cambios: cutoffMultiplier: 2.45 -> 2.4 (-0.05)
+
+### 🕒 [2026-09-19T05:41:34.935Z] Simulación #504 [WIN]: 🏆 Victoria en Turno 127. Longitud máxima: 15. | Fitness: 5430 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 2.4 -> 2.45 (+0.05), voronoiNetWeight: 197 -> 199 (+2), edgePenalty: 50 -> 35 (-15), corridorPenalty: 510 -> 480 (-30), deadEndPenalty: 1380 -> 1330 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:34.974Z] Simulación #505 [WIN]: 🏆 Victoria en Turno 21. Longitud máxima: 5. | Fitness: 2690 | Cambios: cutoffMultiplier: 2.45 -> 2.5 (+0.05), voronoiNetWeight: 199 -> 200 (+1), edgePenalty: 35 -> 20 (-15), corridorPenalty: 480 -> 450 (-30), deadEndPenalty: 1330 -> 1280 (-50)
+
+### 🕒 [2026-09-19T05:41:35.136Z] Simulación #506 [DRAW]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 88. | Fitness: 2620 | Cambios: spaceWeight: 43 -> 45 (+2), tailBonus: 720 -> 750 (+30), voronoiWeight: 43 -> 45 (+2), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:35.165Z] Simulación #507 [WIN]: 🏆 Victoria en Turno 13. Longitud máxima: 4. | Fitness: 2535 | Cambios: cutoffMultiplier: 2.5 -> 2.55 (+0.05), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1280 -> 1230 (-50)
+
+### 🕒 [2026-09-19T05:41:35.466Z] Simulación #508 [WIN]: 🏆 Victoria en Turno 253. Longitud máxima: 24. | Fitness: 7635 | Cambios: cutoffMultiplier: 2.55 -> 2.6 (+0.05), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1230 -> 1180 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:35.519Z] Simulación #509 [WIN]: 🏆 Victoria en Turno 47. Longitud máxima: 7. | Fitness: 3950 | Cambios: cutoffMultiplier: 2.6 -> 2.65 (+0.05), corridorPenalty: 390 -> 360 (-30), deadEndPenalty: 1180 -> 1130 (-50)
+
+### 🕒 [2026-09-19T05:41:35.877Z] Simulación #510 [LOSS]: 🧱 Choque contra Pared en Turno 171 en (10,11). | Fitness: 3215 | Cambios: wallSqueezePenalty: 1640 -> 1700 (+60), coffinPenalty: 1570 -> 1620 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:36.067Z] Simulación #511 [LOSS]: 💥 Choque Frontal en Turno 126 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 11 vs 10). | Fitness: 2225 | Cambios: cutoffMultiplier: 2.65 -> 2.6 (-0.05)
+
+### 🕒 [2026-09-19T05:41:36.340Z] Simulación #512 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 73 (Cuerpo Propio). | Fitness: 1395 | Cambios: deadEndPenalty: 1130 -> 1230 (+100), corridorPenalty: 360 -> 420 (+60), wallSqueezePenalty: 1700 -> 1750 (+50), coffinPenalty: 1620 -> 1660 (+40), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:36.669Z] Simulación #513 [WIN]: 🏆 Victoria en Turno 197. Longitud máxima: 19. | Fitness: 6620 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 2.6 -> 2.65 (+0.05), edgePenalty: 50 -> 35 (-15), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1230 -> 1180 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:36.929Z] Simulación #514 [LOSS]: 🧱 Choque contra Pared en Turno 47 en (10,11). | Fitness: 900 | Cambios: wallSqueezePenalty: 1750 -> 1810 (+60), coffinPenalty: 1660 -> 1710 (+50), edgePenalty: 35 -> 65 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:37.121Z] Simulación #515 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 138. | Fitness: 2475 | Cambios: spaceWeight: 45 -> 47 (+2), tailBonus: 750 -> 780 (+30), voronoiWeight: 45 -> 47 (+2), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:37.237Z] Simulación #516 [LOSS]: 🧱 Choque contra Pared en Turno 71 en (0,11). | Fitness: 1365 | Cambios: wallSqueezePenalty: 1810 -> 1870 (+60), coffinPenalty: 1710 -> 1760 (+50), edgePenalty: 65 -> 95 (+30), partitionMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:37.394Z] Simulación #517 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 106 (Cuerpo Propio). | Fitness: 1855 | Cambios: deadEndPenalty: 1180 -> 1280 (+100), corridorPenalty: 390 -> 450 (+60), wallSqueezePenalty: 1870 -> 1920 (+50), coffinPenalty: 1760 -> 1800 (+40), coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T05:41:37.657Z] Simulación #518 [LOSS]: 💥 Choque Frontal en Turno 169 contra Mutante Muralla (Len: 11 vs 9). | Fitness: 2835 | Cambios: cutoffMultiplier: 2.65 -> 2.6 (-0.05)
+
+### 🕒 [2026-09-19T05:41:37.873Z] Simulación #519 [LOSS]: 💥 Choque Frontal en Turno 125 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 14 vs 12). | Fitness: 2280 | Cambios: cutoffMultiplier: 2.6 -> 2.55 (-0.05)
+
+### 🕒 [2026-09-19T05:41:38.036Z] Simulación #520 [WIN]: 🏆 Victoria en Turno 117. Longitud máxima: 13. | Fitness: 5210 | Cambios: partitionMultiplier: 3.9 -> 3.95 (+0.05), cutoffMultiplier: 2.55 -> 2.6 (+0.05), edgePenalty: 95 -> 80 (-15), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1280 -> 1230 (-50)
+
+### 🕒 [2026-09-19T05:41:38.092Z] Simulación #521 [WIN]: 🏆 Victoria en Turno 39. Longitud máxima: 5. | Fitness: 3760 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 2.6 -> 2.65 (+0.05), edgePenalty: 80 -> 65 (-15), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1230 -> 1180 (-50)
+
+### 🕒 [2026-09-19T05:41:38.209Z] Simulación #522 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 92 (Cuerpo Propio). | Fitness: 1750 | Cambios: deadEndPenalty: 1180 -> 1280 (+100), corridorPenalty: 390 -> 450 (+60), wallSqueezePenalty: 1920 -> 1970 (+50), coffinPenalty: 1800 -> 1840 (+40), coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T05:41:38.557Z] Simulación #523 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 246 (Mutante Glotón 👑 (Campeón Previo)). | Fitness: 4340 | Cambios: deadEndPenalty: 1280 -> 1380 (+100), corridorPenalty: 450 -> 510 (+60), wallSqueezePenalty: 1970 -> 2020 (+50), coffinPenalty: 1840 -> 1880 (+40), coilingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T05:41:38.651Z] Simulación #524 [LOSS]: 💥 Choque Frontal en Turno 49 contra Mutante Glotón 👑 (Campeón Previo) (Len: 8 vs 7). | Fitness: 965 | Cambios: cutoffMultiplier: 2.65 -> 2.6 (-0.05)
+
+### 🕒 [2026-09-19T05:41:39.050Z] Simulación #525 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 256. | Fitness: 4595 | Cambios: spaceWeight: 47 -> 49 (+2), tailBonus: 780 -> 810 (+30), voronoiWeight: 47 -> 49 (+2), coilingMultiplier: 1.05 -> 1 (-0.05)
+
+### 🕒 [2026-09-19T05:41:39.201Z] Simulación #526 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 172 (Cuerpo Propio). | Fitness: 3160 | Cambios: deadEndPenalty: 1380 -> 1480 (+100), corridorPenalty: 510 -> 570 (+60), wallSqueezePenalty: 2020 -> 2070 (+50), coffinPenalty: 1880 -> 1920 (+40), coilingMultiplier: 1 -> 0.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:39.328Z] Simulación #527 [WIN]: 🏆 Victoria en Turno 163. Longitud máxima: 15. | Fitness: 5970 | Cambios: cutoffMultiplier: 2.6 -> 2.65 (+0.05), edgePenalty: 65 -> 50 (-15), corridorPenalty: 570 -> 540 (-30), deadEndPenalty: 1480 -> 1430 (-50), coilingMultiplier: 0.95 -> 1 (+0.05)
+
+### 🕒 [2026-09-19T05:41:39.493Z] Simulación #528 [WIN]: 🏆 Victoria en Turno 118. Longitud máxima: 15. | Fitness: 5295 | Cambios: cutoffMultiplier: 2.65 -> 2.7 (+0.05), edgePenalty: 50 -> 35 (-15), corridorPenalty: 540 -> 510 (-30), deadEndPenalty: 1430 -> 1380 (-50), coilingMultiplier: 1 -> 1.05 (+0.05)
+
+### 🕒 [2026-09-19T05:41:39.530Z] Simulación #529 [WIN]: 🏆 Victoria en Turno 21. Longitud máxima: 5. | Fitness: 2690 | Cambios: cutoffMultiplier: 2.7 -> 2.75 (+0.05), edgePenalty: 35 -> 20 (-15), corridorPenalty: 510 -> 480 (-30), deadEndPenalty: 1380 -> 1330 (-50)
+
+### 🕒 [2026-09-19T05:41:39.812Z] Simulación #530 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 87. | Fitness: 1640 | Cambios: spaceWeight: 49 -> 51 (+2), tailBonus: 810 -> 840 (+30), voronoiWeight: 49 -> 51 (+2), coilingMultiplier: 1.05 -> 1 (-0.05)
+
+### 🕒 [2026-09-19T05:41:39.954Z] Simulación #531 [WIN]: 🏆 Victoria en Turno 102. Longitud máxima: 11. | Fitness: 4915 | Cambios: cutoffMultiplier: 2.75 -> 2.8 (+0.05), corridorPenalty: 480 -> 450 (-30), deadEndPenalty: 1330 -> 1280 (-50)
+
+### 🕒 [2026-09-19T05:41:40.244Z] Simulación #532 [WIN]: 🏆 Victoria en Turno 231. Longitud máxima: 22. | Fitness: 7235 | Cambios: cutoffMultiplier: 2.8 -> 2.85 (+0.05), corridorPenalty: 450 -> 420 (-30), deadEndPenalty: 1280 -> 1230 (-50), coilingMultiplier: 1 -> 1.05 (+0.05)
+
+### 🕒 [2026-09-19T05:41:40.379Z] Simulación #533 [WIN]: 🏆 Victoria en Turno 203. Longitud máxima: 17. | Fitness: 6640 | Cambios: cutoffMultiplier: 2.85 -> 2.9 (+0.05), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1230 -> 1180 (-50), coilingMultiplier: 1.05 -> 1.1 (+0.05)
+
+### 🕒 [2026-09-19T05:41:40.718Z] Simulación #534 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 304. | Fitness: 5385 | Cambios: spaceWeight: 51 -> 53 (+2), tailBonus: 840 -> 870 (+30), voronoiWeight: 51 -> 53 (+2), coilingMultiplier: 1.1 -> 1.05 (-0.05)
+
+### 🕒 [2026-09-19T05:41:41.005Z] Simulación #535 [WIN]: 🏆 Victoria en Turno 151. Longitud máxima: 10. | Fitness: 5615 | Cambios: cutoffMultiplier: 2.9 -> 2.95 (+0.05), corridorPenalty: 390 -> 360 (-30), deadEndPenalty: 1180 -> 1130 (-50)
+
+### 🕒 [2026-09-19T05:41:41.233Z] Simulación #536 [LOSS]: 💥 Choque Frontal en Turno 125 contra Mutante Muralla (Len: 15 vs 12). | Fitness: 2280 | Cambios: cutoffMultiplier: 2.95 -> 2.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:41.319Z] Simulación #537 [LOSS]: 💥 Choque Frontal en Turno 44 contra Mutante Muralla 👑 (Campeón Previo) (Len: 7 vs 5). | Fitness: 820 | Cambios: cutoffMultiplier: 2.9 -> 2.85 (-0.05)
+
+### 🕒 [2026-09-19T05:41:41.611Z] Simulación #538 [WIN]: 🏆 Victoria en Turno 214. Longitud máxima: 18. | Fitness: 6840 | Cambios: cutoffMultiplier: 2.85 -> 2.9 (+0.05), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1130 -> 1080 (-50), coilingMultiplier: 1.05 -> 1.1 (+0.05)
+
+### 🕒 [2026-09-19T05:41:41.784Z] Simulación #539 [WIN]: 🏆 Victoria en Turno 117. Longitud máxima: 12. | Fitness: 5175 | Cambios: cutoffMultiplier: 2.9 -> 2.95 (+0.05), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1080 -> 1030 (-50)
+
+### 🕒 [2026-09-19T05:41:42.067Z] Simulación #540 [WIN]: 🏆 Victoria en Turno 197. Longitud máxima: 16. | Fitness: 6515 | Cambios: cutoffMultiplier: 2.95 -> 3 (+0.05), deadEndPenalty: 1030 -> 1000 (-30), coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T05:41:42.105Z] Simulación #541 [WIN]: 🏆 Victoria en Turno 21. Longitud máxima: 5. | Fitness: 2690 | Cambios: cutoffMultiplier: 3 -> 3.05 (+0.05)
+
+### 🕒 [2026-09-19T05:41:42.273Z] Simulación #542 [WIN]: 🏆 Victoria en Turno 121. Longitud máxima: 12. | Fitness: 5235 | Cambios: cutoffMultiplier: 3.05 -> 3.1 (+0.05)
+
+### 🕒 [2026-09-19T05:41:42.318Z] Simulación #543 [LOSS]: 💥 Choque Frontal en Turno 38 contra Cascabel v41 (Glotón Rusher) (Len: 7 vs 5). | Fitness: 730 | Cambios: cutoffMultiplier: 3.1 -> 3.05 (-0.05)
+
+### 🕒 [2026-09-19T05:41:42.599Z] Simulación #544 [WIN]: 🏆 Victoria en Turno 232. Longitud máxima: 19. | Fitness: 7145 | Cambios: cutoffMultiplier: 3.05 -> 3.1 (+0.05), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:41:42.700Z] Simulación #545 [LOSS]: 💥 Choque Frontal en Turno 71 contra Mutante Muralla (Len: 7 vs 6). | Fitness: 1260 | Cambios: cutoffMultiplier: 3.1 -> 3.05 (-0.05)
+
+### 🕒 [2026-09-19T05:41:42.931Z] Simulación #546 [LOSS]: 💥 Choque Frontal en Turno 134 contra Cascabel v41 (Glotón Rusher) (Len: 19 vs 11). | Fitness: 2380 | Cambios: cutoffMultiplier: 3.05 -> 3 (-0.05)
+
+### 🕒 [2026-09-19T05:41:43.207Z] Simulación #547 [LOSS]: 💥 Choque Frontal en Turno 168 contra Mutante Muralla 👑 (Campeón Previo) (Len: 13 vs 12). | Fitness: 2925 | Cambios: cutoffMultiplier: 3 -> 2.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:43.566Z] Simulación #548 [LOSS]: 💥 Choque Frontal en Turno 134 contra Mutante Muralla 👑 (Campeón Previo) (Len: 16 vs 11). | Fitness: 2380 | Cambios: cutoffMultiplier: 2.95 -> 2.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:43.874Z] Simulación #549 [WIN]: 🏆 Victoria en Turno 212. Longitud máxima: 18. | Fitness: 6810 | Cambios: cutoffMultiplier: 2.9 -> 2.95 (+0.05), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:43.986Z] Simulación #550 [LOSS]: 💥 Choque Frontal en Turno 51 contra Mutante Muralla (Len: 7 vs 5). | Fitness: 925 | Cambios: cutoffMultiplier: 2.95 -> 2.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:44.245Z] Simulación #551 [WIN]: 🏆 Victoria en Turno 49. Longitud máxima: 7. | Fitness: 3980 | Cambios: cutoffMultiplier: 2.9 -> 2.95 (+0.05)
+
+### 🕒 [2026-09-19T05:41:44.392Z] Simulación #552 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 78 (Mutante Glotón). | Fitness: 1470 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2070 -> 2120 (+50), coffinPenalty: 1920 -> 1960 (+40), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:44.620Z] Simulación #553 [WIN]: 🏆 Victoria en Turno 135. Longitud máxima: 11. | Fitness: 5410 | Cambios: cutoffMultiplier: 2.95 -> 3 (+0.05), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50)
+
+### 🕒 [2026-09-19T05:41:44.893Z] Simulación #554 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 209. | Fitness: 3750 | Cambios: spaceWeight: 53 -> 55 (+2), tailBonus: 870 -> 900 (+30), voronoiWeight: 53 -> 55 (+2), coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T05:41:45.257Z] Simulación #555 [LOSS]: 💥 Choque Frontal en Turno 225 contra Mutante Aleatorio 👑 (Campeón Previo) (Len: 19 vs 17). | Fitness: 3955 | Cambios: cutoffMultiplier: 3 -> 2.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:45.450Z] Simulación #556 [WIN]: 🏆 Victoria en Turno 121. Longitud máxima: 11. | Fitness: 5200 | Cambios: cutoffMultiplier: 2.95 -> 3 (+0.05), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50)
+
+### 🕒 [2026-09-19T05:41:45.497Z] Simulación #557 [WIN]: 🏆 Victoria en Turno 27. Longitud máxima: 5. | Fitness: 2780 | Cambios: cutoffMultiplier: 3 -> 3.05 (+0.05)
+
+### 🕒 [2026-09-19T05:41:45.663Z] Simulación #558 [WIN]: 🏆 Victoria en Turno 161. Longitud máxima: 18. | Fitness: 6045 | Cambios: cutoffMultiplier: 3.05 -> 3.1 (+0.05), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:41:45.765Z] Simulación #559 [WIN]: 🏆 Victoria en Turno 104. Longitud máxima: 8. | Fitness: 4840 | Cambios: cutoffMultiplier: 3.1 -> 3.15 (+0.05)
+
+### 🕒 [2026-09-19T05:41:45.913Z] Simulación #560 [LOSS]: 💥 Choque Frontal en Turno 101 contra Cascabel v41 (Glotón Rusher) (Len: 15 vs 11). | Fitness: 1885 | Cambios: cutoffMultiplier: 3.15 -> 3.1 (-0.05)
+
+### 🕒 [2026-09-19T05:41:45.966Z] Simulación #561 [DRAW]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 25. | Fitness: 735 | Cambios: spaceWeight: 55 -> 57 (+2), tailBonus: 900 -> 930 (+30), voronoiWeight: 55 -> 57 (+2), coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T05:41:46.248Z] Simulación #562 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 189 (Cuerpo Propio). | Fitness: 3520 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2120 -> 2170 (+50), coffinPenalty: 1960 -> 2000 (+40), coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T05:41:46.444Z] Simulación #563 [LOSS]: 💥 Choque Frontal en Turno 138 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 14 vs 13). | Fitness: 2510 | Cambios: cutoffMultiplier: 3.1 -> 3.05 (-0.05)
+
+### 🕒 [2026-09-19T05:41:46.610Z] Simulación #564 [WIN]: 🏆 Victoria en Turno 96. Longitud máxima: 11. | Fitness: 4825 | Cambios: cutoffMultiplier: 3.05 -> 3.1 (+0.05), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50)
+
+### 🕒 [2026-09-19T05:41:46.765Z] Simulación #565 [WIN]: 🏆 Victoria en Turno 119. Longitud máxima: 11. | Fitness: 5170 | Cambios: cutoffMultiplier: 3.1 -> 3.15 (+0.05), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50)
+
+### 🕒 [2026-09-19T05:41:46.939Z] Simulación #566 [WIN]: 🏆 Victoria en Turno 133. Longitud máxima: 15. | Fitness: 5520 | Cambios: cutoffMultiplier: 3.15 -> 3.2 (+0.05), coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T05:41:46.989Z] Simulación #567 [WIN]: 🏆 Victoria en Turno 43. Longitud máxima: 7. | Fitness: 3890 | Cambios: cutoffMultiplier: 3.2 -> 3.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:47.356Z] Simulación #568 [WIN]: 🏆 Victoria en Turno 270. Longitud máxima: 18. | Fitness: 7680 | Cambios: cutoffMultiplier: 3.25 -> 3.3 (+0.05), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:41:47.718Z] Simulación #569 [WIN]: 🏆 Victoria en Turno 245. Longitud máxima: 18. | Fitness: 7305 | Cambios: cutoffMultiplier: 3.3 -> 3.35 (+0.05), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:47.996Z] Simulación #570 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 15. | Fitness: 0 | Cambios: spaceWeight: 57 -> 59 (+2), tailBonus: 930 -> 960 (+30), voronoiWeight: 57 -> 59 (+2), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:41:48.224Z] Simulación #571 [LOSS]: 💥 Choque Frontal en Turno 133 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 12 vs 10). | Fitness: 2330 | Cambios: cutoffMultiplier: 3.35 -> 3.3 (-0.05)
+
+### 🕒 [2026-09-19T05:41:48.342Z] Simulación #572 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 25 en (10,10). | Fitness: 0 | Cambios: cornerPocketPenalty: 1000 -> 1040 (+40), cornerPenalty: 100 -> 125 (+25), deadEndPenalty: 1000 -> 1080 (+80)
+
+### 🕒 [2026-09-19T05:41:48.559Z] Simulación #573 [DRAW]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 129. | Fitness: 3410 | Cambios: spaceWeight: 59 -> 61 (+2), tailBonus: 960 -> 990 (+30), voronoiWeight: 59 -> 61 (+2), coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T05:41:48.812Z] Simulación #574 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 202 (Cuerpo Propio). | Fitness: 3645 | Cambios: deadEndPenalty: 1080 -> 1180 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2170 -> 2220 (+50), coffinPenalty: 2000 -> 2040 (+40), coilingMultiplier: 1.15 -> 1.1 (-0.05)
+
+### 🕒 [2026-09-19T05:41:49.110Z] Simulación #575 [WIN]: 🏆 Victoria en Turno 193. Longitud máxima: 18. | Fitness: 6525 | Cambios: cutoffMultiplier: 3.3 -> 3.35 (+0.05), cornerPenalty: 125 -> 105 (-20), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1180 -> 1130 (-50), coilingMultiplier: 1.1 -> 1.15 (+0.05)
+
+### 🕒 [2026-09-19T05:41:49.262Z] Simulación #576 [WIN]: 🏆 Victoria en Turno 105. Longitud máxima: 17. | Fitness: 5170 | Cambios: cutoffMultiplier: 3.35 -> 3.4 (+0.05), cornerPenalty: 105 -> 100 (-5), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1130 -> 1080 (-50), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:41:49.531Z] Simulación #577 [LOSS]: 💥 Choque Frontal en Turno 192 contra Mutante Muralla (Len: 19 vs 16). | Fitness: 3425 | Cambios: cutoffMultiplier: 3.4 -> 3.35 (-0.05)
+
+### 🕒 [2026-09-19T05:41:49.780Z] Simulación #578 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 75 (Cuerpo Propio). | Fitness: 1355 | Cambios: deadEndPenalty: 1080 -> 1180 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2220 -> 2270 (+50), coffinPenalty: 2040 -> 2080 (+40), coilingMultiplier: 1.2 -> 1.15 (-0.05)
+
+### 🕒 [2026-09-19T05:41:50.122Z] Simulación #579 [WIN]: 🏆 Victoria en Turno 249. Longitud máxima: 21. | Fitness: 7470 | Cambios: cutoffMultiplier: 3.35 -> 3.4 (+0.05), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1180 -> 1130 (-50), coilingMultiplier: 1.15 -> 1.2 (+0.05)
+
+### 🕒 [2026-09-19T05:41:50.494Z] Simulación #580 [WIN]: 🏆 Victoria en Turno 294. Longitud máxima: 29. | Fitness: 8425 | Cambios: cutoffMultiplier: 3.4 -> 3.45 (+0.05), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1130 -> 1080 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T05:41:50.688Z] Simulación #581 [WIN]: 🏆 Victoria en Turno 135. Longitud máxima: 12. | Fitness: 5445 | Cambios: cutoffMultiplier: 3.45 -> 3.5 (+0.05), deadEndPenalty: 1080 -> 1030 (-50)
+
+### 🕒 [2026-09-19T05:41:50.953Z] Simulación #582 [WIN]: 🏆 Victoria en Turno 163. Longitud máxima: 16. | Fitness: 6005 | Cambios: cutoffMultiplier: 3.5 -> 3.55 (+0.05), deadEndPenalty: 1030 -> 1000 (-30), coilingMultiplier: 1.25 -> 1.3 (+0.05)
+
+### 🕒 [2026-09-19T05:41:51.334Z] Simulación #583 [WIN]: 🏆 Victoria en Turno 324. Longitud máxima: 26. | Fitness: 8770 | Cambios: cutoffMultiplier: 3.55 -> 3.6 (+0.05), coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T05:41:51.505Z] Simulación #584 [WIN]: 🏆 Victoria en Turno 101. Longitud máxima: 16. | Fitness: 5075 | Cambios: cutoffMultiplier: 3.6 -> 3.65 (+0.05), coilingMultiplier: 1.35 -> 1.4 (+0.05)
+
+### 🕒 [2026-09-19T05:41:51.729Z] Simulación #585 [LOSS]: 💥 Choque Frontal en Turno 180 contra Mutante Defensivo (Len: 19 vs 18). | Fitness: 3315 | Cambios: cutoffMultiplier: 3.65 -> 3.6 (-0.05)
+
+### 🕒 [2026-09-19T05:41:52.028Z] Simulación #586 [WIN]: 🏆 Victoria en Turno 138. Longitud máxima: 16. | Fitness: 5630 | Cambios: cutoffMultiplier: 3.6 -> 3.65 (+0.05), coilingMultiplier: 1.4 -> 1.45 (+0.05)
+
+### 🕒 [2026-09-19T05:41:52.105Z] Simulación #587 [WIN]: 🏆 Victoria en Turno 42. Longitud máxima: 6. | Fitness: 3840 | Cambios: cutoffMultiplier: 3.65 -> 3.7 (+0.05)
+
+### 🕒 [2026-09-19T05:41:52.421Z] Simulación #588 [WIN]: 🏆 Victoria en Turno 183. Longitud máxima: 15. | Fitness: 6270 | Cambios: cutoffMultiplier: 3.7 -> 3.75 (+0.05), coilingMultiplier: 1.45 -> 1.5 (+0.05)
+
+### 🕒 [2026-09-19T05:41:52.528Z] Simulación #589 [WIN]: 🏆 Victoria en Turno 63. Longitud máxima: 9. | Fitness: 4260 | Cambios: cutoffMultiplier: 3.75 -> 3.8 (+0.05)
+
+### 🕒 [2026-09-19T05:41:52.829Z] Simulación #590 [WIN]: 🏆 Victoria en Turno 217. Longitud máxima: 17. | Fitness: 6850 | Cambios: cutoffMultiplier: 3.8 -> 3.85 (+0.05), coilingMultiplier: 1.5 -> 1.55 (+0.05)
+
+### 🕒 [2026-09-19T05:41:53.053Z] Simulación #591 [WIN]: 🏆 Victoria en Turno 147. Longitud máxima: 10. | Fitness: 5555 | Cambios: cutoffMultiplier: 3.85 -> 3.9 (+0.05)
+
+### 🕒 [2026-09-19T05:41:53.259Z] Simulación #592 [WIN]: 🏆 Victoria en Turno 168. Longitud máxima: 16. | Fitness: 6080 | Cambios: cutoffMultiplier: 3.9 -> 3.95 (+0.05), coilingMultiplier: 1.55 -> 1.6 (+0.05)
+
+### 🕒 [2026-09-19T05:41:53.433Z] Simulación #593 [WIN]: 🏆 Victoria en Turno 110. Longitud máxima: 10. | Fitness: 5000 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05)
+
+### 🕒 [2026-09-19T05:41:53.621Z] Simulación #594 [LOSS]: 💥 Choque Frontal en Turno 146 contra Mutante Muralla (Len: 15 vs 10). | Fitness: 2525 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:53.805Z] Simulación #595 [WIN]: 🏆 Victoria en Turno 131. Longitud máxima: 14. | Fitness: 5455 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), coilingMultiplier: 1.6 -> 1.65 (+0.05)
+
+### 🕒 [2026-09-19T05:41:54.112Z] Simulación #596 [LOSS]: 💥 Choque Frontal en Turno 229 contra Mutante Agresivo (Len: 19 vs 18). | Fitness: 4050 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:54.296Z] Simulación #597 [LOSS]: 💥 Choque Frontal en Turno 121 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 10 vs 9). | Fitness: 2115 | Cambios: cutoffMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:54.578Z] Simulación #598 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 68 (Mutante Agresivo 👑 (Campeón Previo)). | Fitness: 1215 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2270 -> 2320 (+50), coffinPenalty: 2080 -> 2120 (+40), coilingMultiplier: 1.65 -> 1.6 (-0.05)
+
+### 🕒 [2026-09-19T05:41:54.768Z] Simulación #599 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 127 (Mutante Agresivo 👑 (Campeón Previo)). | Fitness: 2380 | Cambios: deadEndPenalty: 1100 -> 1200 (+100), corridorPenalty: 360 -> 420 (+60), wallSqueezePenalty: 2320 -> 2370 (+50), coffinPenalty: 2120 -> 2160 (+40), coilingMultiplier: 1.6 -> 1.55 (-0.05)
+
+### 🕒 [2026-09-19T05:41:54.900Z] Simulación #600 [WIN]: 🏆 Victoria en Turno 91. Longitud máxima: 10. | Fitness: 4715 | Cambios: cutoffMultiplier: 3.9 -> 3.95 (+0.05), corridorPenalty: 420 -> 390 (-30), deadEndPenalty: 1200 -> 1150 (-50)
+
+### 🕒 [2026-09-19T05:41:54.929Z] Simulación #601 [WIN]: 🏆 Victoria en Turno 17. Longitud máxima: 4. | Fitness: 2595 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), corridorPenalty: 390 -> 360 (-30), deadEndPenalty: 1150 -> 1100 (-50)
+
+### 🕒 [2026-09-19T05:41:55.163Z] Simulación #602 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 169. | Fitness: 3045 | Cambios: spaceWeight: 61 -> 63 (+2), tailBonus: 990 -> 1020 (+30), voronoiWeight: 61 -> 63 (+2), coilingMultiplier: 1.55 -> 1.5 (-0.05)
+
+### 🕒 [2026-09-19T05:41:55.359Z] Simulación #603 [LOSS]: 💥 Choque Frontal en Turno 127 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 14 vs 13). | Fitness: 2345 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:55.594Z] Simulación #604 [WIN]: 🏆 Victoria en Turno 147. Longitud máxima: 12. | Fitness: 5625 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50)
+
+### 🕒 [2026-09-19T05:41:55.658Z] Simulación #605 [WIN]: 🏆 Victoria en Turno 39. Longitud máxima: 6. | Fitness: 3795 | Cambios: corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50)
+
+### 🕒 [2026-09-19T05:41:55.770Z] Simulación #606 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 13. | Fitness: 0 | Cambios: spaceWeight: 63 -> 65 (+2), tailBonus: 1020 -> 1050 (+30), voronoiWeight: 63 -> 65 (+2), coilingMultiplier: 1.5 -> 1.45 (-0.05)
+
+### 🕒 [2026-09-19T05:41:55.913Z] Simulación #607 [WIN]: 🏆 Victoria en Turno 82. Longitud máxima: 7. | Fitness: 4475 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:41:56.206Z] Simulación #608 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 165. | Fitness: 2845 | Cambios: spaceWeight: 65 -> 67 (+2), tailBonus: 1050 -> 1080 (+30), voronoiWeight: 65 -> 67 (+2), coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T05:41:56.385Z] Simulación #609 [WIN]: 🏆 Victoria en Turno 123. Longitud máxima: 11. | Fitness: 5230 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:41:57.045Z] Simulación #610 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 126. | Fitness: 2190 | Cambios: spaceWeight: 67 -> 69 (+2), tailBonus: 1080 -> 1110 (+30), voronoiWeight: 67 -> 69 (+2), coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T05:41:57.317Z] Simulación #611 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 176 (Cuerpo Propio). | Fitness: 3185 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2370 -> 2420 (+50), coffinPenalty: 2160 -> 2200 (+40), coilingMultiplier: 1.35 -> 1.3 (-0.05)
+
+### 🕒 [2026-09-19T05:41:57.645Z] Simulación #612 [WIN]: 🏆 Victoria en Turno 251. Longitud máxima: 21. | Fitness: 7500 | Cambios: corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50), coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T05:41:57.918Z] Simulación #613 [WIN]: 🏆 Victoria en Turno 169. Longitud máxima: 13. | Fitness: 5990 | Cambios: corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50)
+
+### 🕒 [2026-09-19T05:41:58.100Z] Simulación #614 [LOSS]: 💥 Choque Frontal en Turno 109 contra Mutante Defensivo (Len: 12 vs 11). | Fitness: 2005 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:41:58.487Z] Simulación #615 [LOSS]: 💥 Choque Frontal en Turno 258 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 20 vs 19). | Fitness: 4520 | Cambios: cutoffMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:58.778Z] Simulación #616 [WIN]: 🏆 Victoria en Turno 174. Longitud máxima: 16. | Fitness: 6170 | Cambios: cutoffMultiplier: 3.9 -> 3.95 (+0.05), coilingMultiplier: 1.35 -> 1.4 (+0.05)
+
+### 🕒 [2026-09-19T05:41:58.862Z] Simulación #617 [LOSS]: 💥 Choque Frontal en Turno 60 contra Cascabel v102 (Coiling) (Len: 8 vs 7). | Fitness: 1130 | Cambios: cutoffMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:41:58.966Z] Simulación #618 [LOSS]: 💥 Choque Frontal en Turno 47 contra Cascabel v41 (Glotón Rusher) (Len: 7 vs 6). | Fitness: 900 | Cambios: cutoffMultiplier: 3.9 -> 3.85 (-0.05)
+
+### 🕒 [2026-09-19T05:41:59.000Z] Simulación #619 [WIN]: 🏆 Victoria en Turno 17. Longitud máxima: 4. | Fitness: 2595 | Cambios: cutoffMultiplier: 3.85 -> 3.9 (+0.05)
+
+### 🕒 [2026-09-19T05:41:59.268Z] Simulación #620 [WIN]: 🏆 Victoria en Turno 157. Longitud máxima: 10. | Fitness: 5705 | Cambios: cutoffMultiplier: 3.9 -> 3.95 (+0.05)
+
+### 🕒 [2026-09-19T05:41:59.410Z] Simulación #621 [WIN]: 🏆 Victoria en Turno 111. Longitud máxima: 12. | Fitness: 5085 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05)
+
+### 🕒 [2026-09-19T05:41:59.699Z] Simulación #622 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 109 (Cuerpo Propio). | Fitness: 2040 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2420 -> 2470 (+50), coffinPenalty: 2200 -> 2240 (+40), coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T05:41:59.992Z] Simulación #623 [WIN]: 🏆 Victoria en Turno 182. Longitud máxima: 22. | Fitness: 6500 | Cambios: corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50), coilingMultiplier: 1.35 -> 1.4 (+0.05)
+
+### 🕒 [2026-09-19T05:42:00.258Z] Simulación #624 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 194 (Cuerpo Propio). | Fitness: 3595 | Cambios: deadEndPenalty: 1050 -> 1150 (+100), corridorPenalty: 330 -> 390 (+60), wallSqueezePenalty: 2470 -> 2520 (+50), coffinPenalty: 2240 -> 2280 (+40), coilingMultiplier: 1.4 -> 1.35 (-0.05)
+
+### 🕒 [2026-09-19T05:42:00.393Z] Simulación #625 [LOSS]: 💥 Choque Frontal en Turno 62 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 8 vs 7). | Fitness: 1160 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:00.571Z] Simulación #626 [WIN]: 🏆 Victoria en Turno 97. Longitud máxima: 10. | Fitness: 4805 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), corridorPenalty: 390 -> 360 (-30), deadEndPenalty: 1150 -> 1100 (-50)
+
+### 🕒 [2026-09-19T05:42:00.900Z] Simulación #627 [WIN]: 🏆 Victoria en Turno 197. Longitud máxima: 18. | Fitness: 6585 | Cambios: corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50), coilingMultiplier: 1.35 -> 1.4 (+0.05)
+
+### 🕒 [2026-09-19T05:42:01.344Z] Simulación #628 [WIN]: 🏆 Victoria en Turno 213. Longitud máxima: 17. | Fitness: 6790 | Cambios: corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50), coilingMultiplier: 1.4 -> 1.45 (+0.05)
+
+### 🕒 [2026-09-19T05:42:01.966Z] Simulación #629 [LOSS]: 💥 Choque Frontal en Turno 210 contra Mutante Agresivo (Len: 18 vs 17). | Fitness: 3730 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:02.182Z] Simulación #630 [WIN]: 🏆 Victoria en Turno 105. Longitud máxima: 11. | Fitness: 4960 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05)
+
+### 🕒 [2026-09-19T05:42:02.639Z] Simulación #631 [WIN]: 🏆 Victoria en Turno 334. Longitud máxima: 25. | Fitness: 8885 | Cambios: coilingMultiplier: 1.45 -> 1.5 (+0.05)
+
+### 🕒 [2026-09-19T05:42:03.049Z] Simulación #632 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 65 en (0,10). | Fitness: 1240 | Cambios: cornerPocketPenalty: 1040 -> 1080 (+40), cornerPenalty: 100 -> 125 (+25), deadEndPenalty: 1000 -> 1080 (+80)
+
+### 🕒 [2026-09-19T05:42:03.197Z] Simulación #633 [WIN]: 🏆 Victoria en Turno 97. Longitud máxima: 10. | Fitness: 4805 | Cambios: cornerPenalty: 125 -> 105 (-20), deadEndPenalty: 1080 -> 1030 (-50)
+
+### 🕒 [2026-09-19T05:42:03.279Z] Simulación #634 [LOSS]: 💥 Choque Frontal en Turno 49 contra Mutante Muralla (Len: 7 vs 6). | Fitness: 930 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:03.409Z] Simulación #635 [WIN]: 🏆 Victoria en Turno 79. Longitud máxima: 7. | Fitness: 4430 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), cornerPenalty: 105 -> 100 (-5), deadEndPenalty: 1030 -> 1000 (-30)
+
+### 🕒 [2026-09-19T05:42:03.709Z] Simulación #636 [LOSS]: 💥 Choque Frontal en Turno 71 contra Cascabel v41 (Glotón Rusher) (Len: 12 vs 9). | Fitness: 1365 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:03.814Z] Simulación #637 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 112 (Cuerpo Propio). | Fitness: 2085 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2520 -> 2570 (+50), coffinPenalty: 2280 -> 2320 (+40), coilingMultiplier: 1.5 -> 1.45 (-0.05)
+
+### 🕒 [2026-09-19T05:42:03.941Z] Simulación #638 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 35. | Fitness: 650 | Cambios: spaceWeight: 69 -> 71 (+2), tailBonus: 1110 -> 1140 (+30), voronoiWeight: 69 -> 71 (+2), coilingMultiplier: 1.45 -> 1.4 (-0.05)
+
+### 🕒 [2026-09-19T05:42:04.079Z] Simulación #639 [WIN]: 🏆 Victoria en Turno 113. Longitud máxima: 13. | Fitness: 5150 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50)
+
+### 🕒 [2026-09-19T05:42:04.327Z] Simulación #640 [WIN]: 🏆 Victoria en Turno 183. Longitud máxima: 11. | Fitness: 6130 | Cambios: corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50)
+
+### 🕒 [2026-09-19T05:42:04.494Z] Simulación #641 [WIN]: 🏆 Victoria en Turno 147. Longitud máxima: 14. | Fitness: 5695 | Cambios: coilingMultiplier: 1.4 -> 1.45 (+0.05)
+
+### 🕒 [2026-09-19T05:42:04.615Z] Simulación #642 [WIN]: 🏆 Victoria en Turno 99. Longitud máxima: 13. | Fitness: 4940 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:04.695Z] Simulación #643 [WIN]: 🏆 Victoria en Turno 63. Longitud máxima: 7. | Fitness: 4190 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:04.924Z] Simulación #644 [WIN]: 🏆 Victoria en Turno 171. Longitud máxima: 17. | Fitness: 6160 | Cambios: coilingMultiplier: 1.45 -> 1.5 (+0.05)
+
+### 🕒 [2026-09-19T05:42:05.232Z] Simulación #645 [WIN]: 🏆 Victoria en Turno 194. Longitud máxima: 16. | Fitness: 6470 | Cambios: coilingMultiplier: 1.5 -> 1.55 (+0.05)
+
+### 🕒 [2026-09-19T05:42:05.436Z] Simulación #646 [LOSS]: 💥 Choque Frontal en Turno 59 contra Mutante Defensivo (Len: 10 vs 8). | Fitness: 1150 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:05.784Z] Simulación #647 [WIN]: 🏆 Victoria en Turno 239. Longitud máxima: 21. | Fitness: 7320 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), coilingMultiplier: 1.55 -> 1.6 (+0.05)
+
+### 🕒 [2026-09-19T05:42:06.007Z] Simulación #648 [WIN]: 🏆 Victoria en Turno 131. Longitud máxima: 13. | Fitness: 5420 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:06.260Z] Simulación #649 [LOSS]: 💥 Choque Frontal en Turno 185 contra Mutante Defensivo (Len: 18 vs 17). | Fitness: 3355 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:06.634Z] Simulación #650 [LOSS]: 💥 Choque Frontal en Turno 257 contra Mutante Defensivo 👑 (Campeón Previo) (Len: 24 vs 15). | Fitness: 4365 | Cambios: cutoffMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:42:06.904Z] Simulación #651 [WIN]: 🏆 Victoria en Turno 190. Longitud máxima: 18. | Fitness: 6480 | Cambios: cutoffMultiplier: 3.9 -> 3.95 (+0.05), coilingMultiplier: 1.6 -> 1.65 (+0.05)
+
+### 🕒 [2026-09-19T05:42:07.277Z] Simulación #652 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 312. | Fitness: 5575 | Cambios: spaceWeight: 71 -> 73 (+2), tailBonus: 1140 -> 1170 (+30), voronoiWeight: 71 -> 73 (+2), coilingMultiplier: 1.65 -> 1.6 (-0.05)
+
+### 🕒 [2026-09-19T05:42:07.576Z] Simulación #653 [WIN]: 🏆 Victoria en Turno 156. Longitud máxima: 13. | Fitness: 5795 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05)
+
+### 🕒 [2026-09-19T05:42:07.902Z] Simulación #654 [LOSS]: 💥 Choque Frontal en Turno 261 contra Mutante Defensivo (Len: 22 vs 21). | Fitness: 4635 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:08.097Z] Simulación #655 [LOSS]: 🪤 Muerte por Falta de Espacio o Asfixia en Turno 146. | Fitness: 2770 | Cambios: spaceWeight: 73 -> 75 (+2), tailBonus: 1170 -> 1200 (+30), voronoiWeight: 73 -> 75 (+2), coilingMultiplier: 1.6 -> 1.55 (-0.05)
+
+### 🕒 [2026-09-19T05:42:08.214Z] Simulación #656 [LOSS]: 💥 Choque Frontal en Turno 22 contra Cascabel v41 (Glotón Rusher) (Len: 5 vs 4). | Fitness: 0 | Cambios: cutoffMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:42:08.496Z] Simulación #657 [WIN]: 🏆 Victoria en Turno 176. Longitud máxima: 13. | Fitness: 6095 | Cambios: cutoffMultiplier: 3.9 -> 3.95 (+0.05)
+
+### 🕒 [2026-09-19T05:42:08.712Z] Simulación #658 [LOSS]: 💥 Choque Frontal en Turno 117 contra Mutante Defensivo (Len: 13 vs 11). | Fitness: 2125 | Cambios: cutoffMultiplier: 3.95 -> 3.9 (-0.05)
+
+### 🕒 [2026-09-19T05:42:08.958Z] Simulación #659 [LOSS]: 🧱 Choque contra Pared en Turno 170 en (3,11). | Fitness: 3060 | Cambios: wallSqueezePenalty: 2570 -> 2630 (+60), coffinPenalty: 2320 -> 2370 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:09.239Z] Simulación #660 [WIN]: 🏆 Victoria en Turno 199. Longitud máxima: 20. | Fitness: 6685 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 3.9 -> 3.95 (+0.05), edgePenalty: 50 -> 35 (-15), coilingMultiplier: 1.55 -> 1.6 (+0.05)
+
+### 🕒 [2026-09-19T05:42:09.320Z] Simulación #661 [WIN]: 🏆 Victoria en Turno 89. Longitud máxima: 10. | Fitness: 4685 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), edgePenalty: 35 -> 20 (-15)
+
+### 🕒 [2026-09-19T05:42:09.516Z] Simulación #662 [WIN]: 🏆 Victoria en Turno 169. Longitud máxima: 12. | Fitness: 5955 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:09.964Z] Simulación #663 [WIN]: 🏆 Victoria en Turno 198. Longitud máxima: 19. | Fitness: 6635 | Cambios: coilingMultiplier: 1.6 -> 1.65 (+0.05)
+
+### 🕒 [2026-09-19T05:42:10.094Z] Simulación #664 [WIN]: 🏆 Victoria en Turno 91. Longitud máxima: 10. | Fitness: 4715 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:10.147Z] Simulación #665 [WIN]: 🏆 Victoria en Turno 29. Longitud máxima: 5. | Fitness: 2810 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:10.405Z] Simulación #666 [WIN]: 🏆 Victoria en Turno 201. Longitud máxima: 13. | Fitness: 6470 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:10.465Z] Simulación #667 [WIN]: 🏆 Victoria en Turno 39. Longitud máxima: 5. | Fitness: 3760 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:10.622Z] Simulación #668 [LOSS]: 💥 Choque Frontal en Turno 139 contra Cascabel v41 (Glotón Rusher) (Len: 19 vs 13). | Fitness: 2525 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:10.678Z] Simulación #669 [LOSS]: 🧱 Choque contra Pared en Turno 72 en (1,11). | Fitness: 1310 | Cambios: wallSqueezePenalty: 2630 -> 2690 (+60), coffinPenalty: 2370 -> 2420 (+50), edgePenalty: 20 -> 50 (+30), partitionMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:10.796Z] Simulación #670 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 74 (Mutante Aleatorio). | Fitness: 1340 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2690 -> 2740 (+50), coffinPenalty: 2420 -> 2460 (+40), coilingMultiplier: 1.65 -> 1.6 (-0.05)
+
+### 🕒 [2026-09-19T05:42:11.121Z] Simulación #671 [WIN]: 🏆 Victoria en Turno 253. Longitud máxima: 24. | Fitness: 7635 | Cambios: partitionMultiplier: 3.95 -> 4 (+0.05), cutoffMultiplier: 3.95 -> 4 (+0.05), edgePenalty: 50 -> 35 (-15), corridorPenalty: 360 -> 330 (-30), deadEndPenalty: 1100 -> 1050 (-50), coilingMultiplier: 1.6 -> 1.65 (+0.05)
+
+### 🕒 [2026-09-19T05:42:11.304Z] Simulación #672 [LOSS]: 💥 Choque Frontal en Turno 112 contra Cascabel v41 (Glotón Rusher) (Len: 15 vs 11). | Fitness: 2050 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:11.415Z] Simulación #673 [WIN]: 🏆 Victoria en Turno 138. Longitud máxima: 18. | Fitness: 5700 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), edgePenalty: 35 -> 20 (-15), corridorPenalty: 330 -> 300 (-30), deadEndPenalty: 1050 -> 1000 (-50), coilingMultiplier: 1.65 -> 1.7 (+0.05)
+
+### 🕒 [2026-09-19T05:42:11.608Z] Simulación #674 [WIN]: 🏆 Victoria en Turno 125. Longitud máxima: 13. | Fitness: 5330 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:11.680Z] Simulación #675 [WIN]: 🏆 Victoria en Turno 57. Longitud máxima: 7. | Fitness: 4100 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:11.891Z] Simulación #676 [WIN]: 🏆 Victoria en Turno 230. Longitud máxima: 22. | Fitness: 7220 | Cambios: coilingMultiplier: 1.7 -> 1.75 (+0.05)
+
+### 🕒 [2026-09-19T05:42:11.962Z] Simulación #677 [LOSS]: 💥 Choque Frontal en Turno 39 contra Mutante Glotón (Len: 6 vs 4). | Fitness: 710 | Cambios: cutoffMultiplier: 4 -> 3.95 (-0.05)
+
+### 🕒 [2026-09-19T05:42:12.226Z] Simulación #678 [WIN]: 🏆 Victoria en Turno 173. Longitud máxima: 16. | Fitness: 6155 | Cambios: cutoffMultiplier: 3.95 -> 4 (+0.05), coilingMultiplier: 1.75 -> 1.8 (+0.05)
+
+### 🕒 [2026-09-19T05:42:12.351Z] Simulación #679 [WIN]: 🏆 Victoria en Turno 97. Longitud máxima: 9. | Fitness: 4770 | Cambios: Sin cambios
+
+### 🕒 [2026-09-19T05:42:12.659Z] Simulación #680 [LOSS]: 🚗 Impacto contra Cuerpo en Turno 220 (Cuerpo Propio). | Fitness: 3845 | Cambios: deadEndPenalty: 1000 -> 1100 (+100), corridorPenalty: 300 -> 360 (+60), wallSqueezePenalty: 2740 -> 2790 (+50), coffinPenalty: 2460 -> 2500 (+40), coilingMultiplier: 1.8 -> 1.75 (-0.05)
+
+### 🕒 [2026-09-19T05:44:48.096Z] Partida #346 [LOSS]: 💥 Muerte por Choque Frontal en Turno 193 contra rattler (Longitud 17 vs nuestra 10). | Fitness: 3245 | Cambios: foodEarlyMultiplier: 150 -> 165 (+15), foodBaseMultiplier: 75 -> 85 (+10), foodHungryMultiplier: 90 -> 100 (+10), threatProximityPenalty: 510 -> 540 (+30), cutoffMultiplier: 0.5 -> 0.45 (-0.05)
+
+### 🕒 [2026-09-19T05:46:01.768Z] Partida #347 [WIN]: 🏆 Victoria absoluta en el Turno 96. Longitud máxima: 9. | Fitness: 4755 | Cambios: partitionMultiplier: 3 -> 3.05 (+0.05), cutoffMultiplier: 0.45 -> 0.5 (+0.05), wallSlicingMultiplier: 0.5 -> 0.55 (+0.05), voronoiNetWeight: 82 -> 84 (+2), edgePenalty: 480 -> 465 (-15), cornerPenalty: 635 -> 615 (-20), corridorPenalty: 2000 -> 1970 (-30), deadEndPenalty: 5000 -> 4950 (-50)
+
+### 🕒 [2026-09-19T05:51:43.964Z] Partida #348 [LOSS]: 🪤 Muerte por Falta de Espacio o Encierro en Turno 418. | Fitness: 6725 | Cambios: spaceWeight: 62 -> 64 (+2), tailBonus: 830 -> 860 (+30), voronoiWeight: 62 -> 64 (+2), voronoiNetWeight: 84 -> 86 (+2), foodEarlyMultiplier: 165 -> 175 (+10), coilingMultiplier: 1.25 -> 1.2 (-0.05)
+
+### 🕒 [2026-09-19T05:56:05.260Z] Partida #349 [LOSS]: 💥 Muerte por Choque Frontal en Turno 57 contra Geriatric Jagwire (Longitud 7 vs nuestra 4). | Fitness: 995 | Cambios: foodEarlyMultiplier: 175 -> 190 (+15), foodBaseMultiplier: 85 -> 95 (+10), foodHungryMultiplier: 100 -> 110 (+10), threatProximityPenalty: 540 -> 570 (+30), cutoffMultiplier: 0.5 -> 0.45 (-0.05)
+
+### 🕒 [2026-09-19T06:00:09.041Z] Partida #350 [LOSS]: 💥 Muerte por Choque Frontal en Turno 84 contra Gale-Beast (Longitud 7 vs nuestra 6). | Fitness: 1470 | Cambios: foodEarlyMultiplier: 190 -> 205 (+15), foodBaseMultiplier: 95 -> 105 (+10), foodHungryMultiplier: 110 -> 120 (+10), threatProximityPenalty: 570 -> 600 (+30), cutoffMultiplier: 0.45 -> 0.4 (-0.05)
+
+### 🕒 [2026-09-19T06:35:34.759Z] Partida #351 [WIN]: 🏆 Victoria absoluta en el Turno 4. Longitud máxima: 4. | Fitness: 2400 | Cambios: partitionMultiplier: 3.05 -> 3.1 (+0.05), cutoffMultiplier: 0.4 -> 0.45 (+0.05), wallSlicingMultiplier: 0.55 -> 0.6 (+0.05), voronoiNetWeight: 86 -> 88 (+2), edgePenalty: 465 -> 450 (-15), cornerPenalty: 615 -> 595 (-20), corridorPenalty: 1970 -> 1940 (-30), deadEndPenalty: 4950 -> 4900 (-50)
+
+### 🕒 [2026-09-19T06:54:04.375Z] Simulación #352 [WIN]: 🏆 Victoria en Turno 39. Longitud máxima: 6. | Fitness: 3795 | Cambios: partitionMultiplier: 3.1 -> 3.15 (+0.05), cutoffMultiplier: 0.45 -> 0.5 (+0.05), wallSlicingMultiplier: 0.6 -> 0.65 (+0.05), voronoiNetWeight: 88 -> 90 (+2), edgePenalty: 484 -> 469 (-15), cornerPenalty: 659 -> 639 (-20), corridorPenalty: 1924 -> 1894 (-30), deadEndPenalty: 4900 -> 4850 (-50)
+
+### 🕒 [2026-09-19T06:54:04.754Z] Simulación #353 [LOSS]: 💥 Choque Frontal en Turno 200 contra Mutante Agresivo (Len: 14 vs 8). | Fitness: 3265 | Cambios: foodEarlyMultiplier: 205 -> 220 (+15), foodBaseMultiplier: 105 -> 115 (+10), foodHungryMultiplier: 120 -> 130 (+10), threatProximityPenalty: 600 -> 630 (+30), cutoffMultiplier: 0.5 -> 0.45 (-0.05)
+
+### 🕒 [2026-09-19T06:54:05.312Z] Simulación #354 [LOSS]: 💥 Choque Frontal en Turno 260 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 24 vs 20). | Fitness: 4585 | Cambios: foodEarlyMultiplier: 220 -> 235 (+15), foodBaseMultiplier: 115 -> 125 (+10), foodHungryMultiplier: 130 -> 140 (+10), threatProximityPenalty: 630 -> 660 (+30), cutoffMultiplier: 0.45 -> 0.4 (-0.05)
+
+### 🕒 [2026-09-19T06:54:05.587Z] Simulación #355 [WIN]: 🏆 Victoria en Turno 138. Longitud máxima: 11. | Fitness: 5455 | Cambios: partitionMultiplier: 3.15 -> 3.2 (+0.05), cutoffMultiplier: 0.4 -> 0.45 (+0.05), wallSlicingMultiplier: 0.65 -> 0.7 (+0.05), voronoiNetWeight: 90 -> 92 (+2), edgePenalty: 469 -> 454 (-15), cornerPenalty: 639 -> 619 (-20), corridorPenalty: 1894 -> 1864 (-30), deadEndPenalty: 4850 -> 4800 (-50)
+
+### 🕒 [2026-09-19T06:54:05.941Z] Simulación #356 [LOSS]: 💥 Choque Frontal en Turno 152 contra Mutante Agresivo (Len: 15 vs 13). | Fitness: 2720 | Cambios: foodEarlyMultiplier: 235 -> 250 (+15), foodBaseMultiplier: 125 -> 135 (+10), foodHungryMultiplier: 140 -> 150 (+10), threatProximityPenalty: 660 -> 690 (+30), cutoffMultiplier: 0.45 -> 0.4 (-0.05)
+
+### 🕒 [2026-09-19T06:54:06.221Z] Simulación #357 [LOSS]: 💥 Choque Frontal en Turno 151 contra Mutante Agresivo 👑 (Campeón Previo) (Len: 16 vs 11). | Fitness: 2635 | Cambios: foodEarlyMultiplier: 250 -> 265 (+15), foodBaseMultiplier: 135 -> 145 (+10), foodHungryMultiplier: 150 -> 160 (+10), threatProximityPenalty: 690 -> 720 (+30), cutoffMultiplier: 0.4 -> 0.35 (-0.05)
+
+### 🕒 [2026-09-19T06:54:06.687Z] Simulación #358 [WIN]: 🏆 Victoria en Turno 166. Longitud máxima: 15. | Fitness: 6015 | Cambios: partitionMultiplier: 3.2 -> 3.25 (+0.05), cutoffMultiplier: 0.35 -> 0.4 (+0.05), wallSlicingMultiplier: 0.7 -> 0.75 (+0.05), voronoiNetWeight: 92 -> 94 (+2), edgePenalty: 454 -> 439 (-15), cornerPenalty: 619 -> 599 (-20), corridorPenalty: 1864 -> 1834 (-30), deadEndPenalty: 4800 -> 4750 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T06:54:06.919Z] Simulación #359 [LOSS]: 💥 Choque Frontal en Turno 107 contra Mutante Defensivo (Len: 12 vs 6). | Fitness: 1800 | Cambios: foodEarlyMultiplier: 265 -> 280 (+15), foodBaseMultiplier: 145 -> 155 (+10), foodHungryMultiplier: 160 -> 170 (+10), threatProximityPenalty: 720 -> 750 (+30), cutoffMultiplier: 0.4 -> 0.35 (-0.05)
+
+### 🕒 [2026-09-19T06:54:07.043Z] Simulación #360 [WIN]: 🏆 Victoria en Turno 133. Longitud máxima: 13. | Fitness: 5450 | Cambios: partitionMultiplier: 3.25 -> 3.3 (+0.05), cutoffMultiplier: 0.35 -> 0.4 (+0.05), wallSlicingMultiplier: 0.75 -> 0.8 (+0.05), voronoiNetWeight: 94 -> 96 (+2), edgePenalty: 439 -> 424 (-15), cornerPenalty: 599 -> 579 (-20), corridorPenalty: 1834 -> 1804 (-30), deadEndPenalty: 4750 -> 4700 (-50)
+
+### 🕒 [2026-09-19T06:54:07.213Z] Simulación #361 [LOSS]: 💥 Choque Frontal en Turno 88 contra Cascabel v102 (Coiling) (Len: 7 vs 6). | Fitness: 1515 | Cambios: foodEarlyMultiplier: 280 -> 295 (+15), foodBaseMultiplier: 155 -> 165 (+10), foodHungryMultiplier: 170 -> 180 (+10), threatProximityPenalty: 750 -> 780 (+30), cutoffMultiplier: 0.4 -> 0.35 (-0.05)
+
+### 🧬 [2026-09-19T06:54:07.214Z] ↩️ Rollback de Candidato Rechazado (Gen #1)
+
+> El Candidato no superó el baseline del Campeón (40% vs 50%). Se restauró el Campeón Gen #1.
+
+| Métrica | Campeón Anterior | Candidato Evaluado | Resultado |
+| :--- | :---: | :---: | :---: |
+| **Win Rate** | 50% | 40% | ❌ INFERIOR |
+| **Fitness Promedio** | 3500 | 3724 | 📈 + |
+
+**Genes Mutados / Modificados:**
+- `edgePenalty`: `450` ➔ `484` (+34)
+- `cornerPenalty`: `595` ➔ `659` (+64)
+- `wallSqueezePenalty`: `800` ➔ `783` (-17)
+- `coffinPenalty`: `1050` ➔ `965` (-85)
+- `cornerPocketPenalty`: `1130` ➔ `1174` (+44)
+- `corridorPenalty`: `1940` ➔ `1924` (-16)
+
+### 🕒 [2026-09-19T06:54:07.282Z] Simulación #362 [WIN]: 🏆 Victoria en Turno 36. Longitud máxima: 6. | Fitness: 3750 | Cambios: partitionMultiplier: 3.1 -> 3.15 (+0.05), cutoffMultiplier: 0.44 -> 0.49 (+0.05), wallSlicingMultiplier: 0.6 -> 0.65 (+0.05), voronoiNetWeight: 88 -> 90 (+2), edgePenalty: 447 -> 432 (-15), cornerPenalty: 595 -> 575 (-20), corridorPenalty: 1940 -> 1910 (-30), deadEndPenalty: 4900 -> 4850 (-50)
+
+### 🕒 [2026-09-19T06:54:07.574Z] Simulación #363 [LOSS]: 💥 Choque Frontal en Turno 152 contra Cascabel v102 (Coiling) (Len: 11 vs 10). | Fitness: 2615 | Cambios: foodEarlyMultiplier: 205 -> 220 (+15), foodBaseMultiplier: 98 -> 108 (+10), foodHungryMultiplier: 120 -> 130 (+10), threatProximityPenalty: 600 -> 630 (+30), cutoffMultiplier: 0.49 -> 0.44 (-0.05)
+
+### 🕒 [2026-09-19T06:54:07.973Z] Simulación #364 [WIN]: 🏆 Victoria en Turno 176. Longitud máxima: 13. | Fitness: 6095 | Cambios: partitionMultiplier: 3.15 -> 3.2 (+0.05), cutoffMultiplier: 0.44 -> 0.49 (+0.05), wallSlicingMultiplier: 0.65 -> 0.7 (+0.05), voronoiNetWeight: 90 -> 92 (+2), edgePenalty: 432 -> 417 (-15), cornerPenalty: 575 -> 555 (-20), corridorPenalty: 1910 -> 1880 (-30), deadEndPenalty: 4850 -> 4800 (-50)
+
+### 🕒 [2026-09-19T06:54:08.248Z] Simulación #365 [LOSS]: 💥 Choque Frontal en Turno 115 contra Mutante Defensivo (Len: 12 vs 10). | Fitness: 2060 | Cambios: foodEarlyMultiplier: 220 -> 235 (+15), foodBaseMultiplier: 108 -> 118 (+10), foodHungryMultiplier: 130 -> 140 (+10), threatProximityPenalty: 630 -> 660 (+30), cutoffMultiplier: 0.49 -> 0.44 (-0.05)
+
+### 🕒 [2026-09-19T06:54:08.956Z] Simulación #366 [WIN]: 🏆 Victoria en Turno 279. Longitud máxima: 23. | Fitness: 7990 | Cambios: partitionMultiplier: 3.2 -> 3.25 (+0.05), cutoffMultiplier: 0.44 -> 0.49 (+0.05), wallSlicingMultiplier: 0.7 -> 0.75 (+0.05), voronoiNetWeight: 92 -> 94 (+2), edgePenalty: 417 -> 402 (-15), cornerPenalty: 555 -> 535 (-20), corridorPenalty: 1880 -> 1850 (-30), deadEndPenalty: 4800 -> 4750 (-50), coilingMultiplier: 1.2 -> 1.25 (+0.05)
+
+### 🕒 [2026-09-19T06:54:09.254Z] Simulación #367 [WIN]: 🏆 Victoria en Turno 201. Longitud máxima: 19. | Fitness: 6680 | Cambios: partitionMultiplier: 3.25 -> 3.3 (+0.05), cutoffMultiplier: 0.49 -> 0.54 (+0.05), wallSlicingMultiplier: 0.75 -> 0.8 (+0.05), voronoiNetWeight: 94 -> 96 (+2), edgePenalty: 402 -> 387 (-15), cornerPenalty: 535 -> 515 (-20), corridorPenalty: 1850 -> 1820 (-30), deadEndPenalty: 4750 -> 4700 (-50), coilingMultiplier: 1.25 -> 1.3 (+0.05)
+
+### 🕒 [2026-09-19T06:54:09.302Z] Simulación #368 [WIN]: 🏆 Victoria en Turno 37. Longitud máxima: 6. | Fitness: 3765 | Cambios: partitionMultiplier: 3.3 -> 3.35 (+0.05), cutoffMultiplier: 0.54 -> 0.59 (+0.05), wallSlicingMultiplier: 0.8 -> 0.85 (+0.05), voronoiNetWeight: 96 -> 98 (+2), edgePenalty: 387 -> 372 (-15), cornerPenalty: 515 -> 495 (-20), corridorPenalty: 1820 -> 1790 (-30), deadEndPenalty: 4700 -> 4650 (-50)
+
+### 🕒 [2026-09-19T06:54:09.593Z] Simulación #369 [LOSS]: 📦 Muerte por Confinamiento en Esquina en Turno 45 en (10,10). | Fitness: 835 | Cambios: cornerPocketPenalty: 1130 -> 1170 (+40), cornerPenalty: 495 -> 520 (+25), deadEndPenalty: 4650 -> 4730 (+80), edgePenalty: 372 -> 362 (-10)
+
+### 🕒 [2026-09-19T06:54:09.998Z] Simulación #370 [WIN]: 🏆 Victoria en Turno 229. Longitud máxima: 24. | Fitness: 7275 | Cambios: partitionMultiplier: 3.35 -> 3.4 (+0.05), cutoffMultiplier: 0.59 -> 0.64 (+0.05), wallSlicingMultiplier: 0.85 -> 0.9 (+0.05), voronoiNetWeight: 98 -> 100 (+2), edgePenalty: 362 -> 347 (-15), cornerPenalty: 520 -> 500 (-20), corridorPenalty: 1790 -> 1760 (-30), deadEndPenalty: 4730 -> 4680 (-50), coilingMultiplier: 1.3 -> 1.35 (+0.05)
+
+### 🕒 [2026-09-19T06:54:10.431Z] Simulación #371 [LOSS]: 💥 Choque Frontal en Turno 11 contra Cascabel v101 (Muralla) (Len: 5 vs 4). | Fitness: 0 | Cambios: foodEarlyMultiplier: 235 -> 250 (+15), foodBaseMultiplier: 118 -> 128 (+10), foodHungryMultiplier: 140 -> 150 (+10), threatProximityPenalty: 660 -> 690 (+30), cutoffMultiplier: 0.64 -> 0.59 (-0.05)
+
+### 🧬 [2026-09-19T06:54:10.432Z] 👑 Coronación de Nuevo Campeón (Gen #2)
+
+> El Candidato de la Generación #2 superó al Campeón previo con 60% WR.
+
+| Métrica | Campeón Anterior | Candidato Evaluado | Resultado |
+| :--- | :---: | :---: | :---: |
+| **Win Rate** | 50% | 60% | ✅ SUPERIOR |
+| **Fitness Promedio** | 3500 | 4107 | 📈 + |
+
+**Genes Mutados / Modificados:**
+- `cutoffMultiplier`: `0.45` ➔ `0.44` (-0.01)
+- `foodBaseMultiplier`: `105` ➔ `98` (-7)
+- `edgePenalty`: `450` ➔ `447` (-3)
+- `tailBonus`: `860` ➔ `795` (-65)
+

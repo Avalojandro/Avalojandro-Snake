@@ -11,9 +11,14 @@
  */
 
 const express = require("express");
+const { getWeights, getConfig } = require("./param_manager");
+const { tuneAfterLiveGame } = require("./autotuner");
 
 const app = express();
 app.use(express.json());
+
+// Registro de telemetría en vivo turno a turno por partida
+const gameTurnTelemetry = new Map();
 
 const PORT = process.env.PORT || 8000;
 
@@ -315,34 +320,22 @@ function is_tunnel_trap(candidateCoord, obstacles, lethalDangerZones, board) {
  * @returns {boolean}
  */
 function is_wall_squeeze_risk(candidateCoord, enemies, board) {
-  const isNearWallX = candidateCoord.x <= 1 || candidateCoord.x >= board.width - 2;
-  const isNearWallY = candidateCoord.y <= 1 || candidateCoord.y >= board.height - 2;
+  const isWallX0 = candidateCoord.x === 0;
+  const isWallXMax = candidateCoord.x === board.width - 1;
+  const isWallY0 = candidateCoord.y === 0;
+  const isWallYMax = candidateCoord.y === board.height - 1;
 
-  if (!isNearWallX && !isNearWallY) return false;
+  if (!isWallX0 && !isWallXMax && !isWallY0 && !isWallYMax) return false;
 
   for (let e = 0; e < enemies.length; e++) {
     const enemy = enemies[e];
     for (let b = 0; b < enemy.body.length; b++) {
       const seg = enemy.body[b];
-      const dist = manhattan_distance(candidateCoord, seg);
-      if (dist <= 2) {
-        // Pared izquierda y enemigo bloqueando escape hacia la derecha
-        if (candidateCoord.x <= 1 && seg.x > candidateCoord.x && Math.abs(seg.y - candidateCoord.y) <= 1) {
-          return true;
-        }
-        // Pared derecha y enemigo bloqueando escape hacia la izquierda
-        if (candidateCoord.x >= board.width - 2 && seg.x < candidateCoord.x && Math.abs(seg.y - candidateCoord.y) <= 1) {
-          return true;
-        }
-        // Pared inferior y enemigo bloqueando escape hacia arriba
-        if (candidateCoord.y <= 1 && seg.y > candidateCoord.y && Math.abs(seg.x - candidateCoord.x) <= 1) {
-          return true;
-        }
-        // Pared superior y enemigo bloqueando escape hacia abajo
-        if (candidateCoord.y >= board.height - 2 && seg.y < candidateCoord.y && Math.abs(seg.x - candidateCoord.x) <= 1) {
-          return true;
-        }
-      }
+      // Salida contigua perpendicular bloqueada directamente
+      if (isWallX0 && seg.x === 1 && seg.y === candidateCoord.y) return true;
+      if (isWallXMax && seg.x === board.width - 2 && seg.y === candidateCoord.y) return true;
+      if (isWallY0 && seg.y === 1 && seg.x === candidateCoord.x) return true;
+      if (isWallYMax && seg.y === board.height - 2 && seg.x === candidateCoord.x) return true;
     }
   }
   return false;
@@ -357,9 +350,10 @@ function is_wall_squeeze_risk(candidateCoord, enemies, board) {
  * @param {Coord} myHead
  * @param {Battlesnake[]} enemies
  * @param {Board} board
+ * @param {number} [myLength=0]
  * @returns {boolean}
  */
-function is_perimeter_coffin_trap(candidateCoord, myHead, enemies, board) {
+function is_perimeter_coffin_trap(candidateCoord, myHead, enemies, board, myLength = 0) {
   const isOuterX0 = candidateCoord.x === 0;
   const isOuterXMax = candidateCoord.x === board.width - 1;
   const isOuterY0 = candidateCoord.y === 0;
@@ -371,6 +365,8 @@ function is_perimeter_coffin_trap(candidateCoord, myHead, enemies, board) {
 
   for (let e = 0; e < enemies.length; e++) {
     const enemy = enemies[e];
+    if (myLength > 0 && enemy.length < myLength) continue; // Rivales menores no pueden ejecutarnos ataúd letal
+
     const enemyHead = enemy.head;
     const enemyBody = enemy.body;
 
@@ -447,78 +443,6 @@ function is_perimeter_coffin_trap(candidateCoord, myHead, enemies, board) {
  * @returns {boolean}
  */
 function is_narrow_band_confinement(candidateCoord, you, board, enemies) {
-  // Franja vertical izquierda (X <= 1)
-  if (candidateCoord.x <= 1) {
-    let ownSegmentsInBand = 0;
-    for (let b = 0; b < you.body.length; b++) {
-      if (you.body[b].x <= 1) ownSegmentsInBand++;
-    }
-    if (ownSegmentsInBand >= 4 && ownSegmentsInBand >= you.body.length * 0.4) {
-      for (let e = 0; e < enemies.length; e++) {
-        for (let eb = 0; eb < enemies[e].body.length; eb++) {
-          const eseg = enemies[e].body[eb];
-          if ((eseg.x === 2 || eseg.x === 3) && Math.abs(eseg.y - candidateCoord.y) <= 3) {
-            return true;
-          }
-        }
-      }
-    }
-  }
-
-  // Franja vertical derecha (X >= width - 2)
-  if (candidateCoord.x >= board.width - 2) {
-    let ownSegmentsInBand = 0;
-    for (let b = 0; b < you.body.length; b++) {
-      if (you.body[b].x >= board.width - 2) ownSegmentsInBand++;
-    }
-    if (ownSegmentsInBand >= 4 && ownSegmentsInBand >= you.body.length * 0.4) {
-      for (let e = 0; e < enemies.length; e++) {
-        for (let eb = 0; eb < enemies[e].body.length; eb++) {
-          const eseg = enemies[e].body[eb];
-          if ((eseg.x === board.width - 3 || eseg.x === board.width - 4) && Math.abs(eseg.y - candidateCoord.y) <= 3) {
-            return true;
-          }
-        }
-      }
-    }
-  }
-
-  // Franja horizontal inferior (Y <= 1)
-  if (candidateCoord.y <= 1) {
-    let ownSegmentsInBand = 0;
-    for (let b = 0; b < you.body.length; b++) {
-      if (you.body[b].y <= 1) ownSegmentsInBand++;
-    }
-    if (ownSegmentsInBand >= 4 && ownSegmentsInBand >= you.body.length * 0.4) {
-      for (let e = 0; e < enemies.length; e++) {
-        for (let eb = 0; eb < enemies[e].body.length; eb++) {
-          const eseg = enemies[e].body[eb];
-          if ((eseg.y === 2 || eseg.y === 3) && Math.abs(eseg.x - candidateCoord.x) <= 3) {
-            return true;
-          }
-        }
-      }
-    }
-  }
-
-  // Franja horizontal superior (Y >= height - 2)
-  if (candidateCoord.y >= board.height - 2) {
-    let ownSegmentsInBand = 0;
-    for (let b = 0; b < you.body.length; b++) {
-      if (you.body[b].y >= board.height - 2) ownSegmentsInBand++;
-    }
-    if (ownSegmentsInBand >= 4 && ownSegmentsInBand >= you.body.length * 0.4) {
-      for (let e = 0; e < enemies.length; e++) {
-        for (let eb = 0; eb < enemies[e].body.length; eb++) {
-          const eseg = enemies[e].body[eb];
-          if ((eseg.y === board.height - 3 || eseg.y === board.height - 4) && Math.abs(eseg.x - candidateCoord.x) <= 3) {
-            return true;
-          }
-        }
-      }
-    }
-  }
-
   return false;
 }
 
@@ -660,11 +584,13 @@ function predict_enemy_moves(enemy, obstacles, board, food) {
  * @returns {{ cutoffScore: number, enemySpaceAfter: number, mySpaceAfter: number }}
  */
 function calculate_cutoff_score(candidateCoord, enemy, obstacles, board, myLength) {
-  // Calcular el espacio del enemigo SIN nuestro movimiento
-  const enemySpaceBefore = evaluate_space(enemy.head, obstacles, board, null);
+  // Calcular el espacio del enemigo SIN nuestro movimiento (sin auto-bloquearse con su cabeza)
+  const enemyObstacles = new Set(obstacles);
+  enemyObstacles.delete(to_key(enemy.head));
+  const enemySpaceBefore = evaluate_space(enemy.head, enemyObstacles, board, null);
 
   // Calcular el espacio del enemigo CON nuestro movimiento bloqueando
-  const obstaclesWithUs = new Set(obstacles);
+  const obstaclesWithUs = new Set(enemyObstacles);
   obstaclesWithUs.add(to_key(candidateCoord));
 
   const enemySpaceAfter = evaluate_space(enemy.head, obstaclesWithUs, board, null);
@@ -673,7 +599,9 @@ function calculate_cutoff_score(candidateCoord, enemy, obstacles, board, myLengt
   const spaceLost = enemySpaceBefore.count - enemySpaceAfter.count;
 
   // Calcular nuestro propio espacio después del movimiento
-  const mySpaceAfter = evaluate_space(candidateCoord, obstacles, board, null);
+  const myObstacles = new Set(obstacles);
+  myObstacles.delete(to_key(candidateCoord));
+  const mySpaceAfter = evaluate_space(candidateCoord, myObstacles, board, null);
 
   let cutoffScore = 0;
 
@@ -714,10 +642,12 @@ function calculate_cutoff_score(candidateCoord, enemy, obstacles, board, myLengt
  * @returns {{ isLethalPartition: boolean, isPartition: boolean, enemySubSpace: number, mySubSpace: number, scoreBonus: number }}
  */
 function evaluate_board_partition(candidateCoord, you, enemy, solidObstacles, board) {
-  // 1. Calcular espacio del enemigo ANTES de nuestro movimiento
-  const enemySpaceBefore = evaluate_space(enemy.head, solidObstacles, board, null);
+  // 1. Calcular espacio del enemigo ANTES de nuestro movimiento (sin auto-bloqueo con su cabeza)
+  const enemyObstacles = new Set(solidObstacles);
+  enemyObstacles.delete(to_key(enemy.head));
+  const enemySpaceBefore = evaluate_space(enemy.head, enemyObstacles, board, null);
 
-  const obstaclesWithCandidate = new Set(solidObstacles);
+  const obstaclesWithCandidate = new Set(enemyObstacles);
   obstaclesWithCandidate.add(to_key(candidateCoord));
 
   // 2. Calcular espacio del enemigo DESPUÉS de nuestro movimiento bloqueando
@@ -727,7 +657,9 @@ function evaluate_board_partition(candidateCoord, you, enemy, solidObstacles, bo
 
   // Nuestro propio espacio tras este movimiento (con nuestra cola como salida segura si aplica)
   const myTail = you.body[you.body.length - 1];
-  const mySpace = evaluate_space(candidateCoord, obstaclesWithCandidate, board, myTail);
+  const mySpaceObstacles = new Set(solidObstacles);
+  mySpaceObstacles.delete(to_key(candidateCoord));
+  const mySpace = evaluate_space(candidateCoord, mySpaceObstacles, board, myTail);
 
   let scoreBonus = 0;
   let isLethalPartition = false;
@@ -853,6 +785,232 @@ function detect_anti_partition_danger(candidateCoord, you, enemy, solidObstacles
   }
 
   return 0;
+}
+
+/**
+ * Evalúa el control y estrangulamiento de cuellos de botella (Choke Points) en 1v1 (Inspirado en Log 108 / palaserpiente vs Jagwire).
+ * - Si somos mayores: premia avanzar hacia el cuello de botella que conecta el bolsillo del rival con el área abierta para sellarlo.
+ * - Si somos menores/iguales: penaliza severamente moverse hacia el cuello de botella donde el rival mayor espera para forzar colisión.
+ * @param {Coord} candidateCoord
+ * @param {Battlesnake} you
+ * @param {Battlesnake} enemy
+ * @param {Set<string>} solidObstacles
+ * @param {Board} board
+ * @returns {number}
+ */
+function evaluate_chokepoint_control(candidateCoord, you, enemy, solidObstacles, board) {
+  const isDominant = you.length > enemy.length;
+  let chokepointScore = 0;
+
+  // Evaluar salidas del rival
+  const enemyNeighbors = get_cardinal_neighbors(enemy.head, board).filter(
+    (n) => !solidObstacles.has(to_key(n))
+  );
+
+  // Si el rival tiene 1 o 2 salidas (cuello de botella)
+  if (enemyNeighbors.length <= 2 && enemyNeighbors.length > 0) {
+    for (let i = 0; i < enemyNeighbors.length; i++) {
+      const exit = enemyNeighbors[i];
+      const distToExit = manhattan_distance(candidateCoord, exit);
+      if (isDominant) {
+        // Como líderes, sellar el cuello de botella del rival (ataque de compuerta)
+        if (distToExit === 0) {
+          chokepointScore += 800; // Ocupar directamente la compuerta de escape del rival
+        } else if (distToExit === 1) {
+          chokepointScore += 400; // Presionar la compuerta
+        }
+      } else {
+        // Si somos menores, evitar acercarse a su salida
+        if (distToExit === 0) {
+          chokepointScore -= 1000;
+        }
+      }
+    }
+  }
+
+  return chokepointScore;
+}
+
+/**
+ * Detecta situaciones de pinza o estrangulamiento donde 2 o más serpientes enemigas
+ * (o sus cuerpos) están encerrando o reduciendo los grados de libertad de nuestra serpiente.
+ * @param {Coord} candidateCoord
+ * @param {Coord} myHead
+ * @param {Battlesnake[]} enemies
+ * @param {Board} board
+ * @param {Set<string>} solidObstacles
+ * @returns {{ isPinched: boolean, penalty: number }}
+ */
+function detect_multi_snake_pinch(candidateCoord, myHead, enemies, board, solidObstacles) {
+  if (enemies.length < 2) return { isPinched: false, penalty: 0 };
+
+  let enemySegmentsNearby = 0;
+  const distinctEnemiesNearby = new Set();
+
+  for (let e = 0; e < enemies.length; e++) {
+    const enemy = enemies[e];
+    let hasNearby = false;
+    for (let b = 0; b < enemy.body.length; b++) {
+      const seg = enemy.body[b];
+      const dist = manhattan_distance(candidateCoord, seg);
+      if (dist <= 2) {
+        enemySegmentsNearby++;
+        hasNearby = true;
+      }
+    }
+    if (hasNearby) {
+      distinctEnemiesNearby.add(enemy.id);
+    }
+  }
+
+  // Si 2 o más serpientes distintas tienen cuerpos apretando la zona candidata
+  if (distinctEnemiesNearby.size >= 2) {
+    if (enemySegmentsNearby >= 4) {
+      return { isPinched: true, penalty: 1200 };
+    } else if (enemySegmentsNearby >= 2) {
+      return { isPinched: true, penalty: 600 };
+    }
+  }
+
+  // Contar salidas libres desde candidateCoord
+  const freeExits = get_cardinal_neighbors(candidateCoord, board).filter((n) => {
+    const nKey = to_key(n);
+    return !solidObstacles.has(nKey) && nKey !== to_key(myHead);
+  });
+
+  if (freeExits.length <= 1 && distinctEnemiesNearby.size >= 1) {
+    return { isPinched: true, penalty: 950 };
+  }
+
+  return { isPinched: false, penalty: 0 };
+}
+
+/**
+ * Detecta si una o más serpientes amenazantes (iguales o más grandes) están cerca
+ * y premia activamente la huida hacia zonas abiertas, penalizando aproximaciones peligrosas.
+ * @param {Coord} candidateCoord
+ * @param {Coord} myHead
+ * @param {Battlesnake[]} enemies
+ * @param {number} myLength
+ * @param {Board} board
+ * @param {Coord} openTarget
+ * @returns {number}
+ */
+function evaluate_threat_evasion_and_flee(candidateCoord, myHead, enemies, myLength, board, openTarget) {
+  let scoreAdjustment = 0;
+
+  for (let e = 0; e < enemies.length; e++) {
+    const enemy = enemies[e];
+    const isThreat = enemy.length >= myLength;
+    if (!isThreat) continue;
+
+    const currentDist = manhattan_distance(myHead, enemy.head);
+    const candidateDist = manhattan_distance(candidateCoord, enemy.head);
+
+    // Si la serpiente amenazante está en rango de peligro (distancia <= 3)
+    if (currentDist <= 3) {
+      if (candidateDist > currentDist) {
+        // HUIR: Nos alejamos del rival amenazante
+        scoreAdjustment += 380;
+        // Bono adicional si la huida es hacia el área abierta más grande
+        const distToOpen = manhattan_distance(candidateCoord, openTarget);
+        const headDistToOpen = manhattan_distance(myHead, openTarget);
+        if (distToOpen < headDistToOpen) {
+          scoreAdjustment += 260;
+        }
+      } else if (candidateDist < currentDist) {
+        // Peligro: nos estamos acercando hacia un rival igual o más grande
+        scoreAdjustment -= 500;
+      }
+    } else if (currentDist === 4 && candidateDist < currentDist) {
+      scoreAdjustment -= 160;
+    }
+  }
+
+  return scoreAdjustment;
+}
+
+/**
+ * Encuentra el objetivo de comida más seguro y accesible.
+ * Da prioridad a comida donde tenemos ventaja de distancia y que tras comer deje espacio seguro.
+ * @param {Coord} myHead
+ * @param {Coord[]} foodList
+ * @param {Battlesnake[]} enemies
+ * @param {number} myLength
+ * @param {Set<string>} extendedObstacles
+ * @param {Set<string>} solidObstacles
+ * @param {Board} board
+ * @param {Coord} myTail
+ * @returns {{ target: Coord, distance: number, safe: boolean } | null}
+ */
+function find_safest_food_target(myHead, foodList, enemies, myLength, extendedObstacles, solidObstacles, board, myTail) {
+  if (!foodList || foodList.length === 0) return null;
+
+  let bestFood = null;
+  let bestScore = -Infinity;
+
+  for (let i = 0; i < foodList.length; i++) {
+    const food = foodList[i];
+    const foodKey = to_key(food);
+
+    // Si la comida está en zona de colisión letal con rival mayor/igual, descartar
+    if (extendedObstacles.has(foodKey) && !solidObstacles.has(foodKey)) {
+      continue;
+    }
+
+    const pathInfo = bfs_shortest_path(myHead, food, extendedObstacles, board);
+    if (!pathInfo) continue;
+
+    const myDist = pathInfo.distance;
+    let enemyCanBeatUs = false;
+    let closestEnemyDist = Infinity;
+
+    for (let e = 0; e < enemies.length; e++) {
+      const enemy = enemies[e];
+      const eDist = manhattan_distance(enemy.head, food);
+      if (eDist < closestEnemyDist) closestEnemyDist = eDist;
+
+      // Descartar si un rival mayor llega antes/al mismo tiempo, o un rival igual llega estrictamente antes
+      if ((enemy.length > myLength && eDist <= myDist) || (enemy.length === myLength && eDist < myDist)) {
+        enemyCanBeatUs = true;
+        break;
+      }
+    }
+
+    if (enemyCanBeatUs) continue;
+
+    // Verificar espacio libre disponible tras llegar a la comida
+    const spaceAtFood = evaluate_space(food, extendedObstacles, board, myTail);
+    const spaceViable = spaceAtFood.count >= myLength + 1 || spaceAtFood.canReachTail;
+
+    let foodScore = (30 - myDist) * 10;
+    if (spaceViable) foodScore += 200;
+    if (closestEnemyDist > myDist + 1) foodScore += 160;
+    else if (closestEnemyDist === myDist) foodScore += 60; // Disputa en igualdad de condiciones
+
+    if (foodScore > bestScore) {
+      bestScore = foodScore;
+      bestFood = { target: food, distance: myDist, safe: spaceViable };
+    }
+  }
+
+  // Fallback si todas las comidas están disputadas
+  if (!bestFood) {
+    let minFallbackDist = Infinity;
+    for (let i = 0; i < foodList.length; i++) {
+      const food = foodList[i];
+      const foodKey = to_key(food);
+      if (solidObstacles.has(foodKey)) continue;
+
+      const pathInfo = bfs_shortest_path(myHead, food, extendedObstacles, board);
+      if (pathInfo && pathInfo.distance < minFallbackDist) {
+        minFallbackDist = pathInfo.distance;
+        bestFood = { target: food, distance: pathInfo.distance, safe: false };
+      }
+    }
+  }
+
+  return bestFood;
 }
 
 // ==========================================
@@ -1377,7 +1535,8 @@ function find_largest_open_area(board, solidObstacles) {
  * @param {GameState} gameState
  * @returns {{ move: string, shout: string }}
  */
-function process_move(gameState) {
+function process_move(gameState, customWeights = null) {
+  const W = customWeights || getWeights();
   const { board, you, turn } = gameState;
   const myLength = you.length;
   const myHead = you.head;
@@ -1389,8 +1548,9 @@ function process_move(gameState) {
   const isMultiSnake = enemies.length >= 2;
   const isDuel = enemies.length === 1;
 
-  // FASES DE JUEGO
-  const isEarlyGame = turn < 35 && isMultiSnake;
+  // FASES DE JUEGO:
+  // Al inicio (turn < 50 o longitud < 12), prioridad máxima a alimentarse y crecer con seguridad.
+  const isEarlyGame = turn < 50 || myLength < 12;
   const isGiant = myLength >= 14;
 
   // -------------------------------------------------------------
@@ -1409,14 +1569,9 @@ function process_move(gameState) {
   const loopInfo = track_and_detect_loops(gameId, turn, myHead, you.health, myLength);
   const isLoopBreakoutActive = loopInfo.isLooping && loopInfo.laps >= 4;
 
-  let openTarget = {
-    x: Math.floor(board.width / 2),
-    y: Math.floor(board.height / 2),
-  };
-  if (isLoopBreakoutActive) {
-    const openAreaInfo = find_largest_open_area(board, solidObstacles);
-    openTarget = { x: openAreaInfo.x, y: openAreaInfo.y };
-  }
+  // Centroide del área abierta más grande disponible en el tablero
+  const openAreaInfo = find_largest_open_area(board, solidObstacles);
+  const openTarget = { x: openAreaInfo.x, y: openAreaInfo.y };
 
   // -------------------------------------------------------------
   // ETAPA 4: FALLBACK INTELIGENTE CON PREDICCIÓN MULTI-PASO
@@ -1544,7 +1699,7 @@ function process_move(gameState) {
     );
 
     const isSqueeze = is_wall_squeeze_risk(m.coord, enemies, board);
-    const isCoffin = is_perimeter_coffin_trap(m.coord, myHead, enemies, board);
+    const isCoffin = is_perimeter_coffin_trap(m.coord, myHead, enemies, board, myLength);
     const isConfinement = is_narrow_band_confinement(m.coord, you, board, enemies);
 
     const effectiveSpace = spaceInfo.count;
@@ -1608,74 +1763,28 @@ function process_move(gameState) {
   // -------------------------------------------------------------
   const isCriticalHunger = you.health <= 35;
   const needGrowth = isDuel
-    ? myLength <= maxEnemyLength + 4 || myLength < 18
+    ? myLength <= maxEnemyLength + 3 || myLength < 18
     : myLength <= maxEnemyLength + 2 || myLength < 14 || maxEnemyLength >= myLength + 2;
 
   const isHungry =
-    turn < 40 ||
+    isEarlyGame ||
     (isDuel && myLength < 18) ||
     you.health < 85 ||
     needGrowth ||
     isCriticalHunger;
 
-  // Búsqueda de comida BFS segura con fallback persistente
-  let bestFoodTarget = null;
-  let minFoodDist = Infinity;
-
-  if (board.food && board.food.length > 0) {
-    // Intento 1: Buscar comida que podamos ganar antes que un rival más grande
-    for (const food of board.food) {
-      const foodKey = to_key(food);
-      if (lethalDangerZones.has(foodKey)) continue;
-
-      const pathInfo = bfs_shortest_path(
-        myHead,
-        food,
-        extendedObstacles,
-        board
-      );
-      if (!pathInfo) continue;
-
-      const myDist = pathInfo.distance;
-
-      let enemyBeatsUs = false;
-      for (const enemy of enemies) {
-        if (enemy.length > myLength) {
-          const enemyDist = manhattan_distance(enemy.head, food);
-          if (enemyDist <= myDist) {
-            enemyBeatsUs = true;
-            break;
-          }
-        }
-      }
-
-      if (!enemyBeatsUs && myDist < minFoodDist) {
-        minFoodDist = myDist;
-        bestFoodTarget = food;
-      }
-    }
-
-    // Intento 2 (FALLBACK DE COMIDA): Si el rival está más cerca de todas las comidas,
-    // NO rendirnos ni quedarnos en una esquina. Dirigirnos hacia la comida más cercana
-    // que no esté en zona letal directa para mantener presencia activa y disputar el centro.
-    if (!bestFoodTarget) {
-      for (const food of board.food) {
-        const foodKey = to_key(food);
-        if (lethalDangerZones.has(foodKey)) continue;
-
-        const pathInfo = bfs_shortest_path(
-          myHead,
-          food,
-          extendedObstacles,
-          board
-        );
-        if (pathInfo && pathInfo.distance < minFoodDist) {
-          minFoodDist = pathInfo.distance;
-          bestFoodTarget = food;
-        }
-      }
-    }
-  }
+  // Búsqueda inteligente y segura de alimento con prevención de trampas
+  const safeFoodInfo = find_safest_food_target(
+    myHead,
+    board.food,
+    enemies,
+    myLength,
+    extendedObstacles,
+    solidObstacles,
+    board,
+    myTail
+  );
+  const bestFoodTarget = safeFoodInfo ? safeFoodInfo.target : null;
 
   const centerCoord = {
     x: Math.floor(board.width / 2),
@@ -1686,19 +1795,19 @@ function process_move(gameState) {
     let score = 0;
 
     // 1. Espacio y conectividad a la cola
-    score += candidate.space * 25;
+    score += candidate.space * W.spaceWeight;
     if (candidate.canReachTail && !isLoopBreakoutActive) {
-      score += myLength >= 10 ? 450 : 250;
+      score += myLength >= 10 ? W.tailBonus : Math.round(W.tailBonus * 0.55);
     }
 
     // 2. Control territorial Voronoi de largo alcance
     const voronoi = calculate_voronoi(
       candidate.coord,
       enemies,
-      extendedObstacles,
+      solidObstacles,
       board
     );
-    score += voronoi.myTerritory * 25;
+    score += voronoi.myTerritory * W.voronoiWeight;
 
     // 3. Anticipación de Grados de Libertad Futuros (Degrees of Freedom Foresight)
     // Contar cuántos movimientos libres no letales tendremos en T+2
@@ -1707,70 +1816,80 @@ function process_move(gameState) {
       return !extendedObstacles.has(nKey) && nKey !== to_key(myHead);
     });
     if (futureFreeMoves.length === 0) {
-      score -= 2200; // Callejón sin salida total
+      score -= W.deadEndPenalty; // Callejón sin salida total
     } else if (futureFreeMoves.length === 1) {
-      // Si solo queda 1 salida (corredor angosto de 1 casilla), penalizar fuertemente si hay un rival cerca
-      let corridorPen = 800;
+      let corridorPen = W.corridorPenalty;
       for (const enemy of enemies) {
         const dist = manhattan_distance(candidate.coord, enemy.head);
         if (dist <= 4) {
-          corridorPen += 1200; // Peligro crítico de estrangulamiento o choque contra cuerpo en corredor
+          corridorPen += Math.round(W.corridorPenalty * 1.55); // Peligro crítico de estrangulamiento
         }
       }
       score -= corridorPen;
     }
 
-    // 4. Evasión de Zonas de Pinza (Multi-Enemy) y Fuga a Espacio Abierto
+    // 4. Evasión de Zonas de Pinza y Acorralamiento Multi-Snake (Anti-Pinch)
     if (isMultiSnake) {
+      const pinch = detect_multi_snake_pinch(
+        candidate.coord,
+        myHead,
+        enemies,
+        board,
+        solidObstacles
+      );
+      if (pinch.isPinched) {
+        score -= pinch.penalty;
+      }
+
+      // Si múltiples enemigos disputan esta misma casilla (cruce de 3+ serpientes)
+      if (candidate.threats >= 2) {
+        score -= 1200;
+      }
+
+      // Evasión de zonas abarrotadas de cabezas enemigas
       let nearbyEnemies = 0;
       for (const enemy of enemies) {
         const dist = manhattan_distance(candidate.coord, enemy.head);
         if (dist <= 2) nearbyEnemies++;
       }
       if (nearbyEnemies >= 2) {
-        score -= 600;
+        score -= 700;
       }
     }
 
-    // 5. Evasión Activa y Fuga Táctica contra rivales mayores o de igual tamaño
+    // 5. Evasión Activa y Huida Táctica ante amenazas (Huida hacia área abierta)
     if (!isLoopBreakoutActive) {
+      const evasionScore = evaluate_threat_evasion_and_flee(
+        candidate.coord,
+        myHead,
+        enemies,
+        myLength,
+        board,
+        openTarget
+      );
+      score += evasionScore;
+
+      // Penalización por proximidad a 2 pasos de rivales iguales o mayores
       for (const enemy of enemies) {
         const isDangerousCollision = enemy.length >= myLength;
-        const isStrictlyLarger = enemy.length > myLength;
         const distToEnemyHead = manhattan_distance(candidate.coord, enemy.head);
-        const myHeadDistToEnemy = manhattan_distance(myHead, enemy.head);
 
-        if (isDangerousCollision) {
-          // Penalizar cercanía a 2 pasos de un rival, moderando si vamos directo a comida segura
-          let dist2Pen = isDuel ? 300 : 250;
+        if (isDangerousCollision && distToEnemyHead === 2) {
+          let dist2Pen = isDuel ? Math.round(W.threatProximityPenalty * 1.2) : W.threatProximityPenalty;
           if (bestFoodTarget) {
             const myDistToFood = manhattan_distance(myHead, bestFoodTarget);
             const candDistToFood = manhattan_distance(candidate.coord, bestFoodTarget);
             if (candDistToFood < myDistToFood && myLength >= enemy.length) {
-              dist2Pen *= 0.3; // No abandonar comida si somos iguales o mayores
+              dist2Pen *= 0.3;
             }
           }
-
-          if (distToEnemyHead === 2) {
-            score -= dist2Pen;
-          } else if (distToEnemyHead === 3 && isStrictlyLarger) {
-            score -= 100;
-          }
-        }
-
-        // Fuga Táctica activa: Solo huir deliberadamente cuando el enemigo es ESTRICTAMENTE más grande
-        if (isStrictlyLarger) {
-          if (distToEnemyHead > myHeadDistToEnemy) {
-            score += isDuel ? 220 : 160; // Bono por ganar distancia frente a rival mayor
-          } else if (distToEnemyHead < myHeadDistToEnemy) {
-            score -= isDuel ? 200 : 140; // Penalizar acortar distancia hacia rival mayor
-          }
+          score -= dist2Pen;
         }
       }
     }
 
-    // 6. Space Packing / Coiling estilo Geriatric Jagwire (adaptativo)
-    const coilingBonus = isLoopBreakoutActive ? 0 : calculate_coiling_bonus(candidate.coord, you, board);
+    // 6. Space Packing / Coiling adaptativo
+    const coilingBonus = isLoopBreakoutActive ? 0 : calculate_coiling_bonus(candidate.coord, you, board) * W.coilingMultiplier;
     score += coilingBonus;
 
     // 7. Prevención Drástica de Compresión en Bordes (Anti-Parallel Squeeze)
@@ -1785,17 +1904,15 @@ function process_move(gameState) {
       (candidate.coord.y === 0 || candidate.coord.y === board.height - 1);
 
     if (isEdge) {
-      let edgePen = isGiant ? 150 : 280;
-      let cornerPen = 480;
+      let edgePen = isGiant ? Math.round(W.edgePenalty * 0.55) : W.edgePenalty;
+      let cornerPen = W.cornerPenalty;
 
-      // Si un rival es estrictamente más grande que nosotros, el riesgo de ser aplastado en pared es mucho mayor
       if (maxEnemyLength > myLength) {
-        edgePen += 200;
-        cornerPen += 300;
+        edgePen += Math.round(W.edgePenalty * 0.7);
+        cornerPen += Math.round(W.cornerPenalty * 0.6);
       }
 
-      // Si estamos en inanición crítica (health <= 35) y este movimiento nos acerca a la comida, moderar la penalización
-      if (isCriticalHunger && bestFoodTarget) {
+      if ((isCriticalHunger || isEarlyGame || isHungry) && bestFoodTarget) {
         const myDistToFood = manhattan_distance(myHead, bestFoodTarget);
         const candDistToFood = manhattan_distance(candidate.coord, bestFoodTarget);
         if (candDistToFood < myDistToFood) {
@@ -1812,7 +1929,6 @@ function process_move(gameState) {
       score -= edgePen;
       if (isCorner) score -= cornerPen;
 
-      // Si estamos en un borde y hay un enemigo cerca (distancia <= 4): ¡ALERTA MÁXIMA DE ENCIERRO!
       for (const enemy of enemies) {
         const distToEnemy = manhattan_distance(candidate.coord, enemy.head);
         if (distToEnemy <= 4 && !isLoopBreakoutActive) {
@@ -1824,7 +1940,7 @@ function process_move(gameState) {
 
     // Riesgo directo de estrangulamiento pared-cuerpo enemigo (Anti-Wall Squeeze)
     if (is_wall_squeeze_risk(candidate.coord, enemies, board) && !isLoopBreakoutActive) {
-      score -= 600; // No entrar jamás a un canal entre pared y cuerpo rival en juego normal
+      score -= W.wallSqueezePenalty;
     }
 
     // 7.5. Prevención de Ataúd Perimetral y Bono de Fuga Interior
@@ -1840,19 +1956,19 @@ function process_move(gameState) {
         (myHead.y === board.height - 1 && candidate.coord.y === board.height - 2);
 
       if (isEscapeMove && futureFreeMoves.length >= 2) {
-        score += 450; // Salir de la trampa perimetral hacia el interior del tablero abierto
+        score += 450;
       }
     }
 
-    if (is_perimeter_coffin_trap(candidate.coord, myHead, enemies, board) && !isLoopBreakoutActive) {
-      score -= 850; // No entrar jamás a un ataúd perimetral paralelo
+    if (is_perimeter_coffin_trap(candidate.coord, myHead, enemies, board, myLength) && !isLoopBreakoutActive) {
+      score -= W.coffinPenalty;
     }
 
     if (is_corner_pocket_trap(candidate.coord, enemies, myLength, board) && !isLoopBreakoutActive) {
-      score -= 900; // Rechazo categórico a entrar en una esquina bajo amenaza de corte de rival mayor
+      score -= W.cornerPocketPenalty;
     }
 
-    // 7.6. Anti-Encierro en Esquinas y Bono de Ruptura hacia el Centro (Logs 21 y 22)
+    // 7.6. Anti-Encierro en Esquinas y Bono de Ruptura hacia el Centro
     const isCornerQuadrant =
       (candidate.coord.x <= 2 && candidate.coord.y <= 2) ||
       (candidate.coord.x >= board.width - 3 && candidate.coord.y <= 2) ||
@@ -1863,11 +1979,11 @@ function process_move(gameState) {
       const distToCenter = manhattan_distance(candidate.coord, centerCoord);
       const headDistToCenter = manhattan_distance(myHead, centerCoord);
       if (distToCenter < headDistToCenter) {
-        score += 300; // Romper cerco de esquina hacia el centro
+        score += 300;
       } else if (distToCenter > headDistToCenter) {
         let quadrantPen = 250;
         if (maxEnemyLength > myLength) quadrantPen = 400;
-        if (isCriticalHunger && bestFoodTarget) {
+        if ((isCriticalHunger || isEarlyGame || isHungry) && bestFoodTarget) {
           const myDistToFood = manhattan_distance(myHead, bestFoodTarget);
           const candDistToFood = manhattan_distance(candidate.coord, bestFoodTarget);
           if (candDistToFood < myDistToFood) quadrantPen *= 0.2;
@@ -1877,12 +1993,10 @@ function process_move(gameState) {
     }
 
     if (is_narrow_band_confinement(candidate.coord, you, board, enemies) && !isLoopBreakoutActive) {
-      score -= 750; // Evitar auto-confinarse en franjas angostas de 2 columnas/filas en juego normal
+      score -= 750;
     }
 
-    // 7.7. DETECCIÓN DE CARRERA MORTAL EN PARED (Wall-Race Trap - LOG 103)
-    // Penalizar movimientos que continúan a lo largo de una pared hacia una esquina
-    // cuando un enemigo más grande/igual corre en paralelo (garantiza muerte por colisión de cabezas)
+    // 7.7. Detección de Carrera Mortal en Pared (Wall-Race Trap)
     if (!isLoopBreakoutActive) {
       const wallRace = detect_wall_race_trap(candidate.coord, myHead, myLength, enemies, board, solidObstacles);
       if (wallRace.isWallRace) {
@@ -1897,10 +2011,10 @@ function process_move(gameState) {
 
     // 8. Fases de Juego y Dominio del Centro
     if (isEarlyGame) {
-      const distToCenter = manhattan_distance(candidate.coord, centerCoord);
-      if (distToCenter <= 1) score -= 120;
+      // En early game, no penalizamos el centro ciegamente; orientamos a buscar espacio y comida
+      const distToOpen = manhattan_distance(candidate.coord, openTarget);
+      score += (20 - distToOpen) * 15;
     } else if (isDuel && turn < 40) {
-      // En 1v1 temprano, dominar el centro es clave para tener espacio y acceso a comida
       const distToCenter = manhattan_distance(candidate.coord, centerCoord);
       score -= distToCenter * 25;
     } else if (!isGiant) {
@@ -1908,13 +2022,14 @@ function process_move(gameState) {
       score -= distToCenter * 10;
     }
 
-    // 9. Caza y Bloqueo Ofensivo de Rivales Menores (Killer Cut-off)
-    if (candidate.isHunting && myLength > maxEnemyLength) {
-      score += 550;
+    // 9. Caza y Bloqueo Ofensivo de Rivales Menores
+    // SOLO en 1v1 con clara ventaja de tamaño. En 4P multi-snake, evitar ser agresiva innecesariamente.
+    if (candidate.isHunting && isDuel && myLength > maxEnemyLength) {
+      score += 450;
     }
 
-    // 10. Prioridad en Superioridad de Tamaño (Alpha Dominance) vs Crecimiento vs Inanición
-    if (isCriticalHunger && bestFoodTarget) {
+    // 10. Alimentación Segura y Crecimiento Proactivo (Hacerse larga al inicio)
+    if (bestFoodTarget && (isHungry || isEarlyGame || isCriticalHunger)) {
       const pathToFood = bfs_shortest_path(
         candidate.coord,
         bestFoodTarget,
@@ -1922,44 +2037,18 @@ function process_move(gameState) {
         board
       );
       if (pathToFood) {
-        // En hambre crítica (hp <= 35), el bono de comida es MASIVO para evitar inanición
-        const starvationUrgency = (100 - you.health) * 90;
-        score += (40 - pathToFood.distance) * starvationUrgency;
-      }
-    } else if (isDuel && myLength > maxEnemyLength + 1) {
-      // Como líderes con ventaja clara (+2 o más), seguir alimentándonos para ampliar ventaja sin arriesgar
-      if (bestFoodTarget && (you.health < 85 || myLength < 25)) {
-        const pathToFood = bfs_shortest_path(
-          candidate.coord,
-          bestFoodTarget,
-          extendedObstacles,
-          board
-        );
-        if (pathToFood) {
-          score += (40 - pathToFood.distance) * 70;
-        }
-      }
-      // Dominio del centro y apertura de espacio para el líder
-      const distToCenter = manhattan_distance(candidate.coord, centerCoord);
-      score -= distToCenter * 15;
-    } else if (isHungry && bestFoodTarget) {
-      const pathToFood = bfs_shortest_path(
-        candidate.coord,
-        bestFoodTarget,
-        extendedObstacles,
-        board
-      );
-      if (pathToFood) {
-        // Escalado dinámico de crecimiento activo (buscar comida y crecer)
-        let growthWeight = 70;
-        if (isDuel) {
-          growthWeight = myLength <= maxEnemyLength ? 130 : (myLength < 16 ? 100 : 75);
+        let foodMultiplier = W.foodBaseMultiplier;
+        if (isCriticalHunger) {
+          foodMultiplier = (100 - you.health) * W.foodHungryMultiplier;
+        } else if (isEarlyGame) {
+          // Al inicio: alta prioridad para hacerse larga rápidamente
+          foodMultiplier = myLength < 8 ? W.foodEarlyMultiplier : Math.round(W.foodEarlyMultiplier * 0.8);
+        } else if (isDuel) {
+          foodMultiplier = myLength <= maxEnemyLength ? Math.round(W.foodBaseMultiplier * 1.7) : W.foodBaseMultiplier;
         } else {
-          // En 4 jugadores, alta prioridad a crecer
-          growthWeight = myLength <= maxEnemyLength ? 105 : 70;
-          if (maxEnemyLength >= myLength + 2) growthWeight = 125;
+          foodMultiplier = myLength <= maxEnemyLength ? Math.round(W.foodBaseMultiplier * 1.45) : Math.round(W.foodBaseMultiplier * 0.95);
         }
-        score += (40 - pathToFood.distance) * growthWeight;
+        score += (35 - pathToFood.distance) * foodMultiplier;
       }
     }
 
@@ -1971,15 +2060,13 @@ function process_move(gameState) {
       if (inHazard) score -= 400;
     }
 
-    // 12. PREDICCIÓN MULTI-PASO DEL ENEMIGO (Evasión preventiva en movimiento normal)
-    // Penalizar movimientos que nos acerquen a donde el enemigo probablemente estará
+    // 12. Predicción Multi-Paso del Enemigo
     for (const enemy of enemies) {
       const prediction = predict_enemy_moves(enemy, solidObstacles, board, board.food);
       for (let step = 0; step < prediction.predictedPositions.length; step++) {
         const predicted = prediction.predictedPositions[step];
         const distToPredicted = manhattan_distance(candidate.coord, predicted);
         if (distToPredicted <= 1 && enemy.length >= myLength && !isLoopBreakoutActive) {
-          // Estamos a 1 paso de donde un rival peligroso probablemente estará
           const stepPenalty = step === 0 ? 250 : step === 1 ? 120 : 60;
           const stepConfidence = prediction.confidences[step] || 0.5;
           score -= stepPenalty * stepConfidence;
@@ -1987,11 +2074,12 @@ function process_move(gameState) {
       }
     }
 
-    // 13. ESTRATEGIA PASIVO-AGRESIVA DE ENCIERRO (Cut-off Scoring)
-    // Solo aplicar encierro agresivo si tenemos ventaja de longitud (> rival)
+    // 13. ESTRATEGIA DE ACORRALAMIENTO EN DUELO 1x1
     if (isDuel && enemies.length > 0) {
       const mainEnemy = enemies[0];
       if (myLength > mainEnemy.length) {
+        // --- MODO DOMINANTE: ENCIERRO Y PARTICIÓN DEL RIVAL ---
+        // 1. Cut-off territorial
         const cutoff = calculate_cutoff_score(
           candidate.coord,
           mainEnemy,
@@ -1999,14 +2087,9 @@ function process_move(gameState) {
           board,
           myLength
         );
-        score += cutoff.cutoffScore;
+        score += cutoff.cutoffScore * W.cutoffMultiplier;
 
-        // Anti-encierro: Si nuestro espacio tras este movimiento es peligrosamente bajo, penalizar
-        if (cutoff.mySpaceAfter < myLength * 1.5) {
-          score -= 300; // No sacrificar nuestra seguridad por encerrar al rival
-        }
-
-        // 13.5. PARTICIÓN OFENSIVA DE TABLERO Y CONSTRUCCIÓN DE MURALLA (Wall Slicing estilo Firsttry / Log 101)
+        // 2. Partición ofensiva de tablero (Topological Wall Slicing)
         const partition = evaluate_board_partition(
           candidate.coord,
           you,
@@ -2014,11 +2097,12 @@ function process_move(gameState) {
           solidObstacles,
           board
         );
-        score += partition.scoreBonus;
+        score += partition.scoreBonus * W.partitionMultiplier;
         if (partition.isLethalPartition) {
           candidate.isLethalPartition = true;
         }
 
+        // 3. Muralla slicing
         const wallBonus = calculate_wall_slicing_bonus(
           candidate.coord,
           you,
@@ -2026,35 +2110,75 @@ function process_move(gameState) {
           solidObstacles,
           board
         );
-        score += wallBonus;
+        score += wallBonus * W.wallSlicingMultiplier;
+
+        // 3.5. Ataque y sellado de compuertas/cuello de botella (Chokepoint Squeeze estilo Log 108)
+        const chokepointBonus = evaluate_chokepoint_control(
+          candidate.coord,
+          you,
+          mainEnemy,
+          solidObstacles,
+          board
+        );
+        score += chokepointBonus * (W.chokepointBonus / 400);
+
+        // 4. Dominio territorial Voronoi neto
+        score += (voronoi.myTerritory - voronoi.enemyTerritory) * W.voronoiNetWeight;
+
+        // 5. Negación de comida al rival
+        if (board.food && board.food.length > 0) {
+          for (const f of board.food) {
+            const myDistToF = manhattan_distance(candidate.coord, f);
+            const enemyDistToF = manhattan_distance(mainEnemy.head, f);
+            if (myDistToF < enemyDistToF) {
+              score += 120;
+            }
+          }
+        }
+
+        // Anti-autoencierro: asegurar que nuestro espacio sea suficiente
+        if (cutoff.mySpaceAfter < myLength * 1.5) {
+          score -= 400;
+        }
       } else if (!isLoopBreakoutActive) {
-        // Somos menores o iguales: maximizar distancia y espacio, buscar crecer, no buscar confrontación
+        // --- MODO DEFENSIVO/PARIDAD: EVASIÓN Y CRECIMIENTO ---
         const distToEnemy = manhattan_distance(candidate.coord, mainEnemy.head);
         if (distToEnemy <= 2) {
-          score -= 250; // Evitar acercarnos demasiado al rival igual o más grande
+          score -= 400;
         } else if (distToEnemy <= 3) {
-          score -= 100;
+          score -= 200;
         }
+
+        // Defensiva en cuello de botella (evitar acercarse a compuertas bloqueadas)
+        const chokepointPen = evaluate_chokepoint_control(
+          candidate.coord,
+          you,
+          mainEnemy,
+          solidObstacles,
+          board
+        );
+        score += chokepointPen;
+
+        score += voronoi.myTerritory * 20;
       }
     }
 
     // 14. ANTI-ENCIERRO TERRITORIAL PROPIO
-    // Comparar nuestro Voronoi vs el del enemigo. Si estamos perdiendo territorio, priorizar escape
     if (isDuel && voronoi.myTerritory < voronoi.enemyTerritory && !isLoopBreakoutActive) {
       const territoryRatio = voronoi.myTerritory / Math.max(voronoi.enemyTerritory, 1);
       if (territoryRatio < 0.4) {
-        // Estamos muy encerrados — dar bonus a movimientos que abren espacio
-        score += candidate.space * 15; // Bonus extra por espacio cuando estamos apretados
-        // Penalizar fuertemente movimientos hacia bordes si estamos encerrados
+        score -= 500;
         if (isEdge) score -= 200;
+        if (voronoi.myTerritory < myLength) {
+          score -= 1500; // Penalización crítica si el territorio garantizado no alcanza para alojar nuestro cuerpo
+        }
       } else if (territoryRatio < 0.7) {
-        // Perdiendo terreno pero no crítico — favorecer centro
         const distToCenter = manhattan_distance(candidate.coord, centerCoord);
         score -= distToCenter * 12;
       }
     }
 
-    // 14.5. DETECCIÓN Y FUGA ANTI-PARTICIÓN (Escape de Cerco)
+    // 14.5. DETECCIÓN Y FUGA ANTI-PARTICIÓN
     if (isDuel && enemies.length > 0 && !isLoopBreakoutActive) {
       const mainEnemy = enemies[0];
       const antiPartitionScore = detect_anti_partition_danger(
@@ -2067,18 +2191,16 @@ function process_move(gameState) {
       score += antiPartitionScore;
     }
 
-    // 14.8. ESTRATEGIA DE RUPTURA DE BUCLE Y ESCAPE A ZONA ABIERTA (4+ VUELTAS DETECTADAS - LOG 102)
+    // 14.8. ESTRATEGIA DE RUPTURA DE BUCLE Y ESCAPE A ZONA ABIERTA
     if (isLoopBreakoutActive && loopInfo.bounds) {
       const distToOpen = manhattan_distance(candidate.coord, openTarget);
       const headDistToOpen = manhattan_distance(myHead, openTarget);
 
-      // 1. Bono por acercarse activamente al centroide de la mayor región abierta del tablero
       score += (20 - distToOpen) * 85;
       if (distToOpen < headDistToOpen) {
         score += 1500;
       }
 
-      // 2. Bono masivo por salir de los límites del bucle repetitivo
       const isOutsideLoopBounds =
         candidate.coord.x < loopInfo.bounds.minX ||
         candidate.coord.x > loopInfo.bounds.maxX ||
@@ -2088,7 +2210,6 @@ function process_move(gameState) {
       if (isOutsideLoopBounds) {
         score += 3500;
       } else {
-        // Penalización severa por mantenerse girando en el mismo circuito estéril
         score -= 2000;
       }
     }
@@ -2101,10 +2222,10 @@ function process_move(gameState) {
 
   let mode = "Control";
   if (isLoopBreakoutActive) mode = "RupturaBucle-4Vueltas";
-  else if (isEarlyGame) mode = "Periferia/Early";
   else if (bestDecision.isLethalPartition) mode = "MurallaSlicing/Cutoff";
-  else if (isDuel && myLength > maxEnemyLength) mode = "AlphaDominance/Encierro";
+  else if (isDuel && myLength > maxEnemyLength) mode = "1v1-Encierro";
   else if (isCriticalHunger) mode = "InanicionCritica";
+  else if (isEarlyGame) mode = "Early-Crecimiento";
   else if (isDuel && isHungry) mode = "1v1-ParidadCrecimiento";
   else if (isGiant && bestDecision.canReachTail && bestDecision.space >= myLength) mode = "Coiling/SafeLoop";
   else if (isHungry) mode = "Crecimiento";
@@ -2136,27 +2257,115 @@ app.get("/", (req, res) => {
 
 app.post("/start", (req, res) => {
   if (req.body && req.body.game && req.body.game.id) {
-    clear_game_history(req.body.game.id);
+    const gId = req.body.game.id;
+    gameTurnTelemetry.set(gId, []);
+    clear_game_history(gId);
   }
   res.status(200).send("ok");
 });
 
 app.post("/move", (req, res) => {
   const decision = process_move(req.body);
+
+  if (req.body && req.body.game && req.body.game.id) {
+    const gId = req.body.game.id;
+    let list = gameTurnTelemetry.get(gId);
+    if (!list) {
+      list = [];
+      gameTurnTelemetry.set(gId, list);
+    }
+    list.push({
+      turn: req.body.turn || 0,
+      health: req.body.you?.health || 100,
+      length: req.body.you?.length || 3,
+      head: req.body.you?.head,
+      move: decision.move,
+      shout: decision.shout,
+    });
+  }
+
   res.json(decision);
 });
 
 app.post("/end", (req, res) => {
   if (req.body && req.body.game && req.body.game.id) {
-    clear_game_history(req.body.game.id);
+    const gId = req.body.game.id;
+    const history = gameTurnTelemetry.get(gId) || [];
+
+    // AUTO-TUNER: Analizar logs de la partida y actualizar pesos heurísticos
+    try {
+      tuneAfterLiveGame(req.body, history);
+    } catch (err) {
+      console.error("⚠️ Error ejecutando auto-tuner en /end:", err.message);
+    }
+
+    gameTurnTelemetry.delete(gId);
+    clear_game_history(gId);
   }
   res.status(200).send("ok");
 });
+
+app.get("/tuning", (req, res) => {
+  res.json({
+    config: getConfig(),
+    currentWeights: getWeights(),
+  });
+});
+
+// Endpoints de variantes ganadoras históricas para enfrentamientos locales
+const arena = require("../simulations/arena_entrenamiento");
+
+app.get("/v102", (req, res) => res.json({ apiversion: "1", author: "Historical", color: "#6D28D9", head: "mlh-gene", tail: "mlh-gene" }));
+app.post("/v102/start", (req, res) => res.status(200).send("ok"));
+app.post("/v102/move", (req, res) => res.json(arena.process_cascabel_v102_move(req.body)));
+app.post("/v102/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/v101", (req, res) => res.json({ apiversion: "1", author: "Historical", color: "#00CCCC", head: "beluga", tail: "bolt" }));
+app.post("/v101/start", (req, res) => res.status(200).send("ok"));
+app.post("/v101/move", (req, res) => res.json(arena.process_cascabel_v101_move(req.body)));
+app.post("/v101/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/v100", (req, res) => res.json({ apiversion: "1", author: "Historical", color: "#FFE58F", head: "glasses", tail: "freckled" }));
+app.post("/v100/start", (req, res) => res.status(200).send("ok"));
+app.post("/v100/move", (req, res) => res.json(arena.process_cascabel_v100_move(req.body)));
+app.post("/v100/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/v41", (req, res) => res.json({ apiversion: "1", author: "Historical", color: "#00CC44", head: "eat-food", tail: "curled" }));
+app.post("/v41/start", (req, res) => res.status(200).send("ok"));
+app.post("/v41/move", (req, res) => res.json(arena.process_cascabel_v41_move(req.body)));
+app.post("/v41/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/mutante_gloton", (req, res) => res.json({ apiversion: "1", color: "#22c55e", head: "eat-food", tail: "curled" }));
+app.post("/mutante_gloton/start", (req, res) => res.status(200).send("ok"));
+app.post("/mutante_gloton/move", (req, res) => res.json(arena.process_mutante_move(req.body, "gloton")));
+app.post("/mutante_gloton/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/mutante_agresivo", (req, res) => res.json({ apiversion: "1", color: "#ef4444", head: "fang", tail: "sharp" }));
+app.post("/mutante_agresivo/start", (req, res) => res.status(200).send("ok"));
+app.post("/mutante_agresivo/move", (req, res) => res.json(arena.process_mutante_move(req.body, "agresivo")));
+app.post("/mutante_agresivo/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/mutante_muralla", (req, res) => res.json({ apiversion: "1", color: "#3b82f6", head: "beluga", tail: "bolt" }));
+app.post("/mutante_muralla/start", (req, res) => res.status(200).send("ok"));
+app.post("/mutante_muralla/move", (req, res) => res.json(arena.process_mutante_move(req.body, "muralla")));
+app.post("/mutante_muralla/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/mutante_defensivo", (req, res) => res.json({ apiversion: "1", color: "#8b5cf6", head: "safe", tail: "round-bum" }));
+app.post("/mutante_defensivo/start", (req, res) => res.status(200).send("ok"));
+app.post("/mutante_defensivo/move", (req, res) => res.json(arena.process_mutante_move(req.body, "defensivo")));
+app.post("/mutante_defensivo/end", (req, res) => res.status(200).send("ok"));
+
+app.get("/mutante_random", (req, res) => res.json({ apiversion: "1", color: "#ec4899", head: "pixel", tail: "pixel" }));
+app.post("/mutante_random/start", (req, res) => res.status(200).send("ok"));
+app.post("/mutante_random/move", (req, res) => res.json(arena.process_mutante_move(req.body, "random")));
+app.post("/mutante_random/end", (req, res) => res.status(200).send("ok"));
+
 
 // Inicio del servidor
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`🐍 Battlesnake Engine listo en http://localhost:${PORT}`);
+    console.log(`🧠 Auto-Tuner activo: los parámetros se auto-optimizan tras cada partida en /end`);
   });
 }
 
@@ -2172,6 +2381,7 @@ module.exports = {
   evaluate_board_partition,
   calculate_wall_slicing_bonus,
   detect_anti_partition_danger,
+  evaluate_chokepoint_control,
   is_tunnel_trap,
   is_wall_squeeze_risk,
   is_perimeter_coffin_trap,
@@ -2182,8 +2392,15 @@ module.exports = {
   find_largest_open_area,
   clear_game_history,
   gameHistoryMap,
+  gameTurnTelemetry,
   detect_wall_race_trap,
+  detect_multi_snake_pinch,
+  evaluate_threat_evasion_and_flee,
+  find_safest_food_target,
+  get_cardinal_neighbors,
   process_move,
   manhattan_distance,
   to_key,
+  getWeights,
+  getConfig,
 };

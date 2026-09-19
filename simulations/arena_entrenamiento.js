@@ -15,28 +15,9 @@ const { spawn } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
-const {
-  process_move: process_cascabel_actual_move,
-  get_safe_moves,
-  evaluate_space,
-  bfs_shortest_path,
-  calculate_voronoi,
-  calculate_coiling_bonus,
-  calculate_cutoff_score,
-  evaluate_board_partition,
-  calculate_wall_slicing_bonus,
-  detect_anti_partition_danger,
-  is_tunnel_trap,
-  is_wall_squeeze_risk,
-  is_perimeter_coffin_trap,
-  is_narrow_band_confinement,
-  is_corner_pocket_trap,
-  predict_enemy_moves,
-  manhattan_distance,
-  to_key,
-  get_cardinal_neighbors,
-  is_valid_coord,
-} = require("./index");
+function getIndex() {
+  return require("../src/index");
+}
 
 // ==========================================
 // 1. PERSONAS HISTÓRICAS DE NUESTRA SERPIENTE
@@ -48,6 +29,18 @@ const {
  * Tiende a quedarse en círculos seguros (coiling / tail chasing) y muere de inanición ante bloqueos.
  */
 function process_cascabel_v102_move(gameState) {
+  const {
+    get_safe_moves,
+    evaluate_space,
+    is_tunnel_trap,
+    is_wall_squeeze_risk,
+    is_perimeter_coffin_trap,
+    is_narrow_band_confinement,
+    calculate_voronoi,
+    calculate_coiling_bonus,
+    manhattan_distance,
+  } = getIndex();
+
   const { board, you, turn } = gameState;
   const myLength = you.length;
   const myHead = you.head;
@@ -136,6 +129,13 @@ function process_cascabel_v102_move(gameState) {
  * Obsesionado con cortar el mapa por la mitad y acorralar rivales.
  */
 function process_cascabel_v101_move(gameState) {
+  const {
+    get_safe_moves,
+    evaluate_space,
+    evaluate_board_partition,
+    calculate_wall_slicing_bonus,
+  } = getIndex();
+
   const { board, you, turn } = gameState;
   const { safeMoves, legalMoves, solidObstacles, lethalDangerZones } = get_safe_moves(board, you);
   const pool = safeMoves.length > 0 ? safeMoves : legalMoves;
@@ -176,6 +176,8 @@ function process_cascabel_v101_move(gameState) {
  * Se abraza a los bordes, busca empaquetar espacio ordenadamente.
  */
 function process_cascabel_v100_move(gameState) {
+  const { get_safe_moves, evaluate_space } = getIndex();
+
   const { board, you, turn } = gameState;
   const { safeMoves, legalMoves, solidObstacles } = get_safe_moves(board, you);
   const pool = safeMoves.length > 0 ? safeMoves : legalMoves;
@@ -210,6 +212,8 @@ function process_cascabel_v100_move(gameState) {
  * Devora comida a toda costa sin calcular trampas avanzadas.
  */
 function process_cascabel_v41_move(gameState) {
+  const { get_safe_moves, manhattan_distance, bfs_shortest_path } = getIndex();
+
   const { board, you, turn } = gameState;
   const { safeMoves, legalMoves, solidObstacles } = get_safe_moves(board, you);
   const pool = safeMoves.length > 0 ? safeMoves : legalMoves;
@@ -246,6 +250,51 @@ function process_cascabel_v41_move(gameState) {
   return { move: pool[0].move, shout: `v41 T${turn} Wander` };
 }
 
+/**
+ * Generador de Pesos Mutados / Alterados por Perfil
+ */
+function getMutatedWeights(preset) {
+  const base = getIndex().getWeights();
+  const W = { ...base };
+  if (preset === "gloton") {
+    W.foodBaseMultiplier = 145;
+    W.foodEarlyMultiplier = 220;
+    W.foodHungryMultiplier = 180;
+    W.spaceWeight = 15;
+  } else if (preset === "agresivo") {
+    W.cutoffMultiplier = 2.6;
+    W.chokepointBonus = 750;
+    W.threatProximityPenalty = 100;
+    W.partitionMultiplier = 2.2;
+  } else if (preset === "muralla") {
+    W.partitionMultiplier = 2.8;
+    W.wallSlicingMultiplier = 2.2;
+    W.spaceWeight = 35;
+    W.cutoffMultiplier = 1.8;
+  } else if (preset === "defensivo") {
+    W.coilingMultiplier = 2.2;
+    W.tailBonus = 750;
+    W.deadEndPenalty = 4000;
+    W.threatProximityPenalty = 450;
+    W.spaceWeight = 45;
+  } else if (preset === "random") {
+    const keys = Object.keys(W);
+    const numMutations = Math.floor(Math.random() * 3) + 2;
+    for (let i = 0; i < numMutations; i++) {
+      const randomKey = keys[Math.floor(Math.random() * keys.length)];
+      const factor = 0.5 + Math.random() * 1.0;
+      W[randomKey] = parseFloat((W[randomKey] * factor).toFixed(2));
+    }
+  }
+  return W;
+}
+
+function process_mutante_move(gameState, preset) {
+  const weights = getMutatedWeights(preset);
+  const result = getIndex().process_move(gameState, weights);
+  return { ...result, shout: `[Mutante ${preset.toUpperCase()}] ${result.shout || ""}` };
+}
+
 // ==========================================
 // 2. SERVIDOR DE ARENA MULTI-PUERTO
 // ==========================================
@@ -256,7 +305,7 @@ app.use(express.json());
 // Serpiente Actual (Gran Maestro v103+)
 app.get("/actual", (req, res) => res.json({ apiversion: "1", author: "Avalojandro", color: "#E70A77", head: "silly", tail: "mlh-gene" }));
 app.post("/actual/start", (req, res) => res.send("ok"));
-app.post("/actual/move", (req, res) => res.json(process_cascabel_actual_move(req.body)));
+app.post("/actual/move", (req, res) => res.json(getIndex().process_move(req.body)));
 app.post("/actual/end", (req, res) => res.send("ok"));
 
 // Serpiente v102 (Bucle / Pre-Ruptura)
@@ -283,13 +332,40 @@ app.post("/v41/start", (req, res) => res.send("ok"));
 app.post("/v41/move", (req, res) => res.json(process_cascabel_v41_move(req.body)));
 app.post("/v41/end", (req, res) => res.send("ok"));
 
+// Endpoints de Variantes Mutantes
+app.get("/mutante_gloton", (req, res) => res.json({ apiversion: "1", color: "#22c55e", head: "eat-food", tail: "curled" }));
+app.post("/mutante_gloton/start", (req, res) => res.send("ok"));
+app.post("/mutante_gloton/move", (req, res) => res.json(process_mutante_move(req.body, "gloton")));
+app.post("/mutante_gloton/end", (req, res) => res.send("ok"));
+
+app.get("/mutante_agresivo", (req, res) => res.json({ apiversion: "1", color: "#ef4444", head: "fang", tail: "sharp" }));
+app.post("/mutante_agresivo/start", (req, res) => res.send("ok"));
+app.post("/mutante_agresivo/move", (req, res) => res.json(process_mutante_move(req.body, "agresivo")));
+app.post("/mutante_agresivo/end", (req, res) => res.send("ok"));
+
+app.get("/mutante_muralla", (req, res) => res.json({ apiversion: "1", color: "#3b82f6", head: "beluga", tail: "bolt" }));
+app.post("/mutante_muralla/start", (req, res) => res.send("ok"));
+app.post("/mutante_muralla/move", (req, res) => res.json(process_mutante_move(req.body, "muralla")));
+app.post("/mutante_muralla/end", (req, res) => res.send("ok"));
+
+app.get("/mutante_defensivo", (req, res) => res.json({ apiversion: "1", color: "#8b5cf6", head: "safe", tail: "round-bum" }));
+app.post("/mutante_defensivo/start", (req, res) => res.send("ok"));
+app.post("/mutante_defensivo/move", (req, res) => res.json(process_mutante_move(req.body, "defensivo")));
+app.post("/mutante_defensivo/end", (req, res) => res.send("ok"));
+
+app.get("/mutante_random", (req, res) => res.json({ apiversion: "1", color: "#ec4899", head: "pixel", tail: "pixel" }));
+app.post("/mutante_random/start", (req, res) => res.send("ok"));
+app.post("/mutante_random/move", (req, res) => res.json(process_mutante_move(req.body, "random")));
+app.post("/mutante_random/end", (req, res) => res.send("ok"));
+
 // ==========================================
 // 3. MOTOR DE SIMULACIÓN Y TORNEO
 // ==========================================
 
 function playDuel(port, snake1, snake2) {
   return new Promise((resolve, reject) => {
-    const bs = spawn("./bin/battlesnake", [
+    const bsPath = path.join(__dirname, "../bin/battlesnake");
+    const bs = spawn(bsPath, [
       "play",
       "-W", "11", "-H", "11",
       "-n", snake1.name, "-u", `http://localhost:${port}/${snake1.endpoint}`,
@@ -333,7 +409,8 @@ function playBattleRoyale(port, snakes) {
     }
     args.push("-d", "0", "-t", "500");
 
-    const bs = spawn("./bin/battlesnake", args);
+    const bsPath = path.join(__dirname, "../bin/battlesnake");
+    const bs = spawn(bsPath, args);
     let output = "";
     bs.stdout.on("data", (d) => output += d);
     bs.stderr.on("data", (d) => output += d);
@@ -486,5 +563,7 @@ module.exports = {
   process_cascabel_v101_move,
   process_cascabel_v100_move,
   process_cascabel_v41_move,
+  process_mutante_move,
+  getMutatedWeights,
   runTrainingArena,
 };

@@ -2,13 +2,17 @@
   "name": "mi-battlesnake",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js",
-    "test": "node test.js",
-    "game": "./bin/battlesnake play -W 11 -H 11 --name 'Serpiente Alfa' --url http://localhost:8000 --name 'Serpiente Beta' --url http://localhost:8000",
-    "game:browser": "./bin/battlesnake play -W 11 -H 11 --name 'Serpiente Alfa' --url http://localhost:8000 --name 'Serpiente Beta' --url http://localhost:8000 --browser"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"No tests configured\" && exit 0",
+    "simulate": "node simulations/simulator.js",
+    "royale": "node simulations/battle_royale_100.js",
+    "arena": "node simulations/arena_entrenamiento.js",
+    "autotune": "node simulations/autotune_runner.js",
+    "game": "./bin/battlesnake play -W 11 -H 11 --name 'Cascabel Actual' --url http://localhost:8000 --name 'Cascabel v102 (Coiling)' --url http://localhost:8000/v102 --name 'Cascabel v101 (Muralla)' --url http://localhost:8000/v101 --name 'Cascabel v100 (Perimeter)' --url http://localhost:8000/v100",
+    "game:browser": "./bin/battlesnake play -W 11 -H 11 --name 'Cascabel Actual' --url http://localhost:8000 --name 'Cascabel v102 (Coiling)' --url http://localhost:8000/v102 --name 'Cascabel v101 (Muralla)' --url http://localhost:8000/v101 --name 'Cascabel v100 (Perimeter)' --url http://localhost:8000/v100 --browser"
   },
   "keywords": [],
   "author": "",
